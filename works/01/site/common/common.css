@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+body, h1, h2, h3, h4, p, figure, dl, dd, ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+body {
+    font-family: YuMincho, 'Yu Mincho', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
+    font-size: 16px;
+    color: #666;
+}
+
+.wrapper {
+    width: 780px;
+    margin: 0 auto;
+    background: #fcfcfc;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    width: 400px;
+    height: 100px;
+    background: url(../../../img/gray.png) no-repeat;
+}
+
+header h1 a {
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+nav {
+    width: 100%;
+}
+
+nav li {
+    width: 20%;
+    height: 40px;
+    background: url(../../../img/gray.png) no-repeat;
+    border-top: 3px solid #ccc;
+    border-bottom: 3px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+nav li:last-of-type {
+    border-right: none;
+}
+
+nav li a {
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+footer {
+    height: 50px;
+    background: url(../../../img/gray.png) no-repeat;
+}
+
+footer p {
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+@media screen and (max-width: 780px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        max-width: 400px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+main ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 370px;
+}
+
+main li a {
+    color: #444;
+}
+
+main li a::after {
+    content: ">";
+    display: inline-block;
+    margin-left: 5px;
+}
+
+main li:last-of-type a::after {
+    display: none;
+}
+
+article h2 {
+    height: 100px;
+    line-height: 100px;
+    background: url(../../img/gray.png) no-repeat;
+    padding-left: 20px;
+    color: #fff;
+    text-shadow: #999 1px 1px;
+    margin-bottom: 50px;
+}
+
+article section {
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+
+section h3 {
+    border-left: 5px solid #009900;
+    border-bottom: 1px solid #009900;
+    line-height: 45px;
+    padding-left: 5px;
+    font-weight: bold;
+    color: #090;
+    margin-bottom: 50px;
+}
+
+section h3 span {
+    border-left: 1px solid #009900;
+    display: block;
+    padding-left: 10px;
+}
+
+section p {
+    padding: 0 20px;
+    margin-bottom: 2em;
+}
+
+section .flex {
+    padding: 0 20px;
+}
+
+section figure:first-of-type img {
+    width: 400px;
+    height: 470px;
+}
+
+section figure:last-of-type img {
+    width: 400px;
+    height: 590px;
+}
+
+section figcaption {
+    margin-top: 10px;
+    text-align: right;
+}
+
+section figcaption::before {
+    content: "■";
+    margin-right: 5px;
+    font-size: 24px;
+}
+
+footer {
+    background-color: #444;
+}
+
+footer p {
+    color: #fff;
+    line-height: 30px;
+    text-align: right;
+    margin-right: 40px;
+    font-size: 14px;
+}
