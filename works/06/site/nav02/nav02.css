@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+figure img {
+    width: 100px;
+    height: 100px;
+}
+
+.contents .flex p {
+    width: 300px;
+}
+
+.contents .flex {
+    margin-bottom: 10px;
+}

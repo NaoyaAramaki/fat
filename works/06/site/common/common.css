@@ -10,18 +10,148 @@ img {
     vertical-align: bottom;
 }
 
-body {
-    font-family: YuMincho, 'Yu Mincho', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
-    font-size: 16px;
-    color: #666;
+a {
+    display: block;
+    text-decoration: none;
 }
 
-.inner {
-    width: 1000px;
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
+    font-size: 14px;
+    color: #000;
+    background: linear-gradient(to bottom,#4682b4, #7fffd4);
+}
+
+.wrapper {
+    width: 800px;
     margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #fff;
 }
 
 .flex {
     display: flex;
     justify-content: space-between;
+}
+
+header {
+    background: url(../../../img/skyblue.png) no-repeat;
+    height: 220px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    position: absolute;
+    width: 220px;
+    height: 45px;
+    background: url(../../../img/gray.png) no-repeat;
+    text-align: center;
+    top: 50px;
+    left: 100px;
+}
+
+header h1 a {
+    line-height: 45px;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+main {
+    margin-bottom: 15px;
+}
+
+aside {
+    background: rgb(255, 255, 170);
+    width: 250px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+aside nav {
+    background: url(../../../img/skyblue.png) no-repeat;
+    border-radius: 5px;
+    padding: 10px 10px 20px;
+    box-sizing: border-box;
+}
+
+aside p {
+    color: #fff;
+    text-shadow: 1px 1px #999;
+    font-size: 1.5em;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    background: rgba(0, 170, 204, .6);
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 5px;
+}
+
+aside li {
+    background-color: rgba(0, 204, 238, .6);
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+aside a {
+    padding-left: 30px;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+div.contents {
+    width: 500px;
+}
+
+section {
+    margin-top: 30px;
+    border: 1px solid #999;
+    padding: 30px 65px 20px 20px;
+    position: relative;
+    background: url(../../../img/gray.png) bottom right / 60px 90px no-repeat;
+}
+
+section h2 {
+    position: absolute;
+    background: #fff;
+    top: -15px;
+    left: -20px;
+    font-weight: normal;
+}
+
+section h2::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: text-bottom;
+    background: url(../../../img/gray.png) no-repeat;
+    margin-right: 5px;
+}
+
+dt {
+    font-weight: bold;
+    padding-left: 5px;
+    border-left: 5px solid #0de;
+}
+
+dd {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+footer {
+    background: url(../../../img/gray.png);
+    padding: 100px 0 25px;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    text-shadow: 1px 1px #999;
+    font-weight: bold;
 }
