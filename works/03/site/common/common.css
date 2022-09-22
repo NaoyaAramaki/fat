@@ -19,6 +19,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
     font-size: 16px;
     color: #666;
+    background-color: #fcefe6;
 }
 
 .inner {
@@ -33,6 +34,7 @@ body {
 
 header {
     padding: 10px 0;
+    background: #fff;
 }
 
 header h1 {
@@ -61,4 +63,49 @@ header li a {
     height: 60px;
     text-align: center;
     line-height: 60px;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+header .nav01 a:hover {
+    background: url(../../../img/gray.png) no-repeat;
+}
+
+header .nav02 a:hover {
+    background: url(../../../img/gray.png) no-repeat;
+}
+
+header .nav03 a:hover {
+    background: url(../../../img/gray.png) no-repeat;
+}
+
+header .nav04 a:hover {
+    background: url(../../../img/gray.png) no-repeat;
+}
+
+header .nav05 a:hover {
+    background: url(../../../img/gray.png) no-repeat;
+}
+
+footer {
+    background: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p:first-of-type {
+    background: url(../../../img/skyblue.png) center center / cover no-repeat;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto 20px;
+}
+
+footer p:first-of-type a {
+    line-height: 100px;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+footer p:last-of-type {
+    font-size: .9em;
 }
