@@ -10,18 +10,113 @@ img {
     vertical-align: bottom;
 }
 
+a {
+    display: block;
+    text-decoration: none;
+}
+
 body {
-    font-family: YuMincho, 'Yu Mincho', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
-    font-size: 16px;
-    color: #666;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
+    font-size: 12px;
+    background-color: #e18625;
 }
 
 .inner {
-    width: 1000px;
+    width: 950px;
     margin: 0 auto;
 }
 
 .flex {
     display: flex;
     justify-content: space-between;
+}
+
+header {
+    padding: 15px 0;
+}
+
+header h1 {
+    text-align: center;
+    width: 330px;
+    height: 90px;
+    background: url(../../../img/gray.png) no-repeat;
+}
+
+header h1 a {
+    line-height: 90px;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+header ul {
+    margin-top: 20px;
+}
+
+header li {
+    margin-right: 10px;
+}
+
+header li a {
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+header li a::before {
+    width: 20px;
+    height: 18px;
+    content: "";
+    display: inline-block;
+    background: url(../../../img/gray.png);
+    margin-right: 5px;
+    vertical-align: text-bottom;
+}
+
+nav {
+    background: url(../../../img/gray.png);
+    margin-bottom: 15px;
+}
+
+nav ul {
+    width: 100%;
+}
+
+nav li {
+    width: 20%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    border-right: 1px solid #aaa;
+}
+
+nav li:last-of-type {
+    border-right: none;
+}
+
+nav a {
+    background: url(../../../img/skyblue.png);
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+nav a:hover {
+    background: url(../../../img/white.png);
+}
+
+footer {
+    line-height: 50px;
+    background: rgb(92, 34, 0);
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+footer li {
+    margin-right: 10px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer p {
+    margin-right: 50px;
 }

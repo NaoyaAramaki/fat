@@ -1,2 +1,202 @@
 @charset "UTF-8";
 
+.main_visual {
+    height: 300px;
+    background: url(../../img/gray.png) no-repeat;
+    margin-bottom: 15px;
+}
+
+.main_visual p {
+    line-height: 300px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+main > div.flex {
+    width: 675px;
+    flex-wrap: wrap;
+}
+
+main > aside {
+    width: 260px;
+}
+
+section {
+    padding: 10px;
+    box-sizing: border-box;
+    background: #f9ebb6;
+    width: 330px;
+    margin-bottom: 15px;
+}
+
+section:last-of-type {
+    width: 100%;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+section:first-of-type h2 {
+    color: #080;
+}
+
+section:first-of-type h2::before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+    vertical-align: text-bottom;
+    background-color: #080;
+}
+
+section:nth-of-type(2) h2 {
+    color: #d00;
+}
+
+section:nth-of-type(2) h2::before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+    vertical-align: text-bottom;
+    background-color: #d00;
+}
+
+section:last-of-type h2 {
+    color: #840;
+}
+
+section:last-of-type h2::before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+    vertical-align: text-bottom;
+    background-color: #840;
+}
+
+section p img {
+    width: 100%;
+    height: 55px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+section figure {
+    float: left;
+    clear: left;
+}
+
+section figure img {
+    width: 124px;
+    height: 130px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+section > p a {
+    text-align: center;
+    background: url(../../img/gray.png);
+    width: 140px;
+    margin-right: 0;
+    margin-left: auto;
+    line-height: 28px;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+section dl.flex {
+    width: 100%;
+    flex-wrap: wrap;
+    line-height: 20px;
+}
+
+section dt {
+    width: 20%;
+}
+
+section dd {
+    width: 80%;
+}
+
+aside {
+    background: url(../../img/skyblue.png) no-repeat;
+    height: 380px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+aside h3 {
+    border-bottom: 3px solid #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+aside h3::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: text-bottom;
+    background: url(../../img/gray.png) no-repeat;
+    border-radius: 30%;
+    margin-right: 5px;
+}
+
+aside dt {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+aside dd {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+aside dd:nth-of-type(2),
+aside dd:nth-of-type(3) {
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #fff;
+}
+
+aside input {
+    border: none;
+}
+
+aside input[type="date"],
+aside input[type="time"] {
+    width: 50%;
+}
+
+aside input[type="submit"] {
+    margin-top: 10px;
+    width: 100%;
+    line-height: 30px;
+    color: #fff;
+    text-shadow: 1px 1px #ccc;
+    background: #999;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #666;
+    opacity: .8;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+aside input[type="submit"]:hover {
+    opacity: 1;
+}
