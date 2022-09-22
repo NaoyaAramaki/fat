@@ -1,0 +1,382 @@
+@charset "UTF-8";
+
+body, h1, h2, h3, h4, p, figure, dl, dd, ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+body {
+    font-family: YuMincho, 'Yu Mincho', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
+    font-size: 16px;
+    color: #666;
+    background-color: #fff;
+}
+
+.inner {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+address {
+    font-style: normal;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.header_left {
+    width: 230px;
+}
+
+.header_logo {
+    background: url(../../../img/white.png);
+    width: 100px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.header_logo a {
+    color: #666;
+}
+
+header h1 {
+    line-height: 60px;
+}
+
+header nav {
+    width: 600px;
+    margin-top: 20px;
+}
+
+.icon::before {
+    font-family: 'Material Icons';
+    font-size: 25px;
+    vertical-align: text-bottom;
+    margin-right: 10px;
+}
+
+.icon.about::before {
+    content: "\e0af";
+}
+
+.icon.news::before {
+    content: "\e031";
+}
+
+.icon.faq::before {
+    content: "\e887";
+}
+
+.icon.inquiry::before {
+    content: "\e163";
+}
+
+.icon a {
+    color: #fff;
+    display: inline-block;
+}
+
+/**************** 以下、ハンバーガーボタンのスタイリング ****************/
+.btn {
+    appearance: none;
+    vertical-align: middle;
+    border: 0;
+    background: transparent;
+    outline: 0;
+    border-radius: 0;
+    text-align: inherit;
+    font-family: 'Yu Mincho', serif;
+    /* ボタンの配置位置  */
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    /* ボタンの大きさ  */
+    width: 50px;
+    height: 30px;
+    /* バーガーの線をボタン範囲の中心に配置 */
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+/***** 真ん中のバーガー線 *****/
+.btn-line {
+    /* 線の長さと高さ */
+    width: 100%;
+    height: 3px;
+    /* バーガー線の色 */
+    background-color: #fff;
+    /* バーガー線の位置基準として設定 */
+    position: relative;
+    transition: .2s;
+}
+
+/***** 上下のバーガー線 *****/
+.btn-line::before,
+.btn-line::after {
+    /* 基準線と同じ大きさと色 */
+    position: absolute;
+    transition: .5s;
+}
+
+.btn-line::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    /* 上の線の位置 */
+    transform: translateY(-10px);
+}
+
+.btn-line::after {
+    content: "menu";
+    /* 下の線の位置 */
+    display: block;
+    width: 100%;
+    text-align: center;
+    transform: translateY(3px);
+    color: #fff;
+}
+
+/***** メニューオープン時 *****/
+.btn-line.open {
+    transition: .5s;
+}
+
+.btn-line.open::before {
+    content: "";
+    transform: translateY(0);
+}
+
+.btn-line.open::after {
+    content: "close";
+}
+
+header nav.open {
+    display: block;
+    animation: fade-in .5s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/* ここまでハンバーガーメニュー */
+
+footer::before {
+    content: "footer上部のここに装飾が入ります";
+    display: block;
+    background: url(../../../img/skyblue.png) center center / cover no-repeat;
+    position: relative;
+    top: -100px;
+    height: 100px;
+}
+
+footer {
+    background-color: rgb(221, 255, 244);
+}
+
+footer address {
+    margin-bottom: 100px;
+}
+
+footer address p {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer dl {
+    line-height: 30px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+footer dt {
+    float: left;
+    width: 90px;
+}
+
+footer dd a {
+    color: #666;
+}
+
+footer ul {
+    width: 600px;
+    margin: 0 auto;
+}
+
+footer .icon::before {
+    color: rgb(60, 255, 55);
+}
+
+footer .icon a {
+    color: #666;
+}
+
+.copyright {
+    position: relative;
+    bottom: -64px;
+    background-color: rgb(60, 255, 55);
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px #999;
+}
+
+.copyright small {
+    line-height: 4;
+    font-size: 16px;
+}
+
+/* タブレット端末用CSS */
+@media screen and (max-width: 1000px) {
+    .inner {
+        width: 100%;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    header > .flex {
+        display: block;
+    }
+
+    .header_left {
+        margin: 0 auto;
+    }
+
+    header nav {
+        display: none;
+        width: 100%;
+    }
+
+    .btn {
+        display: flex;
+    }
+
+    header ul.flex {
+        display: block;
+    }
+
+    header li {
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    header li a {
+        padding: 20px 0;
+    }
+
+    footer::before {
+        top: -80px;
+        height: 80px;
+    }
+
+    footer address {
+        margin-bottom: 60px;
+    }
+
+    footer ul.flex {
+        width: 500px;
+        font-size: .9em;
+    }
+
+    .copyright {
+        bottom: -43px;
+    }
+
+    .copyright small {
+        line-height: 3;
+        font-size: .9em;
+    }
+}
+
+/* スマホ端末用CSS */
+@media screen and (max-width: 600px) {
+    .header_left.flex {
+        width: 170px;
+        justify-content: space-around;
+    }
+
+    .header_logo {
+        width: 75px;
+        height: 45px;
+        line-height: 45px;
+        font-size: .8em;
+    }
+
+    header h1 {
+        line-height: 45px;
+        font-size: 1.3em;
+    }
+
+    .btn {
+        width: 40px;
+        right: 10px;
+    }
+
+    .btn-line::after {
+        font-size: .8em;
+    }
+
+    footer address {
+        font-size: .9em;
+    }
+
+    footer dl {
+        width: 280px;
+    }
+
+    footer ul.flex {
+        width: 300px;
+        flex-wrap: wrap;
+    }
+
+    footer li {
+        width: 140px;
+        margin-bottom: 10px;
+    }
+
+    .copyright {
+        bottom: -51px;
+    }
+
+    .copyright small {
+        line-height: 4;
+        font-size: .8em;
+    }
+}

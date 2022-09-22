@@ -1,0 +1,327 @@
+@charset "UTF-8";
+
+.main_visual {
+    height: 650px;
+    background: url(../../img/gray.png) center center / cover no-repeat;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.main_visual p {
+    line-height: 650px;
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 1px 1px #999;
+}
+
+main > ul {
+    width: 800px;
+    margin: 0 auto 150px;
+}
+
+main > ul li {
+    text-align: center;
+    border-right: 1px solid #ccc;
+    font-weight: bold;
+}
+
+main li:last-of-type {
+    border-right: none;
+}
+
+main li a::after {
+    color: #ddd;
+    letter-spacing: 0.1em;
+    display: block;
+}
+
+main .headline01 a::after {
+    content: "headline01";
+}
+
+main .headline02 a::after {
+    content: "headline02";
+}
+
+main .headline03 a::after {
+    content: "headline03";
+}
+
+main .headline04 a::after {
+    content: "headline04";
+}
+
+main > ul li a {
+    color: #333;
+    padding: 10px;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+main > section {
+    margin-bottom: 150px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 75px;
+}
+
+section h2::after {
+    color: #ddd;
+    display: block;
+    font-size: 22px;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+#headline01 h2::after {
+    content: "headline01";
+}
+
+#headline02 h2::after {
+    content: "headline02";
+}
+
+#headline03 h2::after {
+    content: "headline03";
+}
+
+#headline04 h2::after {
+    content: "headline04";
+}
+
+.content section {
+    width: 540px;
+}
+
+.content h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.content p {
+    margin-bottom: 1em;
+    color: #aaa;
+    text-indent: 1em;
+}
+
+main img {
+    width: 400px;
+    height: 500px;
+}
+
+main figcaption {
+    text-align: center;
+    color: #aaa;
+}
+
+#headline02 .content {
+    flex-direction: row-reverse;
+}
+
+.content .detail {
+    width: 200px;
+    margin: 0 auto;
+    text-indent: 0;
+}
+
+.detail a {
+    text-align: center;
+    padding: 10px;
+    background-color: #eee;
+    color: #666;
+}
+
+#headline04 {
+    padding-bottom: 100px;
+}
+
+#headline04 p {
+    color: #aaa;
+    margin-bottom: 1em;
+}
+
+#headline04 iframe {
+    width: 100%;
+    border: none;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+#headline04 ul {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#headline04 li {
+    width: 280px;
+    text-align: center;
+    border: 1px solid #333;
+    padding: 15px 0;
+}
+
+#headline04 a {
+    color: #666;
+}
+
+.icon.document::before {
+    content: "\e0e0";
+}
+
+.icon.booking::before {
+    content: "\e616";
+}
+
+/* タブレット端末用CSS */
+@media screen and (max-width: 1000px) {
+    .main_visual {
+        margin-top: 80px;
+        height: 450px;
+    }
+
+    .main_visual p {
+        line-height: 450px;
+    }
+
+    main > ul {
+        width: 80%;
+        margin: 0 auto 100px;
+    }
+
+    main > ul li {
+        width: 25%;
+    }
+
+    main > ul li a {
+        width: 100%;
+    }
+
+    main li a::after {
+        font-size: .9em;
+    }
+
+    main > section {
+        margin-bottom: 80px;
+    }
+
+    section h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    section h2::after {
+        font-size: 18px;
+    }
+
+    .content.flex {
+        display: block;
+    }
+
+    main img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .content section {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .content h3 {
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .content .detail {
+        width: 60%;
+    }
+
+    #headline04 {
+        padding-bottom: 80px;
+    }
+
+    #headline04 p {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    #headline04 ul {
+        width: 80%;
+        max-width: 600px;
+    }
+
+    #headline04 li {
+        width: 45%;
+        max-width: 280px;
+    }
+}
+
+/* スマホ端末用CSS */
+@media screen and (max-width: 600px) {
+    .main_visual {
+        margin-top: 65px;
+        height: 300px;
+    }
+
+    .main_visual p {
+        line-height: 300px;
+        font-size: 1em;
+    }
+    
+    main > ul.flex {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 400px;
+    }
+
+    main > ul li {
+        width: 50%;
+        box-sizing: border-box;
+        max-width: 150px;
+    }
+
+    main > ul li:first-of-type,
+    main > ul li:nth-of-type(2) {
+        border-bottom: 1px solid #ccc;
+    }
+
+    main > ul li:nth-of-type(2) {
+        border-right: none;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    section h2::after {
+        font-size: 14px;
+    }
+
+    main img {
+        height: 300px;
+    }
+
+    .content h3 {
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: .9em;
+    }
+
+    .content .detail {
+        width: 80%;
+    }
+
+    #headline04 iframe {
+        height: 300px;
+    }
+}

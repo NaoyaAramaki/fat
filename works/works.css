@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+.main_visual p::after {
+    content: "制作実績";
+}
+
+.main_top > p {
+    text-align: center;
+}
+
+.main_top p:last-of-type {
+    margin-bottom: 40px;
+}
+
+dl.flex {
+    line-height: 2;
+    flex-wrap: wrap;
+    width: 500px;
+    margin: 0 auto 50px;
+}
+
+dt {
+    width: 30%;
+    font-weight: bold;
+}
+
+.icon::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 10px;
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+    color: rgba(255, 0, 0, .6);
+}
+
+dt.pc::before {
+    content: '\f109';
+}
+
+dt.tablet::before {
+    content: "\f3fa";
+}
+
+dt.sp::before {
+    content: "\f3cf";
+}
+
+dt.html::before {
+    content: "\f1c9";
+}
+
+dt.js::before {
+    content: "\4a";
+}
+
+dt.design::before {
+    content: "\f53f";
+}
+
+dt.completion::before {
+    content: "\f00c";
+}
+
+dd {
+    width: 70%;
+}
+
+#buttons {
+    margin-bottom: 50px;
+}
+
+#buttons button {
+    padding: 10px;
+    width: 110px;
+    border-radius: 7px;
+    border: 1px solid #aaa;
+    background-color: #aaa;
+    color: #fafafa;
+    transition: all .2s ease-in;
+    font-family: "Yu Mincho";
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#buttons button:hover {
+    border: 1px solid #aaa;
+    background: #fafafa;
+    color: #aaa;
+}
+
+.toTop {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 10;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.toTop a {
+    display: block;
+    padding: 20px 10px 5px;
+    font-size: .5em;
+    text-align: center;
+    opacity: .6;
+    transition: all .2s ease;
+}
+
+.toTop a::after {
+    content: "";
+    width: 0;
+    border-bottom: 10px solid #666;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.toTop a:hover {
+    opacity: 1;
+}
+
+
+main ul.flex {
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+main li {
+    margin-bottom: 50px;
+}
+
+main li a {
+    display: block;
+    overflow: hidden;
+    box-shadow: 1px 1px 2px #999;
+    margin-bottom: 10px;
+}
+
+main li img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    transition: all 1s ease;
+}
+
+main li img:hover {
+    transform: scale(1.05, 1.05);
+}
+
+main li p:nth-of-type(2) {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 制作状況のスタイル */
+li .status::after {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+main li .icon::before {
+    margin-left: 20px;
+    letter-spacing: .5em;
+}
+
+/* タブレット端末用CSS */
+@media screen and (max-width: 1000px) {
+    .main_top {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    #buttons.flex {
+        flex-wrap: wrap;
+        width: 600px;
+        margin: 0 auto 50px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    #buttons button {
+        margin: 0 10px 10px;
+    }
+
+    main ul.flex {
+        margin-bottom: 0;
+        padding: 0;
+        justify-content: space-around;
+    }
+}
+
+/* スマホ端末用CSS */
+@media screen and (max-width: 600px) {
+    .main_top > p {
+        text-align: start;
+        font-size: .9em;
+    }
+
+    dl.flex {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: .85em;
+    }
+
+    dt {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    dt.icon.js + dd {
+        font-size: .9em;
+    }
+
+    dd {
+        width: 100%;
+    }
+
+    #buttons.flex {
+        width: 100%;
+        margin-bottom: 40px;
+        justify-content: space-around;
+    }
+
+    #buttons button {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    
+    main li .icon {
+        margin: 0 auto;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    main li img {
+        width: 80vw;
+    }
+}

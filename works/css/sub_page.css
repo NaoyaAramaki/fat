@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+.thumbnails {
+    margin-bottom: 75px;
+}
+
+.thumbnails p:first-of-type img {
+    width: 600px;
+    height: 400px;
+    box-shadow: 2px 2px 1px #999;
+    background: #fafafa;
+    object-fit: contain;
+}
+
+.thumbnails p:last-of-type img{
+    width: 300px;
+    height: 400px;
+    box-shadow: 2px 2px 1px #999;
+    background: #fafafa;
+    object-fit: contain;
+}
+
+.leading.flex {
+    justify-content: center;
+    margin-bottom: 75px;
+}
+
+.leading p:first-of-type {
+    margin-top: 30px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.leading a {
+    display: block;
+    transition: all .2s ease;
+    font-weight: bold;
+}
+
+.leading a:hover {
+    color: rgb(255, 72, 0);
+}
+
+.leading a::after {
+    content: "※コードにつきましては、「検証」よりご覧ください。";
+    display: block;
+    font-size: 0.9em;
+}
+
+.leading p img {
+    width: 100px;
+    height: 100px;
+    box-shadow: 1px 1px 2px #999;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.detail .flex {
+    flex-wrap: wrap;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.detail dt {
+    width: 25%;
+    font-weight: bold;
+}
+
+.detail dd {
+    width: 75%;
+    margin-bottom: 10px;
+}
+
+.detail dd::after {
+    display: block;
+    font-size: 0.9em;
+}
+
+/* タブレット端末用CSS */
+@media screen and (max-width: 1000px) {
+    .thumbnails {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .thumbnails img {
+        margin: 0 auto 20px;
+        display: block;
+    }
+}
+
+/* スマホ端末用CSS */
+@media screen and (max-width: 600px) {
+    .thumbnails p:first-of-type img {
+        width: 100%;
+    }
+
+    div:last-of-type {
+        display: block;
+        width: 100%;
+    }
+
+    .leading.flex {
+        margin-bottom: 50px;
+    }
+
+    .leading a {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .leading p img {
+        margin: 10px auto ;
+        display: block;
+    }
+
+    .detail .flex {
+        width: 320px;
+        font-size: .9em;
+        box-sizing: border-box;
+    }
+
+    .detail dt {
+        width: 80px;
+    }
+
+    .detail dd {
+        width: 240px;
+    }
+}
