@@ -53,7 +53,7 @@
 .detail_left figure {
     width: 350px;
     height: 400px;
-    background: #ccc;
+    background: url(../common/img/profile.jpg) center center / cover no-repeat;
     border: 1px solid #666;
     box-sizing: border-box;
     border-radius: 50%;

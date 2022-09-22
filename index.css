@@ -96,7 +96,7 @@ main > div::before {
 #profile figure {
     width: 400px;
     height: 400px;
-    background: #ccc;
+    background: url(./common/img/profile.jpg) center center / cover no-repeat;
     border: 1px solid #666;
     border-radius: 50%;
     box-sizing: border-box;
