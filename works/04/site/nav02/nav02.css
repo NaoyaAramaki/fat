@@ -1,38 +1,7 @@
 @charset "UTF-8";
 
-article h2 {
-    color: #fff;
-    text-shadow: 1px 1px #999;
-    background: url(../../../img/skyblue.png) no-repeat;
-    padding-left: 10px;
-    line-height: 36px;
-    margin-bottom: 20px;
-}
-
 article > p {
     margin-bottom: 20px;
-}
-
-article > section {
-    border-bottom: 1px dashed #666;
-    margin-bottom: 50px;
-}
-
-section h3 {
-    color: #a5751b;
-    border-bottom: 1px solid #a5751b;
-    margin-bottom: 15px;
-}
-
-section h3::before {
-    content: "";
-    width: 18px;
-    height: 18px;
-    background: url(../../../img/skyblue.png) no-repeat;
-    display: inline-block;
-    vertical-align: text-bottom;
-    /* line-height: 21px; */
-    margin-right: 5px;
 }
 
 section img {
@@ -40,7 +9,7 @@ section img {
     height: 175px;
 }
 
-.flex {
+section .flex {
     margin-bottom: 20px;
 }
 

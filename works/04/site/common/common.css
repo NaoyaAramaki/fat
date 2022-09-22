@@ -17,7 +17,7 @@ a {
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: #999;
 }
 
@@ -67,11 +67,41 @@ header li a {
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px #999;
-    font-size: .8em;
 }
 
 header li a:hover {
     background: url(../../../img/gray.png) no-repeat;
+}
+
+article h2 {
+    color: #fff;
+    text-shadow: 1px 1px #999;
+    background: url(../../../img/skyblue.png) no-repeat;
+    padding-left: 10px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+
+article > section {
+    border-bottom: 1px dashed #666;
+    margin-bottom: 30px;
+}
+
+section h3 {
+    color: #a5751b;
+    border-bottom: 1px solid #a5751b;
+    margin-bottom: 15px;
+}
+
+section h3::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url(../../../img/skyblue.png) no-repeat;
+    display: inline-block;
+    vertical-align: text-bottom;
+    /* line-height: 21px; */
+    margin-right: 5px;
 }
 
 footer {
@@ -88,12 +118,6 @@ footer address {
 
 footer address p {
     margin-bottom: 1.5em;
-}
-
-footer address a {
-    color: #0ff;
-    text-shadow: 1px 1px #999;
-    text-decoration: underline;
 }
 
 footer > p {
