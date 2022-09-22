@@ -58,6 +58,10 @@ dt.design::before {
     content: "\f53f";
 }
 
+dt.sub_page::before {
+    content: "S";
+}
+
 dt.completion::before {
     content: "\f00c";
 }
@@ -66,8 +70,11 @@ dd {
     width: 70%;
 }
 
-#buttons {
-    margin-bottom: 50px;
+#buttons.flex {
+    margin: 0 auto 50px;
+    width: 600px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #buttons button {
@@ -81,6 +88,7 @@ dd {
     font-family: "Yu Mincho";
     font-weight: bold;
     font-size: 14px;
+    margin-bottom: 10px;
 }
 
 #buttons button:hover {
@@ -178,15 +186,7 @@ main li .icon::before {
     }
 
     #buttons.flex {
-        flex-wrap: wrap;
         width: 600px;
-        margin: 0 auto 50px;
-        padding: 0 20px;
-        box-sizing: border-box;
-    }
-
-    #buttons button {
-        margin: 0 10px 10px;
     }
 
     main ul.flex {

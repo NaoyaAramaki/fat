@@ -10,18 +10,93 @@ img {
     vertical-align: bottom;
 }
 
-body {
-    font-family: YuMincho, 'Yu Mincho', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
-    font-size: 16px;
-    color: #666;
+a {
+    display: block;
+    text-decoration: none;
 }
 
-.inner {
-    width: 1000px;
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
+    font-size: 16px;
+    color: #999;
+}
+
+.wrapper {
+    width: 750px;
     margin: 0 auto;
 }
 
 .flex {
     display: flex;
     justify-content: space-between;
+}
+
+header {
+    padding-top: 40px;
+    background: url(../../../img/skyblue.png) right top no-repeat;
+    background-size: 270px 110px;
+}
+
+header h1 {
+    width: 275px;
+    height: 50px;
+    background: url(../../../img/skyblue.png);
+    margin-bottom: 20px;
+}
+
+header h1 a {
+    color: #fff;
+    text-shadow: 1px 1px #999;
+    line-height: 50px;
+    text-align: center;
+}
+
+header ul {
+    width: 405px;
+    margin-bottom: 15px;
+}
+
+header li {
+    width: calc(100% / 3);
+}
+
+header li a {
+    height: 28px;
+    background: url(../../../img/skyblue.png) no-repeat;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+    font-size: .8em;
+}
+
+header li a:hover {
+    background: url(../../../img/gray.png) no-repeat;
+}
+
+footer {
+    background: rgba(69, 248, 165, 0.288);
+    padding: 10px;
+    text-align: center;
+}
+
+footer address {
+    font-size: 12px;
+    font-style: normal;
+    padding-top: 10px;
+}
+
+footer address p {
+    margin-bottom: 1.5em;
+}
+
+footer address a {
+    color: #0ff;
+    text-shadow: 1px 1px #999;
+    text-decoration: underline;
+}
+
+footer > p {
+    font-size: .9em;
+    padding-bottom: 10px;
 }

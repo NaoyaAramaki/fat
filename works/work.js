@@ -76,6 +76,9 @@ $(function(){
                 case "design":
                     icons[i] = icons[i] + "\\f53f";
                     break;
+                case "sub_page":
+                    icons[i] = icons[i] + "S";
+                    break;
                 case "completion":
                     icons[i] = icons[i] + "\\f00c";
                     break;

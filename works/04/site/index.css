@@ -1,2 +1,55 @@
 @charset "UTF-8";
 
+main figure {
+    height: 330px;
+    width: 100%;
+    background: url(../../img/skyblue.png) no-repeat;
+    margin-bottom: 20px;
+}
+
+main > p {
+    margin-bottom: 15px;
+}
+
+section h2 {
+    padding-left: 20px;
+    background: url(../../img/skyblue.png) no-repeat;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+    margin-bottom: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+thead {
+    background: #ccc;
+}
+
+th {
+    color: #080;
+    padding: 10px;
+    border: 1px solid #999;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #999;
+}
+
+section p {
+    width: 265px;
+    height: 65px;
+    background: url(../../img/skyblue.png) no-repeat;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section a {
+    line-height: 65px;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
