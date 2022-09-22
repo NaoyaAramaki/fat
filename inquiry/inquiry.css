@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+.main_visual p::after {
+    content: "お問い合わせ";
+}
+
+main > p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.is_error{
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 50px;
+}
+
+input, select {
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+dd > input, select, textarea {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Noto Serif JP', -apple-system, BlinkMacSystemFont, serif, Arial, "Helvetica Neue", "ＭＳ Ｐゴシック", YuGothic, "ヒラギノ角ゴ Pro N W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+dl.flex {
+    flex-wrap: wrap;
+    line-height: 5;
+}
+
+#confirm dl {
+    width: 70%;
+    margin: 0 auto;
+}
+
+dt {
+    width: 30%;
+}
+
+dt.required::after {
+    content: "必須";
+    color: #f00;
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#confirm dt {
+    width: 40%;
+}
+
+dd {
+    width: 70%;
+}
+
+#confirm dd {
+    width: 60%;
+}
+
+dd label {
+    margin-right: 20px;
+}
+
+textarea {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    resize: none;
+    height: 15em;
+}
+
+#confirm .inquiryDetails {
+    line-height: 2;
+}
+
+#confirm #receivedInquiryDetails {
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+dd.consent {
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+
+#confirm dd.consent {
+    line-height: 5;
+    margin-bottom: 0;
+}
+
+iframe {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 250px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    font-family: 'Noto Serif JP', -apple-system, BlinkMacSystemFont, serif, Arial, "Helvetica Neue", "ＭＳ Ｐゴシック", YuGothic, "ヒラギノ角ゴ Pro N W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+    font-size: 18px;
+    border: none;
+    padding: 10px 0;
+    opacity: .7;
+    transition: all .2s ease;
+}
+
+#confirm input[type="submit"] {
+    margin-top: 30px;
+}
+
+input[type="submit"]:hover {
+    opacity: 1;
+}
+
+#completed {
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+#completed h2 {
+    margin-bottom: 10px;
+}
+
+/* タブレット端末用CSS */
+@media screen and (max-width: 1000px) {
+
+    form {
+        padding: 0 20px;
+        margin-bottom: 0;
+    }
+
+    dl.flex {
+        display: block;
+        line-height: 2;
+    }
+
+    dt,
+    #confirm dt {
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #confirm dt.required::after {
+        display: none;
+    }
+
+    dd,
+    #confirm dd {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #confirm span {
+        display: block;
+        text-align: center;
+    }
+
+    .radiobutton,
+    .checkbox {
+        width: 430px;
+        margin: 0 auto 20px;
+    }
+
+    #confirm .checkbox {
+        width: 150px;
+        margin: 0 auto 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    textarea,
+    iframe {
+        margin-top: 0;
+    }
+
+    #confirm #receivedInquiryDetails {
+        margin-top: 0;
+    }
+
+    dd.consent {
+        line-height: 35px;
+        margin-bottom: 30px;
+    }
+
+    #receivedAgreed {
+        line-height: 2;
+    }
+}
+
+/* スマホ端末用CSS */
+@media screen and (max-width: 600px) {
+
+    main > p {
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+
+    .is_error {
+        font-size: .8em;
+    }
+
+    .radiobutton,
+    .checkbox {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    textarea {
+        height: 12em;
+    }
+
+    #confirm .inquiryDetails + dt {
+        font-size: .9em;
+    }
+
+
+    #completed {
+        font-size: .9em;
+        margin-bottom: 20px;
+    }
+}

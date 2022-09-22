@@ -1,0 +1,349 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+body, p, h1, h2, h3, h4, h5, h6, figure, ul, ol, dl, dd {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+a, textarea, input, select, button {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+body {
+    font-family: 'Noto Serif JP', -apple-system, BlinkMacSystemFont, serif, Arial, "Helvetica Neue", "ＭＳ Ｐゴシック", YuGothic, "ヒラギノ角ゴ Pro N W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+    background-color: #FAFAFA;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23FFFFFF' stroke-width='3.4'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23E5E5E5'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+    color: #666;
+}
+
+header {
+    background: rgba(250, 250, 250, .95);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+}
+
+header .inner {
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+
+.header_logo a {
+    line-height: 0;
+    color: transparent;
+    font-size: 0;
+    display: block;
+    height: 100px;
+    width: 250px;
+    background: url(../img/logo.png) center center / cover no-repeat;
+    animation: change_logo 10s ease-in-out infinite;
+}
+
+@keyframes change_logo {
+    50% {
+        background: url(../img/logo_hover.png) center center / cover no-repeat;
+    }
+}
+
+header ul {
+    width: 390px;
+    margin-top: 30px;
+}
+
+header li {
+    width: 130px;
+    text-align: center;
+}
+
+header li a {
+    display: block;
+    font-weight: bold;
+    border-left: 1px solid #999;
+    font-size: 24px;
+    transition: all .2s ease-in;
+}
+
+header li a:hover {
+    color: #000;
+}
+
+header li:last-of-type a {
+    border-right: 1px solid #999;
+}
+
+header li a::after {
+    display: block;
+    font-size: 12px;
+}
+
+header .profile a::after {
+    content: "自己紹介";
+}
+
+header .works a::after {
+    content: "制作実績";
+}
+
+header .inquiry a::after {
+    content: "お問い合わせ";
+}
+
+/**************** 以下、ハンバーガーボタンのスタイリング ****************/
+.btn {
+    appearance: none;
+    vertical-align: middle;
+    border: 0;
+    background: transparent;
+    outline: 0;
+    border-radius: 0;
+    text-align: inherit;
+    font-family: 'Yu Mincho', serif;
+    /* ボタンの配置位置  */
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    /* ボタンの大きさ  */
+    width: 50px;
+    height: 30px;
+    /* バーガーの線をボタン範囲の中心に配置 */
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+/***** 真ん中のバーガー線 *****/
+.btn-line {
+    /* 線の長さと高さ */
+    width: 100%;
+    height: 3px;
+    /* バーガー線の色 */
+    background-color: #999;
+    /* バーガー線の位置基準として設定 */
+    position: relative;
+    transition: .2s;
+}
+
+/***** 上下のバーガー線 *****/
+.btn-line::before,
+.btn-line::after {
+    /* 基準線と同じ大きさと色 */
+    position: absolute;
+    transition: .5s;
+}
+
+.btn-line::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #999;
+    /* 上の線の位置 */
+    transform: translateY(-10px);
+}
+
+.btn-line::after {
+    content: "menu";
+    /* 下の線の位置 */
+    display: block;
+    width: 100%;
+    text-align: center;
+    transform: translateY(3px);
+    color: #666;
+}
+
+/***** メニューオープン時 *****/
+.btn-line.open {
+    transition: .5s;
+}
+
+.btn-line.open::before {
+    content: "";
+    transform: translateY(0);
+}
+
+.btn-line.open::after {
+    content: "close";
+}
+
+header nav.open {
+    display: block;
+    animation: fade-in .5s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ここまでハンバーガーメニュー */
+
+.main_visual {
+    margin-top: 110px;
+    margin-bottom: 100px;
+    background-color: transparent;
+    height: 300px;
+    position: relative;
+}
+
+.main_visual canvas {
+    position: absolute;
+    top: 0;
+}
+
+.main_visual p {
+    line-height: 300px;
+    text-align: center;
+    font-size: 4em;
+}
+
+.main_visual p::after {
+    display: block;
+    font-size: 0.4em;
+    margin-top: -230px;
+}
+
+footer p {
+    text-align: center;
+    line-height: 8;
+}
+
+/* タブレット端末用CSS */
+@media screen and (max-width: 1000px) {
+    .inner {
+        width: 100%;
+    }
+
+    .header_logo a {
+        height: 80px;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    header ul {
+        width: 300px;
+        margin-top: 19px;
+    }
+
+    header li {
+        width: 100px;
+    }
+
+    header li a {
+        font-size: 20px;
+    }
+
+    header li a::after {
+        font-size: 10px;
+    }
+    
+    .main_visual {
+        margin-top: 90px;
+        height: 200px;
+        margin-bottom: 80px;
+    }
+
+    .main_visual p {
+        line-height: 200px;
+        font-size: 3em;
+    }
+
+    .main_visual p::after {
+        margin-top: -150px;
+    }
+}
+
+/* スマホ端末用CSS */
+@media screen and (max-width: 600px) {
+    .inner {
+        margin: 0;
+    }
+
+    .header_logo a {
+        height: 60px;
+        width: 150px;
+        margin: 0 auto;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header .flex {
+        display: block;
+    }
+    
+    header ul.flex {
+        width: 100%;
+        height: 35vh;
+        margin-top: 0;
+    }
+
+    header li {
+        width: 100%;
+        height: 10vh;
+    }
+
+    header li a {
+        border: none;
+        width: 100%;
+        height: 100%;
+        padding-top: 5vh;
+    }
+
+    header li:last-of-type a {
+        border: none;
+    }
+
+    .btn {
+        display: flex;
+    }
+
+    .main_visual {
+        margin-top: 70px;
+        height: 150px;
+        margin-bottom: 60px;
+    }
+
+    .main_visual p {
+        line-height: 150px;
+        font-size: 2em;
+    }
+
+    .main_visual p::after {
+        margin-top: -110px;
+    }
+
+    footer {
+        font-size: .9em;
+    }
+}

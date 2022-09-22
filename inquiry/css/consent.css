@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body, p, h1, h2, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 10px 10px 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-family: 'Noto Serif JP', -apple-system, BlinkMacSystemFont, serif, Arial, "Helvetica Neue", "ＭＳ Ｐゴシック", YuGothic, "ヒラギノ角ゴ Pro N W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+article > p {
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+ol {
+    padding-left: 20px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>確認画面 | Fast Arrows Technologies</title>
+        <link rel="icon" href="../common/img/favicon.ico">
+        <link rel="stylesheet" href="../common/css/common.css">
+        <link rel="stylesheet" href="./inquiry.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../common/js/particles.min.js"></script>
+        <script src="../common/js/app.js"></script>
+        <script src="../common/js/common.js"></script>
+        <script src="./js/confirm.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="inner flex">
+                <h1 class="header_logo"><a href="../">Header_Logo</a></h1>
+                <nav>
+                    <ul class="flex">
+                        <li class="profile"><a href="../profile">Profile</a></li>
+                        <li class="works"><a href="../works">Works</a></li>
+                        <li class="inquiry"><a href="./">Inquiry</a></li>
+                    </ul>
+                </nav>
+                <button type="button" class="btn js-btn">
+                    <span class="btn-line"></span>
+                </button>
+            </div>
+        </header>
+        <div class="main_visual" id="particles-js">
+            <p>Inquiry</p>
+        </div>
+        <main class="inner">
+            <p>下記フォームに必要事項を入力後、確認ボタンを押してください。</p>
+            <form action="./completed.html" method="get" id="confirm">
+                <dl class="flex">
+                    <dt class="required">お問い合わせ種別</dt>
+                    <dd><span id="receivedCategory"></span></dd>
+                    <dt>貴社名 (または屋号)</dt>
+                    <dd><span id="receivedCompanyName"></span></dd>
+                    <dt class="required">ご担当者様のお名前</dt>
+                    <dd><span id="receivedClientName"></span></dd>
+                    <dt class="required">フリガナ</dt>
+                    <dd><span id="receivedClientKana"></span></dd>
+                    <dt class="required">電話番号 (半角)</dt>
+                    <dd><span id="receivedTel"></span></dd>
+                    <dt class="required">メールアドレス</dt>
+                    <dd><span id="receivedEmail"></span></dd>
+                    <dt class="required">メールアドレス (確認)</dt>
+                    <dd><span id="receivedReEmail"></span></dd>
+                    <dt class="required">連絡方法</dt>
+                    <dd class="radiobutton"><span id="receivedContactMeans"></span></dd>
+                    <dt>サイトを知ったきっかけ</dt>
+                    <dd class="checkbox">
+                        <span id="receivedCheckbox1"></span>&ensp;
+                        <span id="receivedCheckbox2"></span>&ensp;
+                        <span id="receivedCheckbox3"></span>&ensp;
+                        <span id="receivedCheckbox4"></span>&ensp;
+                    </dd>
+                    <dt class="required">お問い合わせ内容</dt>
+                    <dd class="inquiryDetails"><span id="receivedInquiryDetails"></span></dd>
+                    <dt class="required">個人情報の取り扱いについて</dt>
+                    <dd class="consent"><span id="receivedAgreed"></span></dd>
+                </dl>
+                <input type="submit">
+            </form>
+        </main>
+        <footer>
+            <p><small>Copyright &copy; 2022 Naoya Aramaki All rights reserved.</small></p>
+        </footer>
+    </body>
+</html>

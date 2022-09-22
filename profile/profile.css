@@ -1,0 +1,382 @@
+@charset "UTF-8";
+
+.main_visual p::after {
+    content: "自己紹介";
+}
+
+.main_top {
+    margin-bottom: 40px;
+}
+
+.main_top h2 {
+    font-size: 48px;
+}
+
+.main_top h2::after {
+    content: "Naoya Aramaki";
+    margin-left: 30px;
+    font-size: 24px;
+}
+
+.main_top dl.flex {
+    width: 330px;
+    flex-wrap: wrap;
+}
+
+.main_top dt {
+    width: 25%;
+}
+
+.main_top dd {
+    width: 75%;
+}
+
+.main_top ul.flex {
+    flex-wrap: wrap;
+}
+
+.main_top li {
+    width: 50%;
+}
+
+.detail {
+    margin-bottom: 150px;
+    position: relative;
+}
+
+.detail_left {
+    width: 350px;
+    position: relative;
+    top: -50px;
+}
+
+.detail_left figure {
+    width: 350px;
+    height: 400px;
+    background: #ccc;
+    border: 1px solid #666;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.detail_left h3 {
+    font-weight: normal;
+    font-size: 1em;
+    text-align: center;
+}
+
+.detail_left ul.flex {
+    flex-wrap: wrap;
+    text-decoration: underline;
+    width: 300px;
+    font-size: 0.9em;
+    margin: 0 auto;
+}
+
+.detail_right {
+    width: 600px;
+}
+
+.detail_right dl {
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.detail_right dd {
+    width: 65%;
+}
+
+.qualification {
+    margin-top: 20px;
+}
+
+.qualification section {
+    margin-bottom: 20px;
+}
+
+.qualification ul.flex {
+    flex-wrap: wrap;
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.it_group {
+    width: 340px;
+}
+
+.other_group {
+    width: 260px;
+}
+
+.background {
+    width: 620px;
+    margin: 0 auto;
+}
+
+/* 背景文字 */
+.detail::after {
+    content: "background";
+    font-family: sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    color: rgba(230, 0, 0, .5);
+    position: absolute;
+    z-index: -10;
+    bottom: -150px;
+    right: 0;
+}
+
+.background h2 {
+    font-size: 32px;
+}
+
+.background .flex {
+    flex-wrap: wrap;
+}
+
+.background dt {
+    width: 18%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.background dd {
+    width: 82%;
+}
+
+.supplement::after {
+    text-indent: 1em;
+    display: inline-block;
+}
+
+.enter_high_school::after {
+    content: "普通科特別選抜コース　入学";
+}
+
+.dropout_high_school::after {
+    content: "普通科特別選抜コース　中途退学";
+}
+
+.vivijewel::after {
+    text-indent: 0;
+    content: "・西洋占星術鑑定書作成補助業務を担う";
+}
+
+.enter_vocational_school::after {
+    content: "英語コミュニケーション科　入学";
+}
+
+.dropout_vocational_school::after {
+    content: "英語コミュニケーション科　中途退学";
+}
+
+.university::after {
+    content: "情報マネジメント学部　入学";
+}
+
+.enter_webdesign_school::after {
+    content: "Webサイトデザイン科　入校";
+}
+
+.completion_webdesign_school::after {
+    content: "Webサイトデザイン科　修了予定";
+}
+
+/* タブレット端末用CSS */
+@media screen and (max-width: 1000px) {
+    main {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .main_top {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .main_top h2 {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .main_top dl.flex {
+        width: 560px;
+        margin: 0 auto;
+        font-size: .9em;
+    }
+
+    .main_top dt {
+        width: 12.5%;
+    }
+
+    .main_top dd {
+        width: 37.5%;
+    }
+
+    .detail {
+        display: block;
+        margin-bottom: 150px;
+    }
+
+    .detail_left {
+        width: auto;
+        position: static;
+
+    }
+
+    .detail_left figure {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto 20px;
+    }
+
+    .detail_left ul.flex {
+        margin-bottom: 20px;
+    }
+
+    .detail_right {
+        width: 100%;
+        font-size: .9em;
+    }
+
+    .detail_right dl {
+        width: 530px;
+        margin: 10px auto;
+    }
+
+    .detail_right h3,
+    .detail_right h4 {
+        text-align: center;
+    }
+
+    .qualification {
+        margin-top: 30px;
+    }
+
+    .qualification > .flex {
+        width: 560px;
+        margin: 0 auto;
+    }
+
+    .qualification ul.flex {
+        font-size: .9em;
+    }
+
+    .background {
+        width: 560px;
+        font-size: .9em;
+    }
+}
+
+/* スマホ端末用CSS */
+@media screen and (max-width: 600px) {
+    .main_top h2::after {
+        margin-left: 0;
+        display: block;
+        margin-top: -10px;
+        font-size: 18px;
+    }
+
+    .main_top dl.flex {
+        width: 280px;
+        margin-top: 10px;
+    }
+
+    .main_top dt {
+        width: 25%;
+    }
+
+    .main_top dd {
+        width: 75%;
+    }
+
+    .detail {
+        margin-bottom: 125px;
+    }
+
+    .detail::after {
+        bottom: -125px;
+    }
+
+    .detail_left figure {
+        width: 200px;
+        height: 200px;
+    }
+
+    .detail_left ul.flex {
+        width: 240px;
+        justify-content: space-around;
+    }
+
+    .detail_right dl {
+        display: block;
+        width: 280px;
+        text-align: center;
+    }
+
+    .detail_right dd {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .qualification {
+        text-align: center;
+    }
+
+    .qualification > .flex {
+        width: 280px;
+        display: block;
+    }
+
+    .qualification h3 {
+        margin-bottom: 5px;
+    }
+
+    .qualification ul.flex {
+        padding-left: 0;
+        list-style: none;
+        display: block;
+    }
+
+    .it_group {
+        width: 280px;
+    }
+
+    .it_group li:nth-of-type(5) {
+        font-size: .9em;
+    }
+
+    .detail::after {
+        font-size: 42px;
+    }
+
+    .background {
+        width: 100%;
+    }
+
+    .background .flex {
+        display: block;
+        text-align: center;
+    }
+
+    .background dt {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .background dd {
+        width: 100%;
+    }
+
+    .supplement::after {
+        text-indent: 0;
+        display: block;
+    }
+
+    .supplement_none {
+        display: none;
+    }
+}

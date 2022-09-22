@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+.main_visual {
+    height: 500px;
+    margin-bottom: 0;
+}
+
+.main_visual p {
+    line-height: 500px;
+    text-align: center;
+}
+
+.main_visual p::after {
+    content: "ポートフォリオ";
+    margin-top: -430px;
+}
+
+/* ～はこちらの下の矢印 */
+.more {
+    position: relative;
+    width: 200px;
+    margin-right: 0;
+    margin-left: auto;
+    padding-bottom: 10px;
+}
+
+.more::before {
+    content: "";
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    /*線の形状*/
+    width: 100%;
+    height: 1px;
+    background: #999;
+    animation: arrow_before 5s ease infinite;
+}
+
+.more::after {
+    content: "";
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom:-12px;
+    /*矢印の形状*/
+    width: 6px;
+    height: 20px;
+    border-right: 1px solid #666;
+    transform: rotate(60deg);
+    animation: arrow_after 5s ease infinite;
+}
+
+@keyframes arrow_before {
+    0%{width:0;opacity:0}
+    20%{width:0;opacity:1}
+    80%{width:92%;opacity:1}
+    100%{width:92%;opacity:0}
+}
+
+@keyframes arrow_after {
+    0%{left:0;opacity:0}
+    20%{left:0;opacity:1}
+    80%{left:85%;opacity:1}
+    100%{left:85%;opacity:0}
+}
+
+.more a {
+    padding-left: 10px;
+    display: block;
+}
+
+/* 背景文字 */
+main > div {
+    position: relative;
+    margin-top: 175px;
+}
+main > div::before {
+    font-family: sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    color: rgba(230, 0, 0, .5);
+    position: absolute;
+    z-index: -10;
+    top: -100px;
+}
+
+#profile::before {
+    content: "Profile";
+    right: 0;
+}
+
+#works::before {
+    content: "Works";
+    left: 0;
+}
+
+#profile figure {
+    width: 400px;
+    height: 400px;
+    background: #ccc;
+    border: 1px solid #666;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.profile_right {
+    width: 500px;
+}
+
+.profile_right dl {
+    line-height: 30px;
+    margin-bottom: 1em;
+    width: 160px;
+}
+
+.profile_right dt {
+    float: left;
+    width: 75px;
+}
+
+.profile_right p {
+    margin-bottom: 1em;
+}
+
+#works .flex {
+    flex-wrap: wrap;
+}
+
+#works figure a {
+    display: block;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+#works figure img {
+    height: 300px;
+    width: 450px;
+    box-shadow: 1px 1px 2px #999;
+    object-fit: cover;
+    transition: all 1s ease;
+}
+
+#works figure img:hover {
+    transform: scale(1.05, 1.05);
+}
+
+#inquiry {
+    margin: 75px 0 50px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2::after {
+    display: block;
+    font-size: 12px;
+}
+
+h2::after {
+    content: "お問い合わせ";
+}
+
+#inquiry p {
+    text-align: center;
+}
+
+#inquiry .more {
+    margin-top: 1em;
+    text-align: left;
+}
+
+/* タブレット端末用CSS */
+@media screen and (max-width: 1000px) {
+    .main_visual {
+        margin-top: 90px;
+        height: 400px;
+    }
+
+    .main_visual p {
+        line-height: 400px;
+    }
+
+    .main_visual p::after {
+        margin-top: -350px;
+    }
+
+    .more {
+        width: auto;
+    }
+
+    .more::before,
+    .more::after {
+        display: none;
+    }
+
+    .more a {
+        padding: 15px 0;
+        border: 1px solid #666;
+        text-align: center;
+    }
+    
+    #profile,
+    #works,
+    #inquiry {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    #profile {
+        margin-top: 150px;
+        display: block;
+    }
+
+    #profile figure {
+        height: 300px;
+        width: 300px;
+        margin: 0 auto 20px;
+    }
+    .profile_right dl {
+        margin: 0 auto 10px;
+    }
+
+    .profile_right {
+        width: 100%;
+    }
+
+    .profile_right p {
+        text-align: center;
+    }
+
+    .profile_right .more {
+        text-align: start;
+    }
+
+    #works {
+        margin-top: 150px;
+    }
+
+    #works figure a {
+        margin-bottom: 30px;
+    }
+
+    #works figure img {
+        width: 46vw;
+    }
+}
+
+/* スマホ端末用CSS */
+@media screen and (max-width: 600px) {
+    .main_visual {
+        margin-top: 70px;
+        height: 300px;
+    }
+
+    .main_visual p {
+        line-height: 300px;
+    }
+
+    .main_visual p::after {
+        margin-top: -260px;
+    }
+
+    #profile figure {
+        height: 200px;
+        width: 200px;
+        margin: 0 auto 20px;
+    }
+
+    #works {
+        padding: 0;
+    }
+
+    #works p {
+        margin: 0 20px;
+    }
+
+    #works figure img {
+        width: 100vw;
+    }
+}
