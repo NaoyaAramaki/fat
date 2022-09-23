@@ -10,18 +10,223 @@ img {
     vertical-align: bottom;
 }
 
+a {
+    display: block;
+    text-decoration: none;
+}
+
 body {
     font-family: YuMincho, 'Yu Mincho', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
     font-size: 16px;
     color: #666;
+    background-color: #f4f4f4;
 }
 
 .inner {
-    width: 1000px;
+    width: 960px;
     margin: 0 auto;
 }
 
 .flex {
     display: flex;
     justify-content: space-between;
+}
+
+header {
+    background: #000;
+}
+
+header h1 {
+    width: 280px;
+    height: 60px;
+    text-align: center;
+    background: url(../../../img/skyblue.png) no-repeat;
+}
+
+header h1 a {
+    line-height: 60px;
+    color: #fff;
+}
+
+header > .flex > .flex {
+    margin-top: 15px;
+}
+
+header input {
+    height: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+}
+
+header input[type="submit"] {
+    border: none;
+    font-size: .9em;
+}
+
+header ul {
+    margin-top: 5px;
+}
+
+header li {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    background: url(../../../img/skyblue.png) no-repeat;
+}
+
+header li a {
+    height: 100%;
+}
+
+nav {
+    background: url(../../../img/black.png);
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+nav li {
+    width: calc(100% / 6);
+    height: 65px;
+    background: url(../../../img/black.png) no-repeat;
+    border-left: 1px dotted #fff;
+    transition: all .3s ease;
+}
+
+nav li:hover {
+    background: url(../../../img/gray.png) no-repeat;
+}
+
+nav li:last-of-type {
+    border-right: 1px dotted #fff;
+}
+
+nav li a {
+    line-height: 65px;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+.toTop {
+    width: 100px;
+    padding: 5px;
+    padding-top: 25px;
+    background: url(../../../img/skyblue.png);
+    border-radius: 5px;
+    position: fixed;
+    opacity: .8;
+    transition: all .3s ease;
+    bottom: 50px;
+    right: 50px;
+    z-index: 10;
+}
+
+.toTop:hover {
+    opacity: 1;
+}
+
+.toTop a {
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+.toTop::before {
+    content: "";
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid #fff;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    margin-left: -20px;
+}
+
+footer {
+    background: url(../../../img/black.png);
+    padding-top: 35px;
+    position: relative;
+    color: #fff;
+}
+
+footer::before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background: url(../../../img/skyblue.png);
+    position: absolute;
+    top: -5px;
+}
+
+address {
+    font-style: normal;
+    font-size: .9em;
+    width: 250px;
+}
+
+.footer_logo {
+    width: 165px;
+    height: 30px;
+    background: url(../../../img/gray.png);
+    text-align: center;
+}
+
+.footer_logo a {
+    line-height: 30px;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+    font-size: 1.2em;
+}
+
+p.company_name {
+    margin-bottom: 15px;
+}
+
+.tel a {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.tel a::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    background: url(../../../img/gray.png);
+    margin-right: 5px;
+}
+
+footer > .flex {
+    margin-bottom: 40px;
+}
+
+footer > .flex > ul.flex {
+    width: 600px;
+    text-align: center;
+}
+
+footer > .flex > ul.flex a {
+    color: #fff;
+}
+
+footer > .flex > ul > li {
+    font-weight: bold;
+    font-size: 1.2em;
+    width: calc(100% / 6);
+    border-left: 1px dotted #fff;
+}
+
+footer > .flex > ul > li:last-of-type {
+    border-right: 1px dotted #fff;
+}
+
+footer > .flex > ul > li li {
+    font-size: .8em;
+}
+
+footer > p {
+    text-align: center;
+    line-height: 4;
+    background: rgba(255, 255, 255, .2);
 }
