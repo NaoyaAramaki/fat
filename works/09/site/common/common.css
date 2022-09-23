@@ -10,18 +10,135 @@ img {
     vertical-align: bottom;
 }
 
+a {
+    display: block;
+    text-decoration: none;
+}
+
 body {
-    font-family: YuMincho, 'Yu Mincho', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
-    font-size: 16px;
-    color: #666;
+    font-family: -apple-system, BlinkMacSystemFont, Arial, "Helvetica Neue", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", YuGothic, "ヒラギノ角ゴ Pro N W3", "Hiragino Kaku Gothic ProN", sans-serif;
+    font-size: 14px;
+    color: #000;
+    background: #fff;
 }
 
 .inner {
-    width: 1000px;
+    width: 960px;
     margin: 0 auto;
 }
 
 .flex {
     display: flex;
     justify-content: space-between;
+}
+
+header {
+    padding: 40px 20px;
+}
+
+header h1 {
+    width: 470px;
+    height: 50px;
+    background: url(../../../img/gray.png) no-repeat;
+    text-align: center;
+}
+
+header h1 a {
+    line-height: 50px;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+header address {
+    text-align: right;
+    font-style: normal;
+}
+
+header address p {
+    margin-bottom: 5px;
+}
+
+header address p:first-of-type {
+    font-weight: bold;
+}
+
+header .map {
+    display: inline-block;
+    margin-left: 10px;
+    color: #f39700;
+}
+
+header address p:last-of-type a {
+    color: #000;
+}
+
+header address p:last-of-type a::before {
+    content: "電話:";
+    margin-right: 5px;
+    display: inline-block;
+}
+
+nav {
+    background: url(../../../img/skyblue.png) no-repeat;
+}
+
+nav ul {
+    width: 100%;
+}
+
+nav li {
+    width: 20%;
+    text-align: center;
+    border-left: 1px dotted #fff;
+    box-sizing: border-box;
+}
+
+nav li:last-of-type {
+    border-right: 1px dotted #fff;
+}
+
+nav li a {
+    line-height: 90px;
+    font-size: 1.5em;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+    background: url(../../../img/gray.png);
+    transition: all .3s ease;
+}
+
+nav li a:hover {
+    background: url(../../../img/orange.png);
+}
+
+footer {
+    margin-top: 110px;
+    background: #bce3f5;
+    border-top: solid 5px #00b7ee;
+    padding-top: 25px;
+    line-height: 2;
+}
+
+footer .inner {
+    background: url(../../../img/gray.png) right bottom / 260px 170px no-repeat;
+}
+
+footer a {
+    color: #00f;
+    text-shadow: 1px 1px #999;
+}
+
+footer > .inner > p {
+    margin-bottom: 15px;
+}
+
+footer > .inner > ul {
+    width: 400px;
+}
+
+footer > p {
+    line-height: 3;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+    text-shadow: 1px 1px #999;
 }

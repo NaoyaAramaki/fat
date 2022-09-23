@@ -1,2 +1,156 @@
 @charset "UTF-8";
 
+.main_visual {
+    height: 350px;
+    text-align: center;
+    background: url(../../img/skyblue.png) no-repeat;
+}
+
+.main_visual p {
+    line-height: 350px;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+    font-size: 2em;
+}
+
+main {
+    width: 645px;
+}
+
+main h2 {
+    font-size: 25px;
+    font-weight: normal;
+    margin: 45px 0 25px 25px;
+}
+
+main h2::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    background: url(../../img/skyblue.png) no-repeat;
+    vertical-align: text-bottom;
+    margin-right: 5px;
+}
+
+main dl.flex {
+    flex-wrap: wrap;
+    margin-left: 65px;
+    line-height: 2;
+}
+
+main dt {
+    width: 20%;
+    color: #00b7ee;
+    font-weight: bold;
+}
+
+main dd {
+    width: 80%;
+}
+
+.about .flex {
+    justify-content: space-around;
+}
+
+.about section {
+    width: 200px;
+}
+
+.about img {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+.about h3 {
+    color: #00b7ee;
+    font-size: 21px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.about p {
+    margin-left: 10px;
+}
+
+aside {
+    width: 220px;
+}
+
+aside h4 {
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    margin: 35px 0 15px;
+    background: #fffab5;
+    border-radius: 10px 10px 0 0;
+    color: #00b7ee;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+aside dl {
+    line-height: 32px;
+    font-size: 23px;
+    text-align: right;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+aside dt {
+    float: left;
+    clear: left;
+    width: 28px;
+    font-size: 19px;
+    color: #fff;
+    text-align: center;
+    height: 64px;
+    padding: 5px 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+aside dt:first-of-type {
+    background: #00b7ee;
+}
+
+aside dt:last-of-type {
+    background: #f39700;
+}
+
+aside dd {
+    color: #00b7ee;
+}
+
+aside dd:nth-of-type(2) {
+    margin-bottom: 10px;
+}
+
+aside dd:last-of-type {
+    line-height: 64px;
+    color: #f39700;
+    margin-bottom: 10px;
+}
+
+aside p {
+    text-indent: -1em;
+    margin: 0 1em;
+    padding-left: 1em;
+    box-sizing: border-box;
+}
+
+aside section:last-of-type p:first-of-type {
+    text-indent: 0;
+}
+
+aside span {
+    font-size: 20px;
+}
+
+aside section:last-of-type p:first-of-type a {
+    color: #00b7ee;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
