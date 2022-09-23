@@ -1,2 +1,161 @@
 @charset "UTF-8";
 
+main > div:first-of-type {
+    padding: 60px 0;
+}
+
+main > div:first-of-type section {
+    width: 600px;
+}
+
+main > div:first-of-type figure {
+    width: 300px;
+}
+
+main > div:first-of-type img {
+    width: 300px;
+    height: 240px;
+    margin-top: 30px;
+}
+
+p.catch {
+    font-size: 40px;
+    color: #605d1d;
+    margin-bottom: 20px;
+}
+
+main > div:first-of-type p.text {
+    width: 540px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background: url(../../img/skyblue.png) no-repeat;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn a {
+    line-height: 50px;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+.btn.about {
+    width: 540px;
+    height: 50px;
+}
+
+article.menu {
+    background: #f7f4dd;
+    padding: 40px 0 70px;
+}
+
+.cuisine {
+    width: 220px;
+}
+
+h2 {
+    font-size: 40px;
+    border-left: 10px solid #e6de99;
+    padding-left: 20px;
+    font-weight: normal;
+    width: 730px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 25px;
+    line-height: 40px;
+}
+
+.btn.menu {
+    width: 220px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.btn.access a {
+    line-height: 35px;
+}
+
+article.menu h3 {
+    margin-bottom: 10px;
+}
+
+article.menu h3::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: #605d1d;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.cuisine img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+main > div:last-of-type {
+    padding: 45px 0 25px;
+}
+
+h4 {
+    font-size: 28px;
+    font-weight: normal;
+    color: #605d1d;
+    border-left: 8px solid #e6de99;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    line-height: 30px;
+}
+
+main > div:last-of-type section {
+    width: 460px;
+}
+
+.news dl.flex {
+    width: 100%;
+    line-height: 35px;
+    flex-wrap: wrap;
+}
+
+.news dt {
+    width: 30%;
+}
+
+.news dt::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #605d1d;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.news dd {
+    width: 70%;
+}
+
+.sns ul.flex {
+    flex-wrap: wrap;
+}
+
+.sns li {
+    width: 220px;
+    height: 60px;
+    background: url(../../img/skyblue.png) no-repeat;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sns li a {
+    color: #fff;
+    line-height: 60px;
+    text-shadow: 1px 1px #999;
+}
