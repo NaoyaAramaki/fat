@@ -10,18 +10,143 @@ img {
     vertical-align: bottom;
 }
 
+a {
+    display: block;
+    text-decoration: none;
+}
+
 body {
-    font-family: YuMincho, 'Yu Mincho', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "メイリオ", Meiryo, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, sans-serif;
     font-size: 16px;
-    color: #666;
+    color: #686868;
+    background: #e1f8f7;
 }
 
 .inner {
-    width: 1000px;
+    width: 940px;
     margin: 0 auto;
 }
 
 .flex {
     display: flex;
     justify-content: space-between;
+}
+
+header {
+    padding-top: 25px;
+}
+
+header h1 {
+    width: 200px;
+    height: 90px;
+    background: url(../../../img/gray.png) no-repeat;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+header h1 a {
+    line-height: 90px;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+header p.catch {
+    line-height: 35px;
+    margin-top: 55px;
+    margin-left: 20px;
+}
+
+header p.tel a {
+    color: #51c8e8;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+header p.tel a::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../../../img/gray.png) no-repeat;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+nav ul.flex {
+    width: 600px;
+    margin-left: 220px;
+    margin-right: 120px;
+    position: absolute;
+}
+
+nav li {
+    width: 140px;
+    height: 60px;
+    background: url(../../../img/gray.png) no-repeat;
+    text-align: center;
+}
+
+nav li:hover {
+    height: 80px;
+    background: url(../../../img/orange.png) no-repeat;
+}
+
+nav li a {
+    color: #fff;
+    text-shadow: 1px 1px #999;
+    line-height: 60px;
+}
+
+nav li a:hover {
+    line-height: 80px;
+}
+
+main.inner {
+    margin-top: 60px;
+    padding-left: 20px;
+    box-shadow: 0 0 3px 3px #cee3e2;
+    background: linear-gradient(0deg, transparent calc(100% - 1px), #e1f8f7 calc(100% - 1px)) center center / 16px 16px repeat,
+                linear-gradient(90deg, transparent calc(100% - 1px), #e1f8f7 calc(100% - 1px)) center center / 16px 16px repeat,
+                #fff;
+}
+
+.linear {
+    border-left: 1px solid #fcc;
+    width: 930px;
+    margin-left: 10px;
+}
+
+.contents {
+    border-left: 1px #fcc solid;
+    padding: 30px 0 50px;
+    width: 925px;
+    margin-left: 5px;
+}
+
+footer {
+    font-size: .9em;
+    padding: 20px 0 70px;
+    background: url(../../../img/blue.png) bottom center / 20px 20px repeat-x;
+}
+
+footer li {
+    line-height: 10px;
+}
+
+footer li a {
+    color: #666;
+    border-right: 1px solid #ccc;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+footer li:last-of-type a {
+    border-right: none;
+}
+
+footer::after {
+    content: "";
+    display: block;
+    height: 5px;
 }

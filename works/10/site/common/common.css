@@ -108,30 +108,23 @@ nav li a {
     text-shadow: 1px 1px #999;
 }
 
-.toTop {
-    width: 100px;
-    padding: 5px;
-    padding-top: 25px;
-    background: url(../../../img/skyblue.png);
-    border-radius: 5px;
-    position: fixed;
-    opacity: .8;
-    transition: all .3s ease;
-    bottom: 50px;
-    right: 50px;
-    z-index: 10;
-}
-
-.toTop:hover {
-    opacity: 1;
-}
-
 .toTop a {
     color: #fff;
     text-shadow: 1px 1px #999;
+    width: 100px;
+    background: url(../../../img/skyblue.png);
+    padding: 5px;
+    padding-top: 25px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 10;
+    opacity: .8;
+    transition: all .3s ease;
 }
 
-.toTop::before {
+.toTop a::before {
     content: "";
     border-right: 20px solid transparent;
     border-left: 20px solid transparent;
@@ -140,6 +133,10 @@ nav li a {
     top: 5px;
     left: 50%;
     margin-left: -20px;
+}
+
+.toTop a:hover {
+    opacity: 1;
 }
 
 footer {
