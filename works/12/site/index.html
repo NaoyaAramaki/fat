@@ -1,12 +1,87 @@
 <!DOCTYPE html>
+<!-- 作成者：荒牧直矢 -->
+<!-- 作成日：2022/09/25 -->
+<!-- 最終更新日：2022/09/25 -->
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Work12</title>
+        <link rel="stylesheet" href="./common/common.css">
+        <link rel="stylesheet" href="./index.css">
+        <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <div class="flex inner">
+                <h1><a href="./">header_logo</a></h1>
+                <div class="header_right">
+                    <ul class="flex">
+                        <li class="instagram"><a href="#">instagram</a></li>
+                        <li class="twitter"><a href="#">twitter</a></li>
+                        <li class="facebook"><a href="#">facebook</a></li>
+                    </ul>
+                    <form action="#" class="flex">
+                        <input type="search" placeholder="キーワードを入力">
+                        <input type="submit" value="検索">
+                    </form>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul class="flex inner">
+                <li><a href="#">Nav01</a></li>
+                <li><a href="#">Nav02</a></li>
+                <li><a href="#">Nav03</a></li>
+                <li><a href="#">Nav04</a></li>
+                <li><a href="#">Nav05</a></li>
+                <li><a href="#">Nav06</a></li>
+            </ul>
+        </nav>
+        <div class="main_visual">
+            <div class="slider">
+                <div class="slider_inner flex">
+                    <figure class="slider_item"><img src="../../img/orange.png" alt="photo"></figure>
+                    <figure class="slider_item"><img src="../../img/green.png" alt="photo"></figure>
+                    <figure class="slider_item"><img src="../../img/skyblue.png" alt="photo"></figure>
+                </div>
+            </div>
+        </div>
+        <main>
+            <section class="inner">
+                <h2>見出しが入ります</h2>
+                <ul class="flex">
+                    <li><a href="./lists/list01.html" target="select_list">list01</a></li>
+                    <li><a href="./lists/list02.html" target="select_list">list02</a></li>
+                    <li><a href="./lists/list03.html" target="select_list">list03</a></li>
+                    <li><a href="./lists/list04.html" target="select_list">list04</a></li>
+                    <li><a href="./lists/list05.html" target="select_list">list05</a></li>
+                    <li><a href="./lists/list06.html" target="select_list">list06</a></li>
+                </ul>
+                <iframe src="./lists/list01.html" name="select_list"></iframe>
+            </section>
+            <section class="bg_gray">
+                <div class="inner">
+                    <h2>見出しが入ります</h2>
+                    <dl class="flex">
+                        <dt>20XX.XX.XX</dt>
+                        <dd><a href="#">text text text text text text text text text text text text text text text text text</a></dd>
+                        <dt>20XX.XX.XX</dt>
+                        <dd><a href="#">text text text text text text text text text text text text text text text text text</a></dd>
+                        <dt>20XX.XX.XX</dt>
+                        <dd><a href="#">text text text text text text text text text text text text text text text text text</a></dd>
+                        <dt>20XX.XX.XX</dt>
+                        <dd><a href="#">text text text text text text text text text text text text text text text text text</a></dd>
+                    </dl>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="inner">
+                <p><small>Copyright &copy; 2022 Naoya Aramaki All rights reserved.</small></p>
+                <p class="wit_logo"><a href="https://www.wit-it.co.jp/">wit_logo</a></p>
+            </div>
+        </footer>
+    </body>
 </html>

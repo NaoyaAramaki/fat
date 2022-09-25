@@ -10,6 +10,15 @@ img {
     vertical-align: bottom;
 }
 
+a {
+    display: block;
+    text-decoration: none;
+}
+
+input, a {
+    outline: none;
+}
+
 body {
     font-family: YuMincho, 'Yu Mincho', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
     font-size: 16px;
@@ -17,11 +26,176 @@ body {
 }
 
 .inner {
-    width: 1000px;
+    width: 960px;
     margin: 0 auto;
 }
 
 .flex {
     display: flex;
     justify-content: space-between;
+}
+
+header {
+    padding: 20px 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    background: rgba(255, 255, 255, .95);
+    width: 100%;
+}
+
+header > .flex {
+    padding-left: 100px;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+header h1 {
+    width: 200px;
+    height: 59px;
+    background: url(../../../img/header_logo.png) center center / cover no-repeat;
+    line-height: 0;
+    color: transparent;
+    font-size: 0;
+    animation: header_logo 5s ease infinite;
+}
+
+@keyframes header_logo {
+    50% {
+        background: url(../../../img/header_logo_hover.png) center center / cover no-repeat;
+    }
+}
+
+header h1 a {
+    line-height: 59px;
+}
+
+header ul {
+    width: 120px;
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+header li {
+    width: 30px;
+    height: 30px;
+    line-height: 0;
+    color: transparent;
+    font-size: 0;
+}
+
+header .instagram {
+    background: url(../../../img/icon_instagram.png) center center / cover no-repeat;
+    animation: icon_instagram 5s ease infinite;
+}
+
+@keyframes icon_instagram {
+    25% {
+        background: url(../../../img/icon_instagram_hover.png) center center / cover no-repeat;
+    }
+}
+
+header .twitter {
+    background: url(../../../img/icon_twitter.png) center center / cover no-repeat;
+    animation: icon_twitter 5s ease infinite;
+}
+
+@keyframes icon_twitter {
+    50% {
+        background: url(../../../img/icon_twitter_hover.png) center center / cover no-repeat;
+    }
+}
+
+header .facebook {
+    background: url(../../../img/icon_facebook.png) center center / cover no-repeat;
+    animation: icon_facebook 5s ease infinite;
+}
+
+@keyframes icon_facebook {
+    75% {
+        background: url(../../../img/icon_facebook_hover.png) center center / cover no-repeat;
+    }
+}
+
+header input[type="search"] {
+    padding: 5px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 3px solid #000;
+    width: 210px;
+}
+
+header input[type="submit"] {
+    border: none;
+    border-bottom: 3px solid #000;
+    cursor: pointer;
+}
+
+nav {
+    background: #000;
+    position: fixed;
+    top: 108px;
+    z-index: 100;
+    text-align: center;
+    width: 100%;
+}
+
+nav li {
+    height: 62px;
+    width: calc(100% / 6);
+    border-left: 1px solid #fff;
+    box-sizing: border-box;
+    transition: all .3s ease;
+}
+
+nav li:last-of-type {
+    border-right: 1px solid #fff;
+}
+
+nav li:hover {
+    background: url(../../../img/gray.png) center center / cover no-repeat;
+}
+
+nav a {
+    line-height: 62px;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+footer {
+    line-height: 120px;
+    background: #000;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+    text-align: center;
+}
+
+footer .inner {
+    position: relative;
+}
+
+footer p:last-of-type {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+}
+
+footer .wit_logo {
+    background: url(../../../img/link_wit.png) center center / cover no-repeat;
+    width: 150px;
+    height: 55px;
+    animation: wit_logo 5s ease infinite;
+}
+
+@keyframes wit_logo {
+    50% {
+        background: url(../../../img/link_wit_hover.png) center center / cover no-repeat;
+    }
+}
+
+footer .wit_logo a {
+    line-height: 55px;
+    color: transparent;
+    font-size: 0;
 }

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-body, h1, h2, h3, h4, p, figure, dl, dd, ul {
+body, h1, h2, h3, h4, p, figure, dl, dd, ul, ol {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -14,6 +14,7 @@ body {
     font-family: YuMincho, 'Yu Mincho', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
     font-size: 16px;
     color: #666;
+    background: #fff;
 }
 
 .inner {
