@@ -1,2 +1,242 @@
 @charset "UTF-8";
 
+.main_visual {
+    padding-top: 139px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    height: 400px;
+}
+
+.main_visual ul {
+    position: absolute;
+    width: 1800px;
+}
+
+.main_visual li {
+    width: 600px;
+}
+
+.main_visual img {
+    width: 600px;
+    height: 400px;
+}
+
+.main_visual .btn {
+    position: absolute;
+    top: 310px;
+    opacity: .7;
+    transition: all .2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.main_visual .btn:hover {
+    opacity: 1;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 20px;
+}
+
+.main_visual .btn img {
+    width: 29px;
+    height: 50px;
+}
+
+.bg_gray {
+    background: #fdfdfd;
+    padding: 50px 0;
+}
+
+main > section {
+    padding: 50px 0;
+}
+
+section h2 {
+    font-size: 64px;
+    margin-bottom: 30px;
+    animation: h2_color_changer 5s ease-in-out infinite;
+}
+
+@keyframes h2_color_changer {
+    50% {
+        color: #f9f9f9;
+    }
+}
+
+.bg_gray:first-of-type {
+    padding-bottom: 0;
+}
+
+.bg_gray:first-of-type ul {
+    width: 800px;
+    margin: 0 auto 30px;
+}
+
+.bg_gray:first-of-type ul a {
+    font-size: 28px;
+    font-family: 'Playball';
+    line-height: 2;
+    color: #666;
+    padding: 0 10px;
+    transition: all .5s ease;
+    border-radius: 5px;
+}
+
+.bg_gray:first-of-type ul a:hover {
+    box-shadow: 0px 3px 5px 0 #666;
+}
+
+.bg_gray:first-of-type iframe {
+    border: none;
+    width: 100%;
+    height: 450px;
+}
+
+section.right h2 {
+    text-align: right;
+}
+
+section dl {
+    line-height: 61px;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-family: 'Yu Mincho', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
+}
+
+section.right dl {
+    width: 650px;
+    margin-right: 100px;
+    margin-left: auto;
+}
+
+section dt {
+    width: 20%;
+    border-bottom: 1px dotted #999;
+    font-weight: bold;
+}
+
+section dd {
+    width: 79.8%;
+    border-bottom: 1px dotted #999;
+}
+
+section.right dd a {
+    color: #666;
+}
+
+section.right dd a:hover {
+    font-weight: bold;
+}
+
+.bg_gray dl {
+    width: 675px;
+    margin: 0 auto;
+}
+
+.bg_gray dl ul.flex {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.bg_gray dl li {
+    width: 40%;
+}
+
+.bg_gray dd:last-of-type::after {
+    content: "December 2019 - April 2022 (For two years and five months)";
+    display: block;
+}
+
+section.right iframe {
+    width: 100%;
+    border: none;
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+.wit_logo {
+    width: 150px;
+    height: 55px;
+    margin: 0 auto;
+    background: url(../../img/link_wit.png) center center / cover no-repeat;
+    line-height: 0;
+    font-size: 0;
+    animation: wit_color_change 5s ease infinite;
+}
+
+@keyframes wit_color_change {
+    50% {
+        background: url(../../img/link_wit_hover.png) center center / cover no-repeat;
+    }
+}
+
+.wit_logo a {
+    line-height: 55px;
+    color: transparent;
+}
+
+.bg_gray:last-of-type {
+    padding-top: 0;
+}
+
+.bg_gray:last-of-type h2 {
+    transform: skewY(-10deg);
+}
+
+.bg_gray:last-of-type ul {
+    width: 300px;
+    margin: 75px auto 0;
+}
+
+.bg_gray:last-of-type li {
+    width: 75px;
+    height: 75px;
+    line-height: 0;
+    font-size: 0;
+}
+
+.bg_gray:last-of-type .instagram {
+    background: url(../../img/icon_instagram.png) center center / cover no-repeat;
+    animation: instagram_color_changer 10s ease infinite;
+}
+
+@keyframes instagram_color_changer {
+    25% {
+        background: url(../../img/icon_instagram_hover.png) center center / cover no-repeat;
+    }
+}
+
+.bg_gray:last-of-type .twitter {
+    background: url(../../img/icon_twitter.png) center center / cover no-repeat;
+    animation: twitter_color_changer 10s ease infinite;
+}
+
+@keyframes twitter_color_changer {
+    50% {
+        background: url(../../img/icon_twitter_hover.png) center center / cover no-repeat;
+    }
+}
+
+.bg_gray:last-of-type .facebook {
+    background: url(../../img/icon_facebook.png) center center / cover no-repeat;
+    animation: facebook_color_changer 10s ease infinite;
+}
+
+@keyframes facebook_color_changer {
+    75% {
+        background: url(../../img/icon_facebook_hover.png) center center / cover no-repeat;
+    }
+}
+
+.bg_gray:last-of-type li a {
+    line-height: 75px;
+}

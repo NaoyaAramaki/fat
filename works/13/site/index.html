@@ -1,15 +1,115 @@
 <!DOCTYPE html>
 <!-- 作成者：荒牧直矢 -->
-<!-- 作成日：20xx/xx/xx -->
-<!-- 最終更新日：20xx/xx/xx -->
+<!-- 作成日：2022/09/26 -->
+<!-- 最終更新日：2022/09/26 -->
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Work13</title>
+        <link rel="stylesheet" href="./common/common.css">
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <header>
+            <div class="inner flex">
+                <nav>
+                    <ul class="flex">
+                        <li><a href="#">nav01</a></li>
+                        <li><a href="#">nav02</a></li>
+                        <li><a href="#">nav03</a></li>
+                    </ul>
+                </nav>
+                <h1><a href="./">header_logo</a></h1>
+                <nav>
+                    <ul class="flex">
+                        <li><a href="#">nav04</a></li>
+                        <li><a href="#">nav05</a></li>
+                        <li><a href="#">nav06</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="main_visual" id="slide">
+            <ul class="flex">
+                <li><img src="../../img/skyblue.png" alt="photo"></li>
+                <li><img src="../../img/orange.png" alt="photo"></li>
+                <li><img src="../../img/green.png" alt="photo"></li>
+            </ul>
+            <button id="prevBtn" class="btn"><img src="../../img/prevBtn.png" alt="prevBtn"></button>
+            <button id="nextBtn" class="btn"><img src="../../img/nextBtn.png" alt="nextBtn"></button>
+        </div>
+        <main>
+            <div class="bg_gray">
+                <section class="inner">
+                    <h2>Recommend</h2>
+                    <ul class="flex">
+                        <li><a href="./lists/list01.html" target="select_item">List01</a></li>
+                        <li><a href="./lists/list01.html" target="select_item">List02</a></li>
+                        <li><a href="./lists/list01.html" target="select_item">List03</a></li>
+                        <li><a href="./lists/list01.html" target="select_item">List04</a></li>
+                        <li><a href="./lists/list01.html" target="select_item">List05</a></li>
+                        <li><a href="./lists/list01.html" target="select_item">List06</a></li>
+                    </ul>
+                    <iframe src="./lists/list01.html" name="select_item"></iframe>
+                </section>
+            </div>
+            <section class="inner right">
+                <h2>What's New</h2>
+                <dl class="flex">
+                    <dt>2022.XX.XX</dt>
+                    <dd><a href="#">Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a></dd>
+                    <dt>2022.XX.XX</dt>
+                    <dd><a href="#">Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a></dd>
+                    <dt>2022.XX.XX</dt>
+                    <dd><a href="#">Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a></dd>
+                    <dt>2022.XX.XX</dt>
+                    <dd><a href="#">Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a></dd>
+                </dl>
+            </section>
+            <div class="bg_gray">
+                <section class="inner">
+                    <h2>About Me</h2>
+                    <dl class="flex">
+                        <dt>Name</dt>
+                        <dd>Naoya Aramaki</dd>
+                        <dt>Birthday</dt>
+                        <dd>June 29, 1998</dd>
+                        <dt>Birthplace</dt>
+                        <dd>Kurume, Fukuoka</dd>
+                        <dt>Hobbies</dt>
+                        <dd>
+                            <ul class="flex">
+                                <li>Traveling Abroad</li>
+                                <li>Reading Light Novels</li>
+                                <li>Watching Animation</li>
+                                <li>Horoscopes Reading</li>
+                            </ul>
+                        </dd>
+                        <dt>Previous Job</dt>
+                        <dd>Development Engineer with Java and Python</dd>
+                    </dl>
+                </section>
+            </div>
+            <section class="inner right">
+                <h2>Access</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3239.5599928423903!2d139.707147!3d35.712444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdaa57ef31e29b6f0!2z5pep56iy55Sw6Zu75a2QSVTmlZnogrLjgrvjg7Pjgr_jg7w!5e0!3m2!1sja!2sjp!4v1664154314439!5m2!1sja!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="wit_logo"><a href="https://www.wit-it.co.jp/" target="_blank">wit_logo</a></p>
+            </section>
+            <div class="bg_gray">
+                <section class="inner">
+                    <h2>Follow Me</h2>
+                    <ul class="flex">
+                        <li class="instagram"><a href="#">instagram</a></li>
+                        <li class="twitter"><a href="#">twitter</a></li>
+                        <li class="facebook"><a href="#">facebook</a></li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p><small>Copyright &copy; 2022 Naoya Aramaki All rights reserved.</small></p>
+        </footer>
+    </body>
 </html>

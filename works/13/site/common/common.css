@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Serif+JP:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 
 body, h1, h2, h3, h4, p, figure, dl, dd, ul {
     padding: 0;
@@ -10,18 +12,81 @@ img {
     vertical-align: bottom;
 }
 
+a {
+    display: block;
+    text-decoration: none;
+}
+
 body {
-    font-family: YuMincho, 'Yu Mincho', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
+    font-family: 'Dancing Script', cursive, 'Noto Serif JP', serif, YuMincho, 'Yu Mincho', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
     font-size: 16px;
     color: #666;
+    background: #fff;
 }
 
 .inner {
-    width: 1000px;
+    width: 960px;
     margin: 0 auto;
 }
 
 .flex {
     display: flex;
     justify-content: space-between;
+}
+
+header {
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    position: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, .9);
+    border-bottom: 1px solid rgba(102, 102, 102, .5);
+}
+
+header .flex {
+    justify-content: space-evenly;
+}
+
+header h1 {
+    background: url(../../../img/header_logo.png) center center / cover no-repeat;
+    width: 200px;
+    height: 58px;
+    line-height: 0;
+    font-size: 0;
+    animation: header_logo 5s ease infinite;
+}
+
+@keyframes header_logo {
+    50% {
+        background: url(../../../img/header_logo_hover.png) center center / cover no-repeat;
+    }
+}
+
+header h1 a {
+    line-height: 58px;
+    color: transparent;
+}
+
+header ul.flex {
+    width: 250px;
+    justify-content: space-around;
+    margin-top: 23px;
+}
+
+header ul a {
+    font-family: YuMincho, 'Yu Mincho';
+    font-size: 22px;
+    color: #666;
+    transition: all .5s ease;
+}
+
+header ul a:hover {
+    color: rgb(162, 135, 235);
+}
+
+footer {
+    line-height: 100px;
+    text-align: center;
+    background: #fdfdfd;
 }
