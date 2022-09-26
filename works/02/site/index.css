@@ -127,6 +127,14 @@ section figcaption::before {
         line-height: 300px;
     }
 
+    main ul.flex {
+        width: 300px;
+    }
+
+    main li a {
+        font-size: .8em;
+    }
+
     section .flex {
         padding: 0;
     }
