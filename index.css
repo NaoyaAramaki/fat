@@ -135,7 +135,7 @@ main > div::before {
     height: 300px;
     width: 450px;
     box-shadow: 1px 1px 2px #999;
-    object-fit: cover;
+    object-fit: contain;
     transition: all 1s ease;
 }
 
