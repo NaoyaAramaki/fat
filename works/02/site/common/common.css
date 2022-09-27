@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* 作成者：荒牧直矢 */
 /* 作成日：2022/09/22 */
-/* 最終更新日：2022/09/26 */
+/* 最終更新日：2022/09/27 */
 
 body, h1, h2, h3, h4, p, figure, dl, dd, ul {
     padding: 0;
@@ -167,7 +167,7 @@ nav li a:hover {
     content: "close";
 }
 
-nav .flex.open {
+nav.open {
     display: block;
     animation: fade-in .5s ease-in-out;
 }
@@ -203,8 +203,12 @@ footer p {
 }
 
 @media screen and (max-width: 600px) {
-    nav .flex {
+    nav {
         display: none;
+    }
+
+    nav ul.flex {
+        display: block;
         position: fixed;
         top: 90px;
         background: rgba(255, 255, 255, .7);
