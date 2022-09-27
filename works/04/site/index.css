@@ -1,9 +1,13 @@
 @charset "UTF-8";
+/* 作成者：荒牧直矢 */
+/* 作成日：2022/09/21 */
+/* 最終更新日：2022/09/27 */
 
 main figure {
+    margin-top: 153px;
     height: 330px;
     width: 100%;
-    background: url(../../img/skyblue.png) no-repeat;
+    background: url(../../img/pink.png) no-repeat;
     margin-bottom: 20px;
 }
 
@@ -52,4 +56,25 @@ section a {
     line-height: 65px;
     color: #fff;
     text-shadow: 1px 1px #999;
+}
+
+@media screen and (max-width: 750px) {
+    main figure {
+        margin-top: 133px;
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main figure {
+        margin-top: 70px;
+        height: 230px;
+    }
+    main > p {
+        margin-bottom: 30px;
+    }
+
+    tr td:first-of-type {
+        min-width: 75px;
+    }
 }

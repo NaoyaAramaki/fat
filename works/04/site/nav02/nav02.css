@@ -1,4 +1,11 @@
 @charset "UTF-8";
+/* 作成者：荒牧直矢 */
+/* 作成日：2022/09/21 */
+/* 最終更新日：2022/09/27 */
+
+article {
+    margin-top: 153px;
+}
 
 article > p {
     margin-bottom: 20px;
@@ -7,6 +14,10 @@ article > p {
 section img {
     width: 250px;
     height: 175px;
+}
+    
+figcaption {
+    text-align: center;
 }
 
 section .flex {
@@ -24,17 +35,80 @@ section .flex {
 }
 
 section table {
-    width: 60%;
+    width: 450px;
     border-collapse: collapse;
     margin-bottom: 15px;
 }
 
 td {
     border: 1px solid #999;
-    padding: 10px 40px 10px 10px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
 article > section > p {
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 750px) {
+    article {
+        margin-top: 133px;
+    }
+
+    article > section {
+        margin-bottom: 50px;
+    }
+
+    section .flex {
+        justify-content: space-around;
+    }
+
+    .flex section {
+        width: 300px;
+    }
+
+    section table,
+    article > section > p {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    article {
+        margin-top: 70px;
+    }
+
+    section .flex {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .flex h4 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .flex section {
+        width: 100%;
+    }
+
+    .flex section p {
+        text-align: center;
+    }
+
+    section table {
+        width: 100%;
+        margin: 0 auto 15px;
+        max-width: 450px;
+    }
+
+    article > section > p {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
 }

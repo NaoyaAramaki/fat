@@ -1,10 +1,18 @@
 @charset "UTF-8";
+/* 作成者：荒牧直矢 */
+/* 作成日：2022/09/21 */
+/* 最終更新日：2022/09/27 */
+
+article {
+    margin-top: 153px;
+}
 
 section:first-of-type .flex {
     flex-wrap: wrap;
     width: 400px;
     margin-bottom: 15px;
     border: 1px solid #999;
+    box-sizing: border-box;
 }
 
 section:first-of-type dt {
@@ -71,12 +79,15 @@ section:last-of-type input {
     width: 100%;
     padding: 5px;
     box-sizing: border-box;
+    outline: none;
 }
 
 section:last-of-type textarea {
     resize: none;
     width: 100%;
     height: 15em;
+    outline: none;
+    box-sizing: border-box;
 }
 
 #btn_reset,
@@ -84,4 +95,47 @@ section:last-of-type textarea {
     display: inline-block;
     width: 40%;
     margin: 20px 4% 30px;
+    outline: none;
+}
+
+@media screen and (max-width: 750px) {
+    article {
+        margin-top: 133px;
+    }
+
+    section:nth-of-type(2) p {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    article {
+        margin-top: 70px;
+    }
+
+    section:first-of-type .flex {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    section:last-of-type .flex {
+        display: block;
+    }
+
+    section:last-of-type dt {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    section:last-of-type dd {
+        width: 100%;
+        padding-top: 5px;
+    }
+
+    #btn_reset, #btn_submit {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 }
