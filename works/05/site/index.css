@@ -4,6 +4,7 @@
 /* 最終更新日：2022/09/27 */
 
 .main_visual {
+    margin-top: 170px;
     height: 300px;
     background: url(../../img/gray.png) no-repeat;
     margin-bottom: 15px;
@@ -35,6 +36,7 @@ section {
 
 section:last-of-type {
     width: 100%;
+    padding: 10px 20px;
 }
 
 section h2 {
@@ -184,6 +186,7 @@ aside input {
 aside input[type="date"],
 aside input[type="time"] {
     width: 50%;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
 }
 
 aside input[type="submit"] {
@@ -202,4 +205,112 @@ aside input[type="submit"] {
 
 aside input[type="submit"]:hover {
     opacity: 1;
+}
+
+@media screen and (max-width: 950px) {
+    .main_visual {
+        margin-top: 152px;
+        height: 250px;
+    }
+
+    .main_visual p {
+        line-height: 250px;
+    }
+
+    main.inner {
+        justify-content: space-around;
+    }
+
+    main > div.flex {
+        display: block;
+        width: 80%;
+        max-width: 500px;
+        margin-right: 10px;
+    }
+
+    section,
+    section:last-of-type {
+        width: 100%;
+    }
+
+    .section_bottom p,
+    section dd:last-of-type {
+        margin-bottom: 10px;
+    }
+
+    main > aside {
+        min-width: 160px;
+        width: 20%;
+        height: 400px;
+    }
+
+    aside dt {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    aside dd {
+        margin-bottom: 15px;
+    }
+
+    aside dd label {
+        display: block;
+        margin-left: 15px;
+    }
+
+    aside input[type="date"], 
+    aside input[type="time"] {
+        width: 100%;
+    }
+
+    aside input[type="submit"] {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main_visual {
+        margin-top: 107px;
+        height: 200px;
+    }
+
+    .main_visual p {
+        line-height: 200px;
+    }
+
+    main.inner {
+        display: block;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    
+    main > div.flex {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    section dt {
+        width: 100%;
+        text-align: center;
+    }
+
+    section dd {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    main > aside {
+        width: 300px;
+        height: 380px;
+        margin: 0 auto 50px;
+    }
+
+    aside dd {
+        text-align: center;
+    }
+
+    aside dd label {
+        display: inline;
+    }
 }

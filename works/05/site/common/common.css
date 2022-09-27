@@ -36,6 +36,11 @@ body {
 
 header {
     padding: 15px 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    background: rgba(225, 134, 37, .9);
 }
 
 header h1 {
@@ -77,6 +82,10 @@ header li a::before {
 nav {
     background: url(../../../img/gray.png);
     margin-bottom: 15px;
+    position: fixed;
+    top: 120px;
+    z-index: 100;
+    width: 100%;
 }
 
 nav ul {
@@ -105,6 +114,104 @@ nav a:hover {
     background: url(../../../img/white.png);
 }
 
+/**************** 以下、ハンバーガーボタンのスタイリング ****************/
+.btn {
+    appearance: none;
+    vertical-align: middle;
+    border: 0;
+    background: transparent;
+    outline: 0;
+    border-radius: 0;
+    text-align: inherit;
+    font-family: 'Yu Mincho', serif;
+    /* ボタンの配置位置  */
+    position: fixed;
+    top: 20px;
+    right: 5px;
+    /* ボタンの大きさ  */
+    width: 50px;
+    height: 30px;
+    /* バーガーの線をボタン範囲の中心に配置 */
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 110;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+/***** 真ん中のバーガー線 *****/
+.btn-line {
+    /* 線の長さと高さ */
+    width: 100%;
+    height: 3px;
+    /* バーガー線の色 */
+    background-color: #fff;
+    /* バーガー線の位置基準として設定 */
+    position: relative;
+    transition: .2s;
+}
+
+/***** 上下のバーガー線 *****/
+.btn-line::before,
+.btn-line::after {
+    /* 基準線と同じ大きさと色 */
+    position: absolute;
+    transition: .5s;
+}
+
+.btn-line::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    /* 上の線の位置 */
+    transform: translateY(-10px);
+}
+
+.btn-line::after {
+    content: "menu";
+    /* 下の線の位置 */
+    display: block;
+    width: 100%;
+    text-align: center;
+    transform: translateY(3px);
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+/***** メニューオープン時 *****/
+.btn-line.open {
+    transition: .5s;
+}
+
+.btn-line.open::before {
+    content: "";
+    transform: translateY(0);
+}
+
+.btn-line.open::after {
+    content: "close";
+}
+
+nav.open {
+    display: block;
+    animation: fade-in .5s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/* ここまでハンバーガーメニュー */
+
 footer {
     line-height: 50px;
     background: rgb(92, 34, 0);
@@ -122,4 +229,93 @@ footer a {
 
 footer p {
     margin-right: 50px;
+}
+
+@media screen and (max-width: 950px) {
+    .inner {
+        width: 100%;
+    }
+
+    header h1 {
+        width: 264px;
+        height: 72px;
+    }
+
+    header h1 a {
+        line-height: 72px;
+    }
+
+    nav {
+        top: 102px;
+    }
+
+    footer ul {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 10px 0;
+    }
+
+    header > .flex {
+        display: block;
+    }
+
+    header h1 {
+        width: 198px;
+        height: 54px;
+    }
+
+    header h1 a {
+        line-height: 54px;
+    }
+
+    header ul.flex {
+        width: 150px;
+        margin-top: 10px;
+        margin-right: 0;
+        margin-left: auto;
+    }
+
+    header li {
+        margin-bottom: 5px;
+    }
+
+    nav {
+        display: none;
+        top: 107px;
+    }
+
+    nav ul.flex {
+        display: block;
+    }
+
+    nav li {
+        width: 100%;
+        border: none;
+    }
+
+    .btn {
+        display: flex;
+    }
+
+    footer {
+        padding-top: 10px;
+    }
+
+    footer > .flex {
+        display: block;
+    }
+
+    footer ul.flex {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    footer p {
+        text-align: center;
+        margin-right: 0;
+    }
 }

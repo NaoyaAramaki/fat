@@ -10,14 +10,18 @@
         <title>work05</title>
         <link rel="stylesheet" href="./common/common.css">
         <link rel="stylesheet" href="./index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../../../common/js/common.js"></script>
     </head>
     <body>
-        <header class="inner flex">
-            <h1><a href="./">header_logo</a></h1>
-            <ul class="flex">
-                <li><a href="#">Link01</a></li>
-                <li><a href="#">Link02</a></li>
-            </ul>
+        <header>
+            <div class="flex inner">
+                <h1><a href="./">header_logo</a></h1>
+                <ul class="flex">
+                    <li><a href="#">Link01</a></li>
+                    <li><a href="#">Link02</a></li>
+                </ul>
+            </div>
         </header>
         <nav>
             <ul class="flex inner">
@@ -28,6 +32,9 @@
                 <li class="nav05"><a href="#">nav05</a></li>
             </ul>
         </nav>
+        <button type="button" class="btn js-btn">
+            <span class="btn-line"></span>
+        </button>
         <div class="main_visual inner">
             <p>メインビジュアルがここに入ります</p>
         </div>
@@ -54,11 +61,11 @@
                 <section>
                     <h2>見出しが入ります</h2>
                     <dl class="flex">
-                        <dt>text text text text</dt>
+                        <dt>t_header01</dt>
                         <dd>text text text text text text text text text text text text text text</dd>
-                        <dt>text text text text</dt>
+                        <dt>t_header02</dt>
                         <dd>text text text text text text text text text text text text text text</dd>
-                        <dt>text text text text</dt>
+                        <dt>t_header02</dt>
                         <dd>text text text text text text text text text text text text text text</dd>
                     </dl>
                     <p><a href="#">btn_detail</a></p>
@@ -72,7 +79,7 @@
                         <dd>
                             <label for="radio1">
                                 <input type="radio" id="radio1" name="course">
-                                radio1
+                                radio01
                             </label>
                             <label for="radio2">
                                 <input type="radio" id="radio2" name="course">
