@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* 作成者：荒牧直矢 */
+/* 作成日：2022/09/21 */
+/* 最終更新日：2022/09/27 */
 
 h3 {
     border: 1px solid #0de;
@@ -9,12 +12,12 @@ h3 {
     margin-bottom: 1em;
 }
 
-p {
-    margin: 0 25px;
+section p {
+    margin: 0 25px 1em;
 }
 
 table {
-    width: 100%;
+    width: 355px;
     margin: 0 25px;
     box-sizing: border-box;
     border-collapse: collapse;
@@ -22,6 +25,73 @@ table {
 
 th {
     font-size: .9em;
-
     width: 60px;
+    border: 1px solid #999;
+    padding: 5px;
+    background: rgba(255, 253, 157, 0.9);
+}
+
+td {
+    border: 1px solid #999;
+    text-align: center;
+    padding: 5px 0;
+}
+
+hr {
+    margin-top: 30px;
+    border: .5px solid rgb(127, 182, 255);
+}
+
+article > p:last-of-type {
+    font-size: 10px;
+    text-align: right;
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+
+dl {
+    margin: 0 25px;
+}
+
+dt {
+    font-weight: normal;
+    padding-left: 0;
+    border-left: none;
+    margin-bottom: 5px;
+}
+
+dd {
+    margin: 0 20px 10px;
+}
+
+@media screen and (max-width: 600px) {
+    section p {
+        margin: 0;
+        margin-bottom: 1em;
+    }
+    
+    table {
+        width: 100%;
+        min-width: 100px;
+        display: block;
+        overflow-x: scroll;
+        margin: 0;
+        /* IE, Edge 対応 */
+        -ms-overflow-style: none;
+        /* Firefox 対応 */
+        scrollbar-width: none;
+    }
+
+    table::-webkit-scrollbar {
+        display:none;
+    }
+
+    dl {
+        margin: 0;
+    }
+
+    dd {
+        margin-right: 0;
+        margin-left: 10px;
+    }
 }

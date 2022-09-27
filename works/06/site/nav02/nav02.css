@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* 作成者：荒牧直矢 */
+/* 作成日：2022/09/21 */
+/* 最終更新日：2022/09/27 */
 
 figure img {
     width: 100px;
@@ -7,8 +10,31 @@ figure img {
 
 .contents .flex p {
     width: 300px;
+    margin-left: 10px;
 }
 
 .contents .flex {
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .contents .flex p {
+        min-width: 100px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contents .flex {
+        display: block;
+    }
+
+    figure img {
+        margin: 0 auto 10px;
+        display: block;
+    }
+
+    .contents .flex p {
+        margin-left: 0;
+    }
 }
