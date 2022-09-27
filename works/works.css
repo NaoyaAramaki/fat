@@ -151,9 +151,9 @@ main li a {
 }
 
 main li img {
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
+    height: 196px;
+    width: 210px;
+    object-fit: contain;
     transition: all 1s ease;
 }
 
@@ -237,11 +237,5 @@ main li .icon::before {
     main li .icon {
         margin: 0 auto;
         width: 200px;
-    }
-}
-
-@media screen and (max-width: 399px) {
-    main li img {
-        width: 80vw;
     }
 }

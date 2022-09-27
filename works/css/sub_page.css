@@ -1,20 +1,21 @@
 @charset "UTF-8";
 
-.thumbnails {
+.thumbnails.flex {
     margin-bottom: 75px;
+    justify-content: space-evenly;
 }
 
 .thumbnails p:first-of-type img {
     width: 600px;
-    height: 400px;
+    height: 560px;
     box-shadow: 2px 2px 1px #999;
     background: #fafafa;
     object-fit: contain;
 }
 
 .thumbnails p:last-of-type img{
-    width: 300px;
-    height: 400px;
+    width: 234px;
+    height: 560px;
     box-shadow: 2px 2px 1px #999;
     background: #fafafa;
     object-fit: contain;

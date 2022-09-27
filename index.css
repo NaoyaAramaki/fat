@@ -132,8 +132,8 @@ main > div::before {
 }
 
 #works figure img {
-    height: 300px;
-    width: 450px;
+    height: 392px;
+    width: 420px;
     box-shadow: 1px 1px 2px #999;
     object-fit: contain;
     transition: all 1s ease;
@@ -242,7 +242,12 @@ h2::after {
     }
 
     #works figure img {
-        width: 46vw;
+        width: 45vw;
+        height: calc(45vw * 14 / 15);
+        min-width: 252px;
+        max-width: 392px;
+        min-height: 270px;
+        max-height: 420px;
     }
 }
 
@@ -271,11 +276,22 @@ h2::after {
         padding: 0;
     }
 
+    #works .flex {
+        display: block;
+    }
+
     #works p {
         margin: 0 20px;
     }
 
+    #works figure {
+        margin: 0 auto;
+    }
+
     #works figure img {
         width: 100vw;
+        height: calc(100vw / 15 * 14);
+        display: block;
+        margin: 0 auto;
     }
 }
