@@ -244,10 +244,10 @@ h2::after {
     #works figure img {
         width: 45vw;
         height: calc(45vw * 14 / 15);
-        min-width: 252px;
-        max-width: 392px;
-        min-height: 270px;
-        max-height: 420px;
+        min-width: 270px;
+        max-width: 420px;
+        min-height: 252px;
+        max-height: 392px;
     }
 }
 

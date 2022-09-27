@@ -147,16 +147,16 @@
 }
 
 .supplement::after {
-    text-indent: 1em;
+    text-indent: .5em;
     display: inline-block;
 }
 
 .enter_high_school::after {
-    content: "普通科特別選抜コース　入学";
+    content: "普通科特別選抜コース 入学";
 }
 
 .dropout_high_school::after {
-    content: "普通科特別選抜コース　中途退学";
+    content: "普通科特別選抜コース 中途退学";
 }
 
 .vivijewel::after {
@@ -165,23 +165,27 @@
 }
 
 .enter_vocational_school::after {
-    content: "英語コミュニケーション科　入学";
+    content: "英語コミュニケーション科 入学";
 }
 
 .dropout_vocational_school::after {
-    content: "英語コミュニケーション科　中途退学";
+    content: "英語コミュニケーション科 中途退学";
 }
 
-.university::after {
-    content: "情報マネジメント学部　入学";
+.enter_university::after {
+    content: "情報マネジメント学部 入学";
 }
 
 .enter_webdesign_school::after {
-    content: "Webサイトデザイン科　入校";
+    content: "Webサイトデザイン科 入校";
 }
 
 .completion_webdesign_school::after {
-    content: "Webサイトデザイン科　修了予定";
+    content: "Webサイトデザイン科 修了予定";
+}
+
+.completion_university::after {
+    content: "情報マネジメント学部 卒業予定";
 }
 
 /* タブレット端末用CSS */
