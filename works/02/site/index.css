@@ -20,7 +20,7 @@
 main ul {
     margin-left: 20px;
     margin-bottom: 20px;
-    width: 370px;
+    width: 320px;
 }
 
 main li a {
@@ -128,7 +128,7 @@ section figcaption::before {
     }
 
     main ul.flex {
-        width: 300px;
+        width: 260px;
     }
 
     main li a {
