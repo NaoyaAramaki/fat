@@ -1,5 +1,7 @@
 @charset "UTF-8";
-
+/* 作成者：荒牧直矢 */
+/* 作成日：2022/09/20 */
+/* 最終更新日：2022/09/27 */
 body, h1, h2, h3, h4, p, figure, dl, dd, ul {
     padding: 0;
     margin: 0;
@@ -35,6 +37,10 @@ body {
 header {
     padding: 10px 0;
     background: #fff;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
 }
 
 header h1 {
@@ -87,6 +93,103 @@ header .nav05 a:hover {
     background: url(../../../img/gray.png) no-repeat;
 }
 
+/**************** 以下、ハンバーガーボタンのスタイリング ****************/
+.btn {
+    appearance: none;
+    vertical-align: middle;
+    border: 0;
+    background: transparent;
+    outline: 0;
+    border-radius: 0;
+    text-align: inherit;
+    font-family: 'Yu Mincho', serif;
+    /* ボタンの配置位置  */
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    /* ボタンの大きさ  */
+    width: 50px;
+    height: 30px;
+    /* バーガーの線をボタン範囲の中心に配置 */
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 110;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+/***** 真ん中のバーガー線 *****/
+.btn-line {
+    /* 線の長さと高さ */
+    width: 100%;
+    height: 3px;
+    /* バーガー線の色 */
+    background-color: #666;
+    /* バーガー線の位置基準として設定 */
+    position: relative;
+    transition: .2s;
+}
+
+/***** 上下のバーガー線 *****/
+.btn-line::before,
+.btn-line::after {
+    /* 基準線と同じ大きさと色 */
+    position: absolute;
+    transition: .5s;
+}
+
+.btn-line::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #666;
+    /* 上の線の位置 */
+    transform: translateY(-10px);
+}
+
+.btn-line::after {
+    content: "menu";
+    /* 下の線の位置 */
+    display: block;
+    width: 100%;
+    text-align: center;
+    transform: translateY(3px);
+    color: #333;
+}
+
+/***** メニューオープン時 *****/
+.btn-line.open {
+    transition: .5s;
+}
+
+.btn-line.open::before {
+    content: "";
+    transform: translateY(0);
+}
+
+.btn-line.open::after {
+    content: "close";
+}
+
+nav.open {
+    display: block;
+    animation: fade-in .5s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/* ここまでハンバーガーメニュー */
+
 footer {
     background: #fff;
     text-align: center;
@@ -108,4 +211,48 @@ footer p:first-of-type a {
 
 footer p:last-of-type {
     font-size: .9em;
+}
+
+@media screen and (max-width: 960px) {
+    .inner {
+        width: 100%;
+    }
+
+    .flex {
+        display: block;
+    }
+
+    header h1 {
+        margin: 0 auto;
+    }
+
+    nav {
+        display: none;
+        padding-top: 10px;
+    }
+
+    nav ul.flex {
+        display: block;
+        width: 100%;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    header li a {
+        height: 70px;
+        line-height: 70px;
+    }
+
+    .btn {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        margin-left: 0;
+        margin-right: auto;
+    }
 }

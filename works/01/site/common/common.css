@@ -69,6 +69,11 @@ nav li {
     border-top: 3px solid #ccc;
     border-bottom: 3px solid #ccc;
     border-right: 1px solid #ccc;
+    opacity: .8;
+}
+
+nav li:hover {
+    opacity: 1;
 }
 
 nav li:last-of-type {
@@ -222,11 +227,6 @@ footer p {
         width: 100%;
         border: none;
         height: 70px;
-        opacity: .8;
-    }
-
-    nav li:hover {
-        opacity: 1;
     }
 
     nav li a {

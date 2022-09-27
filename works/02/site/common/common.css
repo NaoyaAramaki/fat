@@ -41,7 +41,7 @@ header {
     position: fixed;
     z-index: 100;
     top: 0;
-    width: 100%;
+    width: 960px;
     background: rgba(255, 255, 255, .7);
 }
 
@@ -198,6 +198,10 @@ footer p {
 
 @media screen and (max-width: 960px) {
     .wrapper {
+        width: 100%;
+    }
+
+    header {
         width: 100%;
     }
 }

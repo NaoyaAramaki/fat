@@ -1,6 +1,10 @@
 @charset "UTF-8";
+/* 作成者：荒牧直矢 */
+/* 作成日：2022/09/20 */
+/* 最終更新日：2022/09/27 */
 
 .main_visual {
+    margin-top: 80px;
     height: 350px;
     background: url(../../img/skyblue.png) center center / cover no-repeat;
 }
@@ -141,4 +145,87 @@ tbody {
 td {
     padding: 5px 0;
     border: 1px solid #fff;
+}
+
+@media screen and (max-width: 960px) {
+    .main_visual {
+        margin-top: 80px;
+        height: 300px;
+    }
+
+    .main_visual p {
+        line-height: 300px;
+    }
+
+    main article {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    article figure img {
+        max-width: 510px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    main aside {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    aside section {
+        width: 45%;
+        box-shadow: 0 0 5px #eee;
+        padding: 20px 0;
+    }
+
+    aside p {
+        width: 100%;
+        max-width: 230px;
+        margin: 0 auto;
+    }
+
+    aside p:first-of-type {
+        max-width: 100%;
+    }
+
+    aside p:first-of-type,
+    aside ul {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    aside table {
+        max-width: 230px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main_visual {
+        height: 250px;
+    }
+
+    .main_visual p {
+        line-height: 250px;
+    }
+
+    main.inner {
+        margin: 20px 0;
+    }
+
+    main article {
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+
+    main aside {
+        display: block;
+    }
+
+    aside section {
+        width: 100%;
+    }
 }
