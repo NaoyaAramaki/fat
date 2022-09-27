@@ -2,6 +2,7 @@
 
 main > div:first-of-type {
     padding: 60px 0;
+    margin-top: 80px;
 }
 
 main > div:first-of-type section {
@@ -29,19 +30,19 @@ main > div:first-of-type p.text {
     margin-bottom: 10px;
 }
 
-.btn {
+.button {
     background: url(../../img/skyblue.png) no-repeat;
     text-align: center;
     border-radius: 5px;
 }
 
-.btn a {
+.button a {
     line-height: 50px;
     color: #fff;
     text-shadow: 1px 1px #999;
 }
 
-.btn.about {
+.button.about {
     width: 540px;
     height: 50px;
 }
@@ -67,14 +68,14 @@ h2 {
     line-height: 40px;
 }
 
-.btn.menu {
+.button.menu {
     width: 220px;
     height: 50px;
     display: inline-block;
     vertical-align: text-bottom;
 }
 
-.btn.access a {
+.button.access a {
     line-height: 35px;
 }
 
@@ -158,4 +159,87 @@ main > div:last-of-type section {
     color: #fff;
     line-height: 60px;
     text-shadow: 1px 1px #999;
+}
+
+@media screen and (max-width: 960px) {
+    main > div:first-of-type {
+        display: block;
+        text-align: center;
+    }
+
+    main > div:first-of-type p.text {
+        width: 100%;
+    }
+
+    .button.about {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    h2 {
+        width: 100%;
+    }
+
+    main > div:first-of-type figure {
+        margin: 0 auto;
+    }
+
+    article.menu {
+        padding-bottom: 40px;
+    }
+
+    .menu .contents.flex {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .button.menu {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+        max-width: 600px;
+    }
+
+    .cuisine {
+        margin-top: 30px;
+    }
+
+    main > div:last-of-type {
+        display: block;
+    }
+
+    main > div:last-of-type section {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    main > div:last-of-type section.sns {
+        margin-bottom: 0;
+    }
+
+    .news dl.flex {
+        width: 90%;
+        margin-left: 50px;
+    }
+
+    .sns ul.flex {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .news dl.flex {
+        display: block;
+        margin-left: 30px;
+    }
+
+    .news dt,
+    .news dd {
+        width: 100%;
+    }
+
+    .news dd {
+        margin-bottom: 10px;
+    }
 }
