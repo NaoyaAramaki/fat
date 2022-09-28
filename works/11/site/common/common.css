@@ -165,8 +165,14 @@ footer li:last-of-type a {
         box-sizing: border-box;
     }
 
+    main.inner {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
     .contents {
         padding-bottom: 30px;
+        padding-left: 5px;
     }
     
     .header_left.flex {
