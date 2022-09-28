@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* 作成者：荒牧直矢 */
+/* 作成日：2022/09/22 */
+/* 最終更新日：2022/09/27 */
 
 body, h1, h2, h3, h4, p, figure, dl, dd, ul {
     padding: 0;
@@ -274,24 +277,21 @@ footer > p small {
 
 @media screen and (max-width: 600px) {
     header h1 {
-        width: 240px;
-        height: 40px;
+        width: 270px;
     }
 
     header h1 a {
-        line-height: 40px;
         font-size: .9em;
-    }
-
-    .btn {
-        top: 10px;
-        right: 10px;
     }
 
     .button.access {
         margin: 15px auto 0;
         width: 90%;
         display: block;
+    }
+    
+    footer {
+        font-size: .9em;
     }
 
     footer dl.flex {
