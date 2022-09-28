@@ -1,10 +1,14 @@
 @charset "UTF-8";
+/* 作成者：荒牧直矢 */
+/* 作成日：2022/09/23 */
+/* 最終更新日：2022/09/28 */
 
 .bg {
     background: url(../../img/skyblue.png);
 }
 
 .main_visual {
+    margin-top: 60px;
     height: 360px;
     background: url(../../img/gray.png) no-repeat;
     text-align: center;
@@ -46,7 +50,7 @@ section .left {
     font-size: .7em;
 }
 
-.btn {
+.button {
     text-align: center;
     background: url(../../img/skyblue.png) no-repeat;
     border-radius: 5px;
@@ -55,7 +59,7 @@ section .left {
     box-shadow: 1px 1px 1px #999;
 }
 
-.btn a {
+.button a {
     line-height: 25px;
     color: #fff;
     text-shadow: 1px 1px #999;
@@ -113,4 +117,75 @@ section p.detail a::before {
 
 .right dd {
     width: 80%;
+}
+
+@media screen and (max-width: 1000px) {
+    .main_visual {
+        height: 300px;
+        margin-bottom: 40px;
+    }
+
+    .main_visual p {
+        line-height: 300px;
+    }
+
+    main.inner {
+        margin-bottom: 70px;
+    }
+
+    main > section.flex {
+        display: block;
+        margin: 0 10px 30px;
+    }
+
+    section .left {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .left h2::after {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    section .right {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content:  space-around;
+    }
+
+    section section {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main_visual {
+        margin-top: 99px;
+        height: 240px;
+    }
+
+    .main_visual p {
+        line-height: 240px;
+        font-size: 1.5em;
+    }
+
+    main.inner {
+        margin-bottom: 50px;
+    }
+    
+    .right dl.flex {
+        display: block;
+        line-height: 1.5;
+    }
+
+    .right dt {
+        width: 100%;
+    }
+
+    .right dd {
+        width: 100%;
+        margin-bottom: 15px;
+    }
 }
