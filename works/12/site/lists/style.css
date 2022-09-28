@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* 作成者：荒牧直矢 */
+/* 作成日：2022/09/25 */
+/* 最終更新日：2022/09/28 */
 
 body, h1, h2, h3, h4, p, figure, dl, dd, ul {
     padding: 0;
@@ -14,7 +17,7 @@ body {
     font-family: YuMincho, 'Yu Mincho', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
     font-size: 16px;
     color: #666;
-    padding: 50px;
+    padding: 30px;
     background: rgba(250, 250, 250, .8);
 }
 
@@ -35,5 +38,31 @@ img {
 }
 
 p {
-    width: 300px;
+    width: 100%;
+    min-width: 200px;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 580px) {
+    body {
+        padding: 20px;
+    }
+
+    .container .flex {
+        display: block;
+    }
+
+    img {
+        width: 150px;
+        height: 150px;
+        float: left;
+        clear: left;
+        margin-right: 10px;
+    }
+
+    p {
+        width: 100%;
+        min-width: 100px;
+        margin-left: 0;
+    }
 }

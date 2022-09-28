@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* 作成者：荒牧直矢 */
+/* 作成日：2022/09/25 */
+/* 最終更新日：2022/09/28 */
 
 .main_visual {
     padding-top: 50px;
@@ -31,11 +34,6 @@
     }
 }
 
-.slider_item {
-    width: 600px;
-    height: 450px;
-}
-
 .main_visual img {
     width: 600px;
     height: 400px;
@@ -60,9 +58,8 @@ h2::before {
 }
 
 main ul {
-    margin: 0 50px;
+    margin: 0 50px 20px;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 main li {
@@ -83,8 +80,8 @@ main li a {
 
 iframe {
     border: none;
-    width: 80%;
-    height: 440px;
+    width: 600px;
+    height: 400px;
     border-radius: 20px;
     margin: 0 auto;
     display: block;
@@ -118,4 +115,108 @@ main dd a {
 
 main dd a:hover {
     font-weight: bold;
+}
+
+@media screen and (max-width: 960px) {
+    .slider {
+        width: 450px;
+        height: 300px;
+    }
+    
+    @keyframes slider {
+        33% {
+        transform: translateX(-450px);
+        }
+        66% {
+        transform: translateX(-900px);
+        }
+        100% {
+        transform: translateX(0);
+        }
+    }
+    
+    .main_visual img {
+        width: 450px;
+        height: 300px;
+    }
+    
+    iframe {
+        width: 100%;
+    }
+
+    main .inner {
+        padding: 30px;
+    }
+
+    main dl.flex {
+        display: block;
+        line-height: 30px;
+    }
+
+    main dt {
+        width: 100%;
+        border-bottom: none;
+        padding-left: 0;
+    }
+
+    main dd {
+        width: 100%;
+        padding-left: 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main_visual {
+        margin-top: 139px;
+    }
+
+    .slider {
+        width: 300px;
+        height: 200px;
+    }
+    
+    @keyframes slider {
+        33% {
+        transform: translateX(-300px);
+        }
+        66% {
+        transform: translateX(-600px);
+        }
+        100% {
+        transform: translateX(0);
+        }
+    }
+    
+    .main_visual img {
+        width: 300px;
+        height: 200px;
+    }
+
+    main .inner {
+        padding: 10px;
+    }
+
+    main ul.flex {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 20px 20px;
+    }
+
+    main li {
+        margin: 0 5px;
+        min-width: 60px;
+    }
+    
+    iframe {
+        height: 280px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    iframe {
+        height: 360px;
+    }
+    
 }
