@@ -40,6 +40,7 @@ header {
     z-index: 100;
     top: 0;
     background: url(../../../img/gray.png) center center / cover no-repeat;
+    opacity: .8;
 }
 
 header h1 {

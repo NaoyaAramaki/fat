@@ -1,6 +1,10 @@
 @charset "UTF-8";
+/* 作成者：荒牧直矢 */
+/* 作成日：2022/09/22 */
+/* 最終更新日：2022/09/28 */
 
 .main_visual {
+    margin-top: 158px;
     height: 350px;
     text-align: center;
     background: url(../../img/skyblue.png) no-repeat;
@@ -149,8 +153,102 @@ aside span {
     font-size: 20px;
 }
 
-aside section:last-of-type p:first-of-type a {
+aside p a {
     color: #00b7ee;
     font-size: 28px;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 960px) {
+    .main_visual {
+        margin-top: 146px;
+        height: 300px;
+    }
+
+    .main_visual p {
+        line-height: 300px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    body > div.flex {
+        display: block;
+    }
+
+    .about .flex {
+        flex-wrap: wrap;
+    }
+
+    .about img {
+        margin-bottom: 10px;
+    }
+
+    .about h3 {
+        margin-bottom: 0;
+    }
+
+    .about section {
+        margin-bottom: 30px;
+    }
+
+    aside {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    aside section {
+        width: 45%;
+        max-width: 300px;
+    }
+
+    aside dl,
+    aside p a {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    
+}
+
+@media screen and (max-width: 600px) {
+    .main_visual {
+        margin-top: 111px;
+        height: 250px;
+    }
+
+    .main_visual p {
+        line-height: 250px;
+        font-size: 1.5em;
+    }
+
+    main h2 {
+        margin: 30px 0 10px;
+    }
+
+    main dl.flex {
+        margin: 0 auto;
+        width: 90%;
+        display: block;
+    }
+
+    main dt {
+        width: 100%;
+    }
+
+    main dd {
+        width: 95%;
+        margin-left: 5%;
+    }
+
+    aside {
+        display: block;
+    }
+
+    aside section {
+        width: 100%;
+        margin: 0 auto;
+    }
 }

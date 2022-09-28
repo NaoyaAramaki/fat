@@ -274,4 +274,8 @@ footer > p {
     .btn {
         display: flex;
     }
+
+    footer address p {
+        font-size: .85em;
+    }
 }
