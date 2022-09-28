@@ -248,7 +248,7 @@
 
     .detail_right dl {
         width: 530px;
-        margin: 10px auto;
+        margin: 20px auto;
     }
 
     .detail_right h3,
@@ -317,13 +317,13 @@
 
     .detail_right dl {
         display: block;
-        width: 280px;
+        width: 100%;
         text-align: center;
     }
 
     .detail_right dd {
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .qualification {

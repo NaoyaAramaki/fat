@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* 作成者：荒牧直矢 */
+/* 作成日：2022/09/24 */
+/* 最終更新日：2022/09/28 */
 
 body, h1, h2, h3, h4, p, figure, dl, dd, ul {
     padding: 0;
@@ -33,7 +36,12 @@ body {
 }
 
 header {
-    padding-top: 25px;
+    padding: 15px 0 10px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    background: rgba(225, 248, 247, .9);
 }
 
 header h1 {
@@ -51,7 +59,7 @@ header h1 a {
 }
 
 header p.catch {
-    line-height: 35px;
+    font-size: 14px;
     margin-top: 55px;
     margin-left: 20px;
 }
@@ -71,6 +79,11 @@ header p.tel a::before {
     background: url(../../../img/gray.png) no-repeat;
     border-radius: 50%;
     margin-right: 5px;
+}
+
+nav {
+    padding-top: 115px;
+    position: relative;
 }
 
 nav ul.flex {
@@ -104,7 +117,7 @@ nav li a:hover {
 
 main.inner {
     margin-top: 60px;
-    padding-left: 20px;
+    padding-left: 30px;
     box-shadow: 0 0 3px 3px #cee3e2;
     background: linear-gradient(0deg, transparent calc(100% - 1px), #e1f8f7 calc(100% - 1px)) center center / 16px 16px repeat,
                 linear-gradient(90deg, transparent calc(100% - 1px), #e1f8f7 calc(100% - 1px)) center center / 16px 16px repeat,
@@ -114,14 +127,13 @@ main.inner {
 .linear {
     border-left: 1px solid #fcc;
     width: 930px;
-    margin-left: 10px;
+    padding-left: 5px;
 }
 
 .contents {
     border-left: 1px #fcc solid;
     padding: 30px 0 50px;
     width: 925px;
-    margin-left: 5px;
 }
 
 footer {
@@ -145,8 +157,110 @@ footer li:last-of-type a {
     border-right: none;
 }
 
-footer::after {
-    content: "";
-    display: block;
-    height: 5px;
+@media screen and (max-width: 1000px) {
+    .inner,
+    .linear,
+    .contents {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contents {
+        padding-bottom: 30px;
+    }
+    
+    .header_left.flex {
+        flex-flow: column-reverse wrap;
+        width: 60%;
+        min-width: 350px;
+        height: 107px;
+    }
+
+    .header_right {
+        width: 30%;
+        min-width: 250px;
+        margin-top: 23px;
+    }
+
+    header h1 {
+        margin-left: 20px;
+    }
+
+    header p.catch {
+        margin: 0 0 0 auto;
+        font-size: .7em;
+    }
+
+    nav.inner {
+        padding-top: 150px;
+        width: 600px;
+    }
+
+    nav.inner {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    nav ul.flex {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav li {
+        width: calc(100% /4.5);
+        margin: 0 auto;
+    }
+
+    footer {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header_left.flex {
+        min-width: 200px;
+        height: 115px;
+    }
+
+    header h1 {
+        height: 81px;
+        width: 180px;
+    }
+
+    header h1 a {
+        line-height: 81px;
+        font-size: .9em;
+    }
+
+    .header_right {
+        font-size: .8em;
+        margin-top: 30px;
+        min-width: 140px;
+    }
+
+    header p.tel a {
+        font-size: 1em;
+    }
+
+    header p.tel a::before {
+        vertical-align: text-bottom;
+    }
+
+    footer {
+        padding: 20px 10px 70px;
+    }
+    
+    footer > .flex {
+        display: block;
+    }
+
+    footer ul.flex {
+        width: 120px;
+        margin-bottom: 20px;
+    }
+
+    footer p {
+        text-align: center;
+    }
 }
