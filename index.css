@@ -188,6 +188,7 @@ h2::after {
 
     .more {
         width: auto;
+        padding-bottom: 0;
     }
 
     .more::before,
@@ -197,10 +198,40 @@ h2::after {
 
     .more a {
         padding: 15px 0;
-        border: 1px solid #666;
+        /* border: 1px solid #666; */
         text-align: center;
     }
-    
+
+    .more a:before,
+    .more a:after {
+        content: '';
+        width: 30px;
+        height: 30px;
+        border-color: #999;
+        box-sizing: border-box;
+        border-style :solid;
+        display: block;
+        position: absolute;
+        animation: test 5s ease-in-out infinite;
+    }
+    .more a:before {
+        top: 0;
+        left: 0;
+        border-width: 1px 0 0 1px;
+    }
+    .more a:after {
+        bottom: 0;
+        right: 0;
+        border-width: 0 1px 1px 0;
+    }
+
+    @keyframes test {
+        50% {
+            width: calc(100% + 12px);
+            height: calc(100% + 12px);
+        }
+    } 
+
     #profile,
     #works,
     #inquiry {
