@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- 作成者：荒牧直矢 -->
 <!-- 作成日：2022/09/26 -->
-<!-- 最終更新日：2022/09/26 -->
+<!-- 最終更新日：2022/09/29 -->
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
@@ -10,6 +10,9 @@
         <title>Work13</title>
         <link rel="stylesheet" href="./common/common.css">
         <link rel="stylesheet" href="./index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../../../common/js/common.js"></script>
+        <script src="./index.js"></script>
     </head>
     <body>
         <header>
@@ -29,16 +32,19 @@
                         <li><a href="#">nav06</a></li>
                     </ul>
                 </nav>
+                <button type="button" class="btn js-btn">
+                    <span class="btn-line"></span>
+                </button>
             </div>
         </header>
-        <div class="main_visual" id="slide">
+        <div class="main_visual">
             <ul class="flex">
                 <li><img src="../../img/skyblue.png" alt="photo"></li>
                 <li><img src="../../img/orange.png" alt="photo"></li>
                 <li><img src="../../img/green.png" alt="photo"></li>
             </ul>
-            <button id="prevBtn" class="btn"><img src="../../img/prevBtn.png" alt="prevBtn"></button>
-            <button id="nextBtn" class="btn"><img src="../../img/nextBtn.png" alt="nextBtn"></button>
+            <button id="prevBtn" class="button"><img src="../../img/prevBtn.png" alt="prevBtn"></button>
+            <button id="nextBtn" class="button"><img src="../../img/nextBtn.png" alt="nextBtn"></button>
         </div>
         <main>
             <div class="bg_gray">

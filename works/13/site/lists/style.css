@@ -1,6 +1,9 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Serif+JP:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+/* 作成者：荒牧直矢 */
+/* 作成日：2022/09/26 */
+/* 最終更新日：2022/09/29 */
 
 body, h1, h2, h3, h4, p, figure, dl, dd, ul {
     padding: 0;
@@ -42,7 +45,16 @@ div.flex {
     margin: 0 auto;
 }
 
-figure img {
+div.flex > ul {
+    position: relative;
+}
+
+div.flex > ul li {
+    position: absolute;
+    width: 100%;
+}
+
+div.flex > ul img {
     width: 250px;
     height: 250px;
     border-radius: 15px;
@@ -70,11 +82,11 @@ section p {
     font-size: 20px;
 }
 
-ul.flex {
+.right ul.flex {
     width: 200px;
 }
 
-a img {
+.right a img {
     width: 50px;
     height: 50px;
     border-radius: 5px;

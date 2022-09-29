@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* 作成者：荒牧直矢 */
+/* 作成日：2022/09/26 */
+/* 最終更新日：2022/09/29 */
 
 .main_visual {
     padding-top: 139px;
@@ -24,7 +27,7 @@
     height: 400px;
 }
 
-.main_visual .btn {
+.main_visual .button {
     position: absolute;
     top: 310px;
     opacity: .7;
@@ -34,7 +37,7 @@
     cursor: pointer;
 }
 
-.main_visual .btn:hover {
+.main_visual .button:hover {
     opacity: 1;
 }
 
@@ -46,7 +49,7 @@
     right: 20px;
 }
 
-.main_visual .btn img {
+.main_visual .button img {
     width: 29px;
     height: 50px;
 }
