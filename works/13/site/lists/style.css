@@ -91,3 +91,27 @@ section p {
     height: 50px;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 600px) {
+    div.flex {
+        width: 95%;
+    }
+    div.flex > ul img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .right {
+        margin-right: 10px;
+        width: 50%;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    .right ul.flex {
+        width: 100%;
+        max-width: 200px;
+    }
+}

@@ -46,7 +46,7 @@
 }
 
 #nextBtn {
-    right: 20px;
+    right: 10px;
 }
 
 .main_visual .button img {
@@ -79,9 +79,11 @@ section h2 {
     padding-bottom: 0;
 }
 
-.bg_gray:first-of-type ul {
+.bg_gray:first-of-type ul.flex {
     width: 800px;
     margin: 0 auto 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .bg_gray:first-of-type ul a {
@@ -91,7 +93,8 @@ section h2 {
     color: #666;
     padding: 0 10px;
     transition: all .5s ease;
-    border-radius: 5px;
+    min-width: 100px;
+    box-sizing: border-box;
 }
 
 .bg_gray:first-of-type ul a:hover {
@@ -242,4 +245,100 @@ section.right iframe {
 
 .bg_gray:last-of-type li a {
     line-height: 75px;
+}
+
+@media screen and (max-width: 960px) {
+    .main_visual {
+        width: 450px;
+        height: 300px;
+    }
+    
+    .main_visual ul {
+        width: 1350px;
+    }
+    
+    .main_visual li {
+        width: 450px;
+    }
+    
+    .main_visual img {
+        width: 450px;
+        height: 300px;
+    }
+    
+    .main_visual .button {
+        top: 260px;
+    }
+
+    .bg_gray:first-of-type ul.flex {
+        width: 100%;
+    }
+
+    section.right dl,
+    .bg_gray dl {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 650px;
+        display: block;
+    }
+
+    section.right dt,
+    .bg_gray dt {
+        width: 100%;
+        padding-left: 20px;
+        box-sizing: border-box;
+    }
+
+    section.right dd,
+    .bg_gray dd {
+        width: 100%;
+        padding-left: 40px;
+        box-sizing: border-box;
+    }
+
+    .bg_gray dd:last-of-type::after {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main_visual {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .main_visual ul {
+        width: 900px;
+    }
+    
+    .main_visual li {
+        width: 300px;
+    }
+    
+    .main_visual img {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .main_visual .button {
+        top: 210px;
+    }
+
+    section.right dd a {
+        word-wrap:break-word;
+        line-height: 2;
+    }
+
+    .bg_gray dl ul.flex {
+        display: block;
+    }
+
+    .bg_gray dl li {
+        width: 100%;
+        line-height: 2;
+    }
+
+    .bg_gray dd:last-of-type {
+        line-height: 2;
+    }
 }

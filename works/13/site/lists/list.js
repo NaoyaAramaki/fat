@@ -6,7 +6,7 @@ $(function(){
     var count = $("div.flex > ul li").length;
     var current = 1;
     var next = 2;
-    var interval = 3000;
+    var interval = 2000;
     var duration = 500;
     var timer;
 
