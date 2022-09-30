@@ -139,6 +139,7 @@ main ul.flex {
     margin-bottom: 50px;
     padding: 0 20px;
     box-sizing: border-box;
+    justify-content: space-evenly;
 }
 
 main li {
@@ -194,7 +195,6 @@ main li .icon::before {
     main ul.flex {
         margin-bottom: 0;
         padding: 0;
-        justify-content: space-around;
     }
 }
 
