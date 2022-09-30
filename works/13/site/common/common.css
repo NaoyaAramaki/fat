@@ -100,8 +100,8 @@ header ul a:hover {
     font-family: 'Yu Mincho', serif;
     /* ボタンの配置位置  */
     position: fixed;
-    top: 15px;
-    right: 10px;
+    top: 25px;
+    right: 25px;
     /* ボタンの大きさ  */
     width: 50px;
     height: 30px;
