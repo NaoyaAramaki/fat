@@ -518,6 +518,7 @@ h3 {
     .section3 {
         padding: 120px 30px;
         box-sizing: border-box;
+        display: none;
     }
 
     .section3 h2 {
