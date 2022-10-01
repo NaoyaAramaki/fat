@@ -61,7 +61,7 @@ header h1 {
     width: 300px;
     height: 45px;
     text-align: center;
-    background: url(../../../img/skyblue.png) center center / cover no-repeat;
+    background: url(../../../../img/skyblue.png) center center / cover no-repeat;
 }
 
 header h1 a {
