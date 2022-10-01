@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* 作成者：荒牧直矢 */
+/* 作成日：2022/09/30 */
+/* 最終更新日：2022/10/01 */
+main {
+    margin-bottom: 150px;
+}
+
+.contents1 {
+    margin-bottom: 200px;
+}
+
+.contents1 > .flex {
+    order: 2;
+}
+
+.contents1 section {
+    width: 300px;
+    text-align: center;
+}
+
+.contents1 h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.contents1 section p img {
+    width: 300px;
+    height: 450px;
+    margin-bottom: 10px;
+}
+
+.contents1 ul {
+    width: 100px;
+    margin: 30px auto 0;
+}
+
+.contents1 li {
+    margin-bottom: 10px;
+}
+
+.contents1 ul img {
+    width: 100px;
+    height: 100px;
+}
+
+.list01 {
+    order: 1;
+}
+
+.list02 {
+    order: 3;
+}
+
+.contents1 .tag {
+    margin-top: 10px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.contents1 .tag a {
+    color: #666;
+}
+
+.contents2 {
+    width: 700px;
+    margin: 0 auto 200px;
+    text-align: center;
+}
+
+.contents2 h3 {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contents2 dl {
+    flex-wrap: wrap;
+    width: 400px;
+    margin: 30px auto 0;
+    line-height: 2;
+}
+
+.contents2 dt {
+    width: 25%;
+}
+
+.contents2 dd {
+    width: 75%;
+}
+
+.contents3 h4 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contents3 .flex {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contents3 section {
+    width: 320px;
+    margin-bottom: 30px;
+}
+
+.contents3 img {
+    width: 320px;
+    height: 170px;
+}
+
+.contents3 p {
+    font-size: 13px;
+}

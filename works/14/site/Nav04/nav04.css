@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* 作成者：荒牧直矢 */
+/* 作成日：2022/09/30 */
+/* 最終更新日：2022/09/30 */
+
+main {
+    background: url(../../../img/white_gray.png) right top / 300px 500px no-repeat,
+                url(../../../img/white_gray.png) left top 600px / 300px 500px no-repeat;
+}
+
+main figure img {
+    width: 500px;
+    height: 300px;
+    display: block;
+    margin: 0 auto 100px;
+}
+
+section h2 {
+    text-align: center;
+}
+
+section dl.flex {
+    width: 500px;
+    flex-wrap: wrap;
+    margin: 0 auto 100px;
+    line-height: 45px;
+    text-align: center;
+}
+
+section dt {
+    width: 30%;
+}
+
+section dd {
+    width: 70%;
+}
+
+section iframe {
+    width: 800px;
+    height: 400px;
+    display: block;
+    margin: 0 auto 100px;
+    border: none;
+}
+
+.banner {
+    width: 1000px;
+    margin: 0 auto 100px;
+}
+
+.banner img {
+    width: 450px;
+    height: 100px;
+}

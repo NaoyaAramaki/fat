@@ -1,26 +1,10 @@
 @charset "UTF-8";
 /* 作成者：荒牧直矢 */
 /* 作成日：2022/09/26 */
-/* 最終更新日：2022/09/29 */
+/* 最終更新日：2022/09/30 */
 
 body {
     background: linear-gradient( orange, rgb(218, 218, 218), skyblue);
-}
-
-header {
-    padding: 20px 10px;
-    background: rgba(255, 165, 0, .6);
-    box-sizing: border-box;
-}
-
-header ul {
-    margin-top: 20px;
-    width: 420px;
-}
-
-header li a {
-    color: #fff;
-    text-shadow: 7px 5px 5px #fff;
 }
 
 .main_visual {
@@ -307,19 +291,38 @@ h3 {
     left: 100px;
 }
 
-@media screen and (max-width: 1000px) {
+.fadeIn {
+    opacity: 0;
+    transition: 2s;
+}
+
+.fadeIn.is-show {
+    opacity: 1;
+}
+
+@media screen and (max-width: 1100px) {
+    .main_visual figure img {
+        height: 400px;
+    }
+
+    .bg_belt {
+        height: 85px;
+    }
+
     .main_visual ul.flex {
         width: 100%;
     }
 
     .main_visual li {
         width: 20%;
-        max-width: 185px;
+        min-width: 145px;
+        top: -40px;
     }
 
     .main_visual li img {
         width: 100%;
-        max-width: 185px;
+        min-width: 150px;
+        height: 100px;
     }
 
     .contents1 {
@@ -352,6 +355,11 @@ h3 {
     .section1::after {
         border-left: 290px solid transparent;
         border-right: 290px solid transparent;
+    }
+
+    .section1 li img {
+        width: 120px;
+        height: 120px;
     }
 
     .section1 p.more {
@@ -404,5 +412,127 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
-    
+    .main_visual figure img {
+        height: 300px;
+    }
+
+    .bg_belt {
+        height: 85px;
+    }
+
+    .main_visual li {
+        min-width: 85px;
+        top: -30px;
+    }
+
+    .main_visual li img {
+        min-width: 85px;
+        height: 80px;
+    }
+
+    .contents2_right {
+        grid-template-columns: 180px 160px;
+        grid-template-rows: 125px 120px;
+        width: 350px;
+    }
+
+    .contents2_right figure:first-of-type img, .contents2_right figure:last-of-type img {
+        width: 180px;
+        height: 115px;
+    }
+
+    .contents2_right figure:nth-of-type(2) img {
+        width: 160px;
+        height: 240px;
+    }
+
+    .section1 {
+        width: 350px;
+        height: 500px;
+    }
+
+    .section1::after {
+        border-right: 175px solid transparent;
+        border-left: 175px solid transparent;
+        border-top: 85px solid rgba(147, 209, 207, .7);
+        bottom: -85px;
+        z-index: -10;
+    }
+
+    .section1 h2 {
+        margin-bottom: 10px;
+    }
+
+    .section1 ul.flex {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .section1 li {
+        margin-bottom: 30px;
+    }
+
+    .section1 p.text {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .section1 p.more {
+        position: static;
+        width: auto;
+        text-align: center;
+    }
+
+    p.more::before,
+    p.more::after {
+        display: none;
+    }
+
+    p.more a {
+        width: auto;
+        padding: 5px 5px 10px;
+        border: 1px solid #fff;
+    }
+
+    .section2 h2 {
+        width: 300px;
+        height: 100px;
+    }
+
+    .section2 figure img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .section2 .flex section {
+        margin-top: 25px;
+    }
+
+    .section2 p.more {
+        position: static;
+        width: auto;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .section3 {
+        padding: 120px 30px;
+        box-sizing: border-box;
+    }
+
+    .section3 h2 {
+        width: 300px;
+        left: -20px;
+    }
+
+    .section3 p.text {
+        position: static;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section3 p.more {
+        position: static;
+        text-align: center;
+    }
 }

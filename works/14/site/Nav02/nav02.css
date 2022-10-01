@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* 作成者：荒牧直矢 */
+/* 作成日：2022/09/30 */
+/* 最終更新日：2022/09/30 */
+
+article{
+    width: 900px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    border: 1px solid #999;
+    flex-wrap: wrap;
+    position: relative;
+    height: 800px;
+}
+
+article figure:first-of-type {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+}
+
+article figure:first-of-type img {
+    width: 580px;
+    height: 525px;
+}
+
+section {
+    width: 480px;
+    height: 360px;
+    background: rgba(255, 255, 255, .9);
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 30px;
+}
+
+section .note {
+    margin: 1em 0;
+    text-align: left;
+}
+
+section .note::before {
+    content: "※";
+    margin-right: 5px;
+}
+
+
+article figure:last-of-type {
+    position: absolute;
+    bottom: -35px;
+    right: -35px;
+}
+
+article figure:last-of-type img {
+    width: 560px;
+    height: 350px;
+}
+
+dl {
+    width: 300px;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+    line-height: 3;
+    text-align: center;
+}
+
+dt {
+    width: 25%;
+    border-right: 1px solid #999;
+    box-sizing: border-box;
+}
+
+dd {
+    width: 75%;
+}
+
+.contents2 figure:first-of-type {
+    right: -40px;
+    left: auto;
+}
+
+.contents2 section {
+    right: auto;
+    left: 50px;
+}
+
+.contents2 figure:last-of-type {
+    right: auto;
+    left: -35px;
+}
+
+.contents2 dl {
+    left: auto;
+    right: 40px;
+}

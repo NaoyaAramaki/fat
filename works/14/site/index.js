@@ -1,6 +1,6 @@
 // 作成者：荒牧直矢
 // 作成日：2022/09/29
-// 最終更新日：2022/09/29
+// 最終更新日：2022/09/30
 $(function(){
     var img01 = "../../img/gray.png";
     var img02 = "../../img/green.png";
@@ -28,8 +28,20 @@ $(function(){
     $("body, .bg_belt").ripples({
         dropRadius: 10, //波紋の大きさ
         resolution: 600, //波紋の広がり速度
-        perturbance: 0.001 //波紋のブレ        
+        perturbance: 0.001 //波紋のブレ
     })
 
+    $(".main_visual ul a").click(function(){
+        $(this).attr("href");
+        $(".main_visual figure img").attr("src", $(this).attr("href"));
+        return false;
+    })
 
+    $(".fadeIn").on("inview", function (event, isInView) {
+      if (isInView) {
+        $(this).stop().addClass("is-show");
+      } else {
+        $(this).stop().removeClass("is-show");
+      }
+    });
 });
