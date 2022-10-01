@@ -1,5 +1,111 @@
 @charset "UTF-8";
 /* 作成者：荒牧直矢 */
-/* 作成日：2022/09/30 */
-/* 最終更新日：2022/09/30 */
+/* 作成日：2022/10/02 */
+/* 最終更新日：2022/10/02 */
+a, input, textarea, select {
+    outline: none;
+}
 
+.main_visual {
+    margin-bottom: 50px;
+}
+
+.contents1 {
+    text-align: center;
+    padding: 45px 75px;
+    box-sizing: border-box;
+    border: 5px solid rgba(224, 123, 51, .6);
+    margin-bottom: 100px;
+}
+
+.contents1 h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contents1 .tel a{
+    color: #666;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contents1 .tel a:before {
+    content: "Tel:";
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.business_hours {
+    margin-bottom: 10px;
+}
+
+.business_hours::after {
+    content: "※TextTextTextTextText";
+    display: block;
+}
+
+.progress {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.progress li {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 30px;
+    border: rgba(224, 123, 51, .6) 1px solid;
+    font-size: 14px;
+    line-height: 75px;
+}
+
+.progress li:first-of-type {
+    background: rgba(224, 123, 51, .3);
+}
+
+.contact_choices {
+    width: 800px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.contact_choices li {
+    border: 1px rgba(224, 123, 51, .6) solid;
+    border-right: none;
+}
+
+.contact_choices li:last-of-type {
+    border-right: 1px rgba(224, 123, 51, .6) solid;
+}
+
+.contact_choices a {
+    line-height: 65px;
+    width: 200px;
+    color: #666;
+    transition: all .3s ease;
+}
+
+.contact_choices .current {
+    background: rgba(224, 123, 51, .3);
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+.contact_choices a:hover {
+    background: rgba(224, 123, 51, .3);
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}
+
+dl.flex {
+    flex-wrap: wrap;
+}
+
+dt {
+    width: 30%;
+}
+
+dd {
+    width: 70%;
+}

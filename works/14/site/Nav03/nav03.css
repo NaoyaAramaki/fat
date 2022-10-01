@@ -2,4 +2,24 @@
 /* 作成者：荒牧直矢 */
 /* 作成日：2022/09/30 */
 /* 最終更新日：2022/09/30 */
+main {
+    margin-bottom: 150px;
+}
+figure {
+    width: 760px;
+    margin: 0 auto 50px;
+    position: relative;
+}
 
+figure img {
+    width: 760px;
+    height: 280px;
+}
+
+figcaption {
+    position: absolute;
+    top: 110px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px #999;
+}

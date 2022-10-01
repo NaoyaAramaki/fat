@@ -523,6 +523,7 @@ h3 {
     .section3 h2 {
         width: 300px;
         left: -20px;
+        right: auto;
     }
 
     .section3 p.text {
