@@ -167,17 +167,28 @@ input[type="submit"] {
 
 
 
-
-
-
-
-
-
-
 #confirm .progress li:nth-of-type(2) {
     background: rgba(224, 123, 51, .3);
 }
 
+#confirm .sendBtn {
+    margin-top: 30px;
+}
+
+#confirm .toPrevPage,
+#confirm input[type="submit"] {
+    width: 45%;
+}
+
+#confirm .toPrevPage {
+    text-align: center;
+}
+
+#confirm .toPrevPage a {
+    padding: 15px 0;
+    color: #666;
+    background: #f0f0f0;
+}
 
 
 #complete .progress li:last-of-type {

@@ -101,7 +101,7 @@ main {
 
 .contents3 section {
     width: 320px;
-    margin-bottom: 30px;
+    margin: 0 30px 30px;
 }
 
 .contents3 img {
