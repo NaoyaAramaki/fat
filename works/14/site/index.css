@@ -291,14 +291,14 @@ h3 {
     left: 100px;
 }
 
-/* .fadeIn {
+.fadeIn {
     opacity: 0;
     transition: 2s;
 }
 
 .fadeIn.is-show {
     opacity: 1;
-} */
+}
 
 @media screen and (max-width: 1100px) {
     .main_visual figure img {
