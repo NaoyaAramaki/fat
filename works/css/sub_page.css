@@ -98,6 +98,7 @@ h3 {
 @media screen and (max-width: 600px) {
     .thumbnails p:first-of-type img {
         width: 100%;
+        height: auto;
     }
 
     div:last-of-type {

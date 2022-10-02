@@ -209,7 +209,7 @@ nav.open {
 
 .main_visual {
     margin-top: 110px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     background-color: transparent;
     height: 300px;
     position: relative;
@@ -269,7 +269,6 @@ footer p {
     .main_visual {
         margin-top: 90px;
         height: 200px;
-        margin-bottom: 80px;
     }
 
     .main_visual p {
@@ -331,7 +330,6 @@ footer p {
     .main_visual {
         margin-top: 70px;
         height: 150px;
-        margin-bottom: 60px;
     }
 
     .main_visual p {
