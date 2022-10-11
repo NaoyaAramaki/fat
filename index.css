@@ -121,6 +121,11 @@ main > div::before {
     margin-bottom: 1em;
 }
 
+.profile_right p:nth-of-type(3) {
+    /* お問い合わせ非表示 */
+    display: none;
+}
+
 #works .flex {
     flex-wrap: wrap;
     justify-content: space-around;
@@ -145,7 +150,9 @@ main > div::before {
 }
 
 #inquiry {
-    margin: 75px 0 50px;
+    /* お問い合わせ非表示 */
+    display: none;
+    margin-top: 75px;
 }
 
 h2 {

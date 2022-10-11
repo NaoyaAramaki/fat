@@ -68,13 +68,27 @@ header .inner {
 }
 
 header ul {
-    width: 390px;
+    /* お問い合わせ非表示 */
+    /* width: 390px; */
+    width: 400px;
     margin-top: 30px;
 }
 
 header li {
-    width: 130px;
+    /* お問い合わせ非表示 */
+    /* width: 130px; */
+    width: 200px;
     text-align: center;
+}
+
+/* お問い合わせ非表示 */
+header li:last-of-type {
+    display: none;
+}
+
+/* お問い合わせ非表示 */
+header li:nth-of-type(2) a {
+    border-right: 1px solid #999;
 }
 
 header li a {
@@ -232,6 +246,10 @@ nav.open {
     margin-top: -230px;
 }
 
+footer {
+    margin-top: 50px;
+}
+
 footer p {
     text-align: center;
     line-height: 8;
@@ -255,7 +273,9 @@ footer p {
     }
 
     header li {
-        width: 100px;
+        /* お問い合わせ非表示 */
+        /* width: 100px; */
+        width: 150px;
     }
 
     header li a {
@@ -321,6 +341,11 @@ footer p {
 
     header li:last-of-type a {
         border: none;
+    }
+
+    /* お問い合わせ非表示 */
+    header li:nth-of-type(2) a {
+        border-right: none;
     }
 
     .btn {
