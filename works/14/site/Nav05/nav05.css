@@ -2,13 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
 /* 作成者：荒牧直矢 */
 /* 作成日：2022/10/02 */
-/* 最終更新日：2022/10/02 */
+/* 最終更新日：2022/10/15 */
 a, input, textarea, select {
     outline: none;
 }
 
 .main_visual {
     margin-bottom: 50px;
+}
+
+.note {
+    word-wrap: break-word;
 }
 
 .contents1 {
@@ -74,6 +78,7 @@ a, input, textarea, select {
 .contact_choices li {
     border: 1px rgba(224, 123, 51, .6) solid;
     border-right: none;
+    box-sizing: border-box;
 }
 
 .contact_choices li:last-of-type {
@@ -127,6 +132,7 @@ input, select, textarea, iframe {
     font-family: 'Shippori Mincho B1', -apple-system, BlinkMacSystemFont, Arial, "Helvetica Neue", "ＭＳ Ｐゴシック", YuGothic, "ヒラギノ角ゴ Pro N W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif, serif;
     font-size: 16px;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 ::placeholder {
@@ -164,9 +170,6 @@ input[type="submit"] {
     font-size: 16px;
 }
 
-
-
-
 #confirm .progress li:nth-of-type(2) {
     background: rgba(224, 123, 51, .3);
 }
@@ -190,7 +193,6 @@ input[type="submit"] {
     background: #f0f0f0;
 }
 
-
 #complete .progress li:last-of-type {
     background: rgba(224, 123, 51, .3);
 }
@@ -200,4 +202,73 @@ input[type="submit"] {
     width: 800px;
     margin: 0 auto 100px;
     word-break: break-all;
+}
+
+@media screen and (max-width: 1100px) {
+    .contents1 {
+        margin-bottom: 75px;
+    }
+
+    .contact_choices {
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .contact_choices li {
+        width: 50%;
+    }
+
+    .contact_choices li:first-of-type {
+        border-bottom: none;
+    }
+
+    .contact_choices li:nth-of-type(2) {
+        border-bottom: none;
+        border-right: 1px rgba(224, 123, 51, .6) solid;
+    }
+    
+    .contact_choices a {
+        width: 100%;
+    }
+
+    dl.flex {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        display: block;
+    }
+
+    dt {
+        width: 100%;
+        line-height: 1;
+    }
+
+    dl dl dt {
+        margin-top: 20px;
+    }
+
+    dd {
+        width: 100%;
+        line-height: 1.5;
+    }
+
+    form > dl > dd {
+        margin-bottom: 40px;
+    }
+
+    textarea, iframe {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contents1 {
+        margin-bottom: 50px;
+    }
+
+    form > dl:last-of-type label {
+        word-wrap: break-word;
+    }
 }

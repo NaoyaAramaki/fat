@@ -26,8 +26,32 @@ body {
     width: 600px;
     margin: 0 auto 100px;
     text-align: center;
+    word-wrap: break-word;
 }
 
 footer {
     color: #fff;
+}
+
+@media screen and (max-width: 1100px) {
+    .main_visual {
+        margin-bottom: 75px;
+    }
+
+    .main_top {
+        padding: 0 20px;
+        box-sizing: border-box;
+        margin-bottom: 75px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main_visual {
+        margin-bottom: 50px;
+    }
+
+    .main_top {
+        width: 100%;
+        margin-bottom: 50px;
+    }
 }

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* 作成者：荒牧直矢 */
 /* 作成日：2022/09/30 */
-/* 最終更新日：2022/10/01 */
+/* 最終更新日：2022/10/15 */
 main {
     margin-bottom: 150px;
 }
@@ -28,6 +28,10 @@ main {
     width: 300px;
     height: 450px;
     margin-bottom: 10px;
+}
+
+.contents1 section p:nth-of-type(2) {
+    word-wrap: break-word;
 }
 
 .contents1 ul {
@@ -73,6 +77,10 @@ main {
     margin-bottom: 30px;
 }
 
+.contents2 p {
+    word-wrap: break-word;
+}
+
 .contents2 dl {
     flex-wrap: wrap;
     width: 400px;
@@ -111,4 +119,63 @@ main {
 
 .contents3 p {
     font-size: 13px;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 1100px) {
+    main {
+        margin-bottom: 100px;
+    }
+
+    .contents1.flex {
+        display: block;
+    }
+
+    .contents1 > .flex {
+        order: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contents1 .list01,
+    .contents1 .list02 {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .contents1 section {
+        width: 50%;
+    }
+
+    .contents1 section p img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2/3;
+    }
+
+    .contents1 section p:nth-of-type(2) {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .contents2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        margin-bottom: 50px;
+    }
+
+    .contents1 .list01, .contents1 .list02 {
+        overflow: hidden;
+        justify-content: flex-start;
+    }
+
+    .contents2 dl {
+        width: 100%;
+    }
 }
