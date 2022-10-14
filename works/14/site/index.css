@@ -327,6 +327,7 @@ h3 {
 
     .contents1 {
         display: none;
+        position: static;
     }
 
     .contents1 .bg_white {
