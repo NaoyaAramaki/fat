@@ -252,6 +252,7 @@ input[type="submit"] {
     dd {
         width: 100%;
         line-height: 1.5;
+        margin-top: 10px;
     }
 
     form > dl > dd {
