@@ -335,6 +335,7 @@ h3 {
         width: 100%;
     }
 
+    .contents1 .bg_white img,
     .contents1 > figure img {
         width: 100%;
     }
