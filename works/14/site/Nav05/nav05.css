@@ -49,9 +49,10 @@ a, input, textarea, select {
     display: block;
 }
 
-.progress {
+.progress.flex {
     width: 300px;
     margin: 0 auto;
+    justify-content: space-evenly;
 }
 
 .progress li {
@@ -63,6 +64,10 @@ a, input, textarea, select {
     border: rgba(224, 123, 51, .6) 1px solid;
     font-size: 14px;
     line-height: 75px;
+}
+
+.progress li:nth-of-type(2) {
+    display: none;
 }
 
 #input_form .progress li:first-of-type {
@@ -168,6 +173,13 @@ input[type="submit"] {
     padding: 15px 0;
     margin-bottom: 30px;
     font-size: 16px;
+}
+
+.is_error {
+    color: #f00;
+    padding: 0 20px;
+    line-height: 2;
+    margin-bottom: 20px;
 }
 
 /* #confirm .progress li:nth-of-type(2) {
