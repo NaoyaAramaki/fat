@@ -3,7 +3,7 @@
 /* 作成日：2022/09/30 */
 /* 最終更新日：2022/10/15 */
 
-article{
+main > div{
     width: 900px;
     margin: 0 auto 150px;
     border: 1px solid #999;
@@ -12,13 +12,13 @@ article{
     height: 800px;
 }
 
-article figure:first-of-type {
+main > div figure:first-of-type {
     position: absolute;
     top: -40px;
     left: -40px;
 }
 
-article figure:first-of-type img {
+main > div figure:first-of-type img {
     width: 580px;
     height: 525px;
 }
@@ -53,13 +53,13 @@ section .note::before {
 }
 
 
-article figure:last-of-type {
+main > div figure:last-of-type {
     position: absolute;
     bottom: -35px;
     right: -35px;
 }
 
-article figure:last-of-type img {
+main > div figure:last-of-type img {
     width: 560px;
     height: 350px;
 }
@@ -109,7 +109,7 @@ dd {
         margin-bottom: 100px;
     }
     
-    article.flex {
+    main > div.flex {
         display: block;
         width: 100%;
         height: auto;
@@ -117,12 +117,12 @@ dd {
         margin-bottom: 100px;
     }
     
-    article figure:first-of-type,
-    article figure:last-of-type {
+    main > div figure:first-of-type,
+    main > div figure:last-of-type {
         position: static;
     }
 
-    article figure:first-of-type img {
+    main > div figure:first-of-type img {
         width: 100%;
         height: auto;
         aspect-ratio: 9/8;
@@ -131,7 +131,7 @@ dd {
         margin: 0 auto;
     }
 
-    article figure:last-of-type img {
+    main > div figure:last-of-type img {
         width: 100%;
         height: auto;
         aspect-ratio: 11/7;
@@ -161,7 +161,7 @@ dd {
         margin-bottom: 50px;
     }
 
-    article:last-of-type {
+    main > div:last-of-type {
         margin-bottom: 50px;
     }
 }
