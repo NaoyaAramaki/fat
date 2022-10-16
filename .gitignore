@@ -1,0 +1,4 @@
+# work15のnode_modulesフォルダ以下全てを除外
+works/**/node_modules/
+works/**/node_modules copy/
+works/**/package-lock.json

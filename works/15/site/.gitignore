@@ -1,3 +1,0 @@
-# work15のnode_modulesフォルダ以下全てを除外
-node_modules/
-package-lock.json
