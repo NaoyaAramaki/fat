@@ -1,22 +1,14 @@
-
+/* ==========================================================================
+  作成者    ：荒牧直矢
+  作成日    ：2022/10/16
+  最終更新日：2022/10/16
+============================================================================*/
 // Box sizing rules
 *,
 *::before,
 *::after {
   box-sizing: border-box; 
 }
-
-// Remove default padding
-// ul[class],
-// ol[class] {
-//   padding: 0;
-// }
-ul,
-ol {
-  padding: 0;
-  list-style: none;
-}
-
 
 // Remove default margin
 body,
@@ -34,6 +26,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  padding: 0;
 }
 
 // Set core body defaults
@@ -44,9 +37,10 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1;
   position: relative;
-  font-family: 'Noto Sans JP';
+  font-family: YuMincho, 'Yu Mincho', -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Arial, "メイリオ", Meiryo, sans-serif;
   min-width: 1320px;
-  color: #222;
+  color: #666;
+  background: #fff;
 
   @include sp {
     min-width: auto;
