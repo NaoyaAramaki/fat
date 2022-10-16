@@ -10,11 +10,11 @@ gulp.task("scss", () => {
   // style.scssファイルを取得
   return (
     gulp
-      .src("scss/*.scss")
+      .src("/site/common/scss/style.scss")
       // Sassのコンパイルを実行
       .pipe(sass())
       // cssフォルダー以下に保存
-      .pipe(gulp.dest("css"))
+      .pipe(gulp.dest("/site/common/"))
   );
 });
 //リロードの監視用
@@ -24,9 +24,9 @@ gulp.task('bs-reload', function(done) {
 });
 //ファイルの変更を監視
 gulp.task('watch',(done) => {
-  gulp.watch('**/*.scss',gulp.series('scss','bs-reload'));
-  gulp.watch('**/*.html',gulp.series('bs-reload'));
-  gulp.watch('**/*.js',gulp.series('bs-reload'));
+  gulp.watch('/site/common/**/*.scss',gulp.series('scss','bs-reload'));
+  gulp.watch('/site/common/**/*.html',gulp.series('bs-reload'));
+  gulp.watch('/site/common/**/*.js',gulp.series('bs-reload'));
   done();
 });
 //ブラウザシンク設定
