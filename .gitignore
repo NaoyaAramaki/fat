@@ -1,0 +1,2 @@
+# work15のnode_modulesフォルダ以下全てを除外
+/fat/works/15/site/node_modules/
