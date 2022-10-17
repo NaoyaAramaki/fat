@@ -66,9 +66,9 @@ a, input, textarea, select {
     line-height: 75px;
 }
 
-.progress li:nth-of-type(2) {
+/* .progress li:nth-of-type(2) {
     display: none;
-}
+} */
 
 #input_form .progress li:first-of-type {
     background: rgba(224, 123, 51, .3);
