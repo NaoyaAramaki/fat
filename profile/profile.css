@@ -78,9 +78,17 @@
     width: 600px;
 }
 
+.work_experience {
+    margin-bottom: 15px;
+}
+
+.work_experience h3 {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
 .detail_right dl {
     flex-wrap: wrap;
-    margin: 10px 0;
 }
 
 .detail_right dd {
@@ -246,9 +254,9 @@
         font-size: .9em;
     }
 
-    .detail_right dl {
+    .work_experience {
         width: 530px;
-        margin: 20px auto;
+        margin: 15px auto;
     }
 
     .detail_right h3,
@@ -315,9 +323,12 @@
         justify-content: space-around;
     }
 
+    .work_experience {
+        width: 100%;
+    }
+
     .detail_right dl {
         display: block;
-        width: 100%;
         text-align: center;
     }
 
