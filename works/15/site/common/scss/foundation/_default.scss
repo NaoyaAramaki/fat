@@ -12,19 +12,12 @@
 
 // Remove default margin
 body,
-h1,
-h2,
-h3,
-h4,
+h1,h2,h3,h4,
 p,
-ul,
-ol,
-li,
-figure,
-figcaption,
+ul,ol,li,
+figure,figcaption,
 blockquote,
-dl,
-dd {
+dl,dd {
   margin: 0;
   padding: 0;
 }
