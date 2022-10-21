@@ -5,66 +5,24 @@ $spacePadding: false;
 
 $spaceClass: true !default;
 $marginEndValue: 100 !default;
+$listDirection: (top mt)(right mr)(bottom mb)(left ml);
 
 @if $spaceClass {
-	@for $i from 0 through $marginEndValue {
-		.u-mt#{$i * 5} {
-			margin-top: #{$i * 5}px !important;
+	@each $direction in $listDirection {
+		@for $i from 0 through $marginEndValue {
+			.u-#{nth($direction, 2)}#{$i * 5} {
+				margin-#{nth($direction, 1)}: #{$i * 5}px !important;
 
-			&--pc {
-				@include pc {
-					margin-top: #{$i * 5}px !important;
+				&--pc {
+					@include pc {
+						margin-#{nth($direction, 1)}: #{$i * 5}px !important;
+					}
 				}
-			}
 
-			&--sp {
-				@include sp {
-					margin-top: #{$i * 5}px !important;
-				}
-			}
-		}
-		.u-mr#{$i * 5} {
-			margin-right: #{$i * 5}px !important;
-
-			&--pc {
-				@include pc {
-					margin-right: #{$i * 5}px !important;
-				}
-			}
-
-			&--sp {
-				@include sp {
-					margin-right: #{$i * 5}px !important;
-				}
-			}
-		}
-		.u-mb#{$i * 5} {
-			margin-bottom: #{$i * 5}px !important;
-
-			&--pc {
-				@include pc {
-					margin-bottom: #{$i * 5}px !important;
-				}
-			}
-
-			&--sp {
-				@include sp {
-					margin-bottom: #{$i * 5}px !important;
-				}
-			}
-		}
-		.u-ml#{$i * 5} {
-			margin-left: #{$i * 5}px !important;
-
-			&--pc {
-				@include pc {
-					margin-left: #{$i * 5}px !important;
-				}
-			}
-
-			&--sp {
-				@include sp {
-					margin-left: #{$i * 5}px !important;
+				&--sp {
+					@include sp {
+						margin-#{nth($direction, 1)}: #{$i * 5}px !important;
+					}
 				}
 			}
 		}
