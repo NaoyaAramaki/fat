@@ -1,4 +1,3 @@
-# work15のnode_modulesフォルダ以下全てを除外
-works/**/node_modules/
-works/**/gulpfile.js
-works/**/package-lock.json
+node_modules/
+gulpfile.js
+package-lock.json
