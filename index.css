@@ -126,6 +126,52 @@ main > div::before {
     display: none;
 }
 
+#news {
+    margin-top: 50px;
+}
+
+#news h2::after {
+    content: "お知らせ";
+}
+
+#news dl {
+    flex-wrap: wrap;
+    width: 500px;
+    margin: 0 auto;
+    line-height: 2.5;
+}
+
+#news dt {
+    width: 150px;
+    border-bottom: 1px solid #999;
+    font-weight: bold;
+}
+
+#news dd {
+    width: 350px;
+    border-bottom: 1px solid #999;
+}
+
+#news a {
+    position: relative;
+    transition: all .3s ease;
+}
+
+#news a:hover {
+    opacity: .7;
+}
+
+#news a:hover::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #aaa;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
 #works .flex {
     flex-wrap: wrap;
     justify-content: space-around;
@@ -332,5 +378,21 @@ h2::after {
         height: auto;
         display: block;
         margin: 0 auto;
+    }
+
+    #news dl {
+        display: block;
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    #news dt {
+        width: 100%;
+    }
+
+    #news dd {
+        width: 100%;
     }
 }
