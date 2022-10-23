@@ -17,15 +17,15 @@ $(function(){
         
         switch($(this).text()) {
             case choice1:
-                $(".choice1").css("display", "block");
+                $(".choice1").css("display", "flex");
                 $(this).addClass("current");
                 break;
             case choice2:
-                $(".choice2").css("display", "block");
+                $(".choice2").css("display", "flex");
                 $(this).addClass("current");
                 break;
             case choice3:
-                $(".choice3").css("display", "block");
+                $(".choice3").css("display", "flex");
                 $(this).addClass("current");
                 break;
             case choice4:
