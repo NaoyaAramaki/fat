@@ -9,6 +9,7 @@ const browserSync = require("browser-sync"); //ブラウザリロード
 const paths = {
   'scss': 'common/scss/**/*.scss',
   'css': 'common/css/',
+  'html': '**/*.html',
 };
 
 /**
@@ -59,7 +60,7 @@ const browserSyncReload = (done) => {
  * watch('監視するファイル',処理)
  */
 const watchFiles = () => {
-  gulp.watch(paths.scss, gulp.series(cssSass, browserSyncReload))
+  gulp.watch([paths.scss, paths.html], gulp.series(cssSass, browserSyncReload))
 }
 
 /**
