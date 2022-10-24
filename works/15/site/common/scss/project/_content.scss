@@ -29,6 +29,18 @@
             display: flex;
             flex-direction: column;
         }
+
+        &--section04 {
+            background: #D4F4FA;
+            width: 265px;
+            height: 240px;
+            padding: 20px 15px 50px 50px;
+
+            &:last-of-type {
+                width: 285px;
+                padding-right: 40px;
+            }
+        }
     }
 
     &__heading {
@@ -50,6 +62,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        &--section04 {
+            height: 60px;
         }
     }
 
@@ -137,5 +153,11 @@
             width: 60%;
             color: #fff;
         }
+    }
+
+    &__link {
+        display: inline;
+        color: $fontColor;
+        text-decoration: underline;
     }
 }

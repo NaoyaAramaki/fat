@@ -283,7 +283,7 @@ html {
   background: #fff;
 }
 .l-header-logo {
-  background: url(/fat/works/img/white_gray.png) center center/cover no-repeat;
+  background: url(/fat/works/img/gray.png) center center/cover no-repeat;
   width: 378px;
   height: 43px;
   margin: 30px 0 13px;
@@ -437,6 +437,16 @@ html {
   display: flex;
   flex-direction: column;
 }
+.p-content__item--section04 {
+  background: #D4F4FA;
+  width: 265px;
+  height: 240px;
+  padding: 20px 15px 50px 50px;
+}
+.p-content__item--section04:last-of-type {
+  width: 285px;
+  padding-right: 40px;
+}
 .p-content__heading {
   font-size: 2rem;
   line-height: 1.5;
@@ -455,6 +465,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.p-content__heading--section04 {
+  height: 60px;
 }
 .p-content__figure--section01 {
   margin-bottom: 20px;
@@ -523,6 +536,11 @@ html {
   padding-left: 30px;
   width: 60%;
   color: #fff;
+}
+.p-content__link {
+  display: inline;
+  color: #222;
+  text-decoration: underline;
 }
 
 .u-align--left {
