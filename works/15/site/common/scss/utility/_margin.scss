@@ -1,14 +1,14 @@
 @charset 'utf-8';
 
-$spaceClass: false;
-$spacePadding: false;
+// marginを使う場合: コメントアウト
+// $spaceClass: false;
 
 $spaceClass: true !default;
 $marginEndValue: 100 !default;
-$listDirection: (top mt)(right mr)(bottom mb)(left ml);
+$marginDirection: (top mt)(right mr)(bottom mb)(left ml);
 
 @if $spaceClass {
-	@each $direction in $listDirection {
+	@each $direction in $marginDirection {
 		@for $i from 0 through $marginEndValue {
 			.u-#{nth($direction, 2)}#{$i * 5} {
 				margin-#{nth($direction, 1)}: #{$i * 5}px !important;
@@ -48,70 +48,31 @@ $listDirection: (top mt)(right mr)(bottom mb)(left ml);
 /************************************
 padding調整
 ************************************/	
+// paddingを使う場合: コメントアウト
+$spacePadding: false;
+
 $spacePadding: true !default;
 $paddingEndValue: 50 !default;
+$paddingDirection: (top pt)(right pr)(bottom pb)(left pl);
 
 @if $spacePadding {
-	@for $i from 0 through $paddingEndValue {
-		.u-pt#{$i * 5} {
-			padding-top: #{$i * 5}px !important;
+	@each $direction in $paddingDirection{
+		@for $i from 0 through $paddingEndValue {
+			.u-#{nth($direction, 2)}#{$i * 5} {
+				padding-#{nth($direction, 1)}: #{$i * 5}px !important;
 	
-			&--pc {
-				@include pc {
-					padding-top: #{$i * 5}px !important;
+				&--pc {
+					@include pc {
+						padding-#{nth($direction, 1)}: #{$i * 5}px !important;
+					}
 				}
-			}
 	
-			&--sp {
-				@include sp {
-					padding-top: #{$i * 5}px !important;
-				}
-			}
-		}
-		.u-pr#{$i * 5} {
-			padding-right: #{$i * 5}px !important;
-	
-			&--pc {
-				@include pc {
-					padding-right: #{$i * 5}px !important;
-				}
-			}
-	
-			&--sp {
-				@include sp {
-					padding-right: #{$i * 5}px !important;
+				&--sp {
+					@include sp {
+						padding-#{nth($direction, 1)}: #{$i * 5}px !important;
+					}
 				}
 			}
 		}
-		.u-pb#{$i * 5} {
-			padding-bottom: #{$i * 5}px !important;
-	
-			&--pc {
-				@include pc {
-					padding-bottom: #{$i * 5}px !important;
-				}
-			}
-	
-			&--sp {
-				@include sp {
-					padding-bottom: #{$i * 5}px !important;
-				}
-			}
-		}
-		.u-pl#{$i * 5} {
-			padding-left: #{$i * 5}px !important;
-	
-			&--pc {
-				@include pc {
-					padding-left: #{$i * 5}px !important;
-				}
-			}
-	
-			&--sp {
-				@include sp {
-					padding-left: #{$i * 5}px !important;
-				}
-			}
-		}
-	}		
+	}
 }

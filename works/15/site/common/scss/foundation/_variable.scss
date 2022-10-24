@@ -1,4 +1,14 @@
-//テキストカラー
+// font-family
+$unique: "Noto Sans JP";
+$apple: -apple-system, BlinkMacSystemFont;
+$eu: "Helvetica Neue", Arial;
+$mincho: YuMincho, 'Yu Mincho';
+$gothic: YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+$fontFamily: $unique, $apple, $eu, $mincho, $gothic;
 
+// color
+$fontColor: #222;
+$bgColor: #fff;
 
 // ブレイクポイント
+$BP: 769px;

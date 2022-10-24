@@ -2,6 +2,10 @@
     display: flex;
     justify-content: space-between;
     box-shadow: 0px 5px 8px 0px rgba($color: #000000, $alpha: .1);
+    position: fixed;
+    width: 100%;
+    @include z-index(header);
+    background: $bgColor;
 
     &-logo {
         background: url(/fat/works/img/white_gray.png) center center / cover no-repeat;
@@ -36,6 +40,11 @@
 
         &__item {
             border-left: 1px solid #e6e6e6;
+
+            &:hover {
+                opacity: .7;
+                background: rgba($color: #edf7f6, $alpha: .8);
+            }
         }
 
         &__link {
@@ -50,6 +59,32 @@
             width: 32px;
             height: 32px;
             margin: 0 auto 10px;
+        }
+
+        &__count {
+            position: relative;
+
+            @include sp {
+                width: fit-content;
+                margin: 0 auto;
+            }
+
+            &::after {
+                content: "0";
+                position: absolute;
+                top: -5px;
+                right: 10px;
+                width: 20px;
+                height: 20px;
+                padding: 3px;
+                border-radius: 50%;
+                background: #E56A54;
+                color: #fff;
+
+                @include sp {
+                    right: -10px;
+                }
+            }
         }
     }
 }

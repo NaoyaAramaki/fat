@@ -1,0 +1,25 @@
+.c-heading {
+    font-size: 3.6rem;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before, &::after {
+        content: "";
+        display: inline-block;
+        background: url(/fat/works/img/yellow_green.png);
+        width: 82px;
+        height: 18px;
+    }
+
+    &::before {
+        margin-right: 30px;
+    }
+
+    &::after {
+        margin-left: 30px;
+    }
+}

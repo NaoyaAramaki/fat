@@ -1,0 +1,23 @@
+.c-button {
+    width: 520px;
+    height: 56px;
+    margin: 0 auto;
+    border-radius: 28px;
+    background: #00bfb3;
+    font-size: 1.6rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba($color: #000000, $alpha: .1);
+    transition: opacity .3s ease;
+
+    &:hover {
+        opacity: .7;
+    }
+
+    &__link {
+        color: #fff;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

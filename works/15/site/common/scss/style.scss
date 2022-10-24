@@ -1,17 +1,22 @@
 // foundation
+@import 'foundation/_variable';
 @import 'foundation/_mixin';
 @import 'foundation/_default';
-@import 'foundation/_variable';
 
 // component
+@import 'component/_button';
 @import 'component/_globalNav';
 @import 'component/_hamburger';
+@import 'component/_heading';
 
 // layout
+@import 'layout/_section';
 @import 'layout/_header';
+@import 'layout/_kv';
+@import 'layout/_main';
 
 // project
-@import 'project/_test';
+@import 'project/_content';
 
 
 // utility

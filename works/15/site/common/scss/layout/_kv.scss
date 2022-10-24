@@ -1,0 +1,58 @@
+.l-kv {
+    background: url(/fat/works/img/skyblue.png) center center / cover no-repeat;
+    height: 450px;
+    padding-top: 86px;
+    box-sizing: content-box;
+
+    &-catch {
+        width: 1080px;
+        margin: 0 auto;
+        font-weight: bold;
+        line-height: 1.5;
+        padding-top: 120px;
+        position: relative;
+        padding-left: 65px;
+
+        &--green {
+            color: #8bc713;
+        }
+
+        &__text1 {
+            font-size: 3rem;
+        }
+
+        &__text2 {
+            font-size: 4rem;
+        }
+
+        &__text3 {
+            line-height: 1;
+            font-size: 6rem;
+            color: #8bc713;
+            -webkit-text-stroke: 2.5px #fff;
+        }
+
+        &__text4 {
+            line-height: 1.5;
+            color: #318f98;
+            width: 120px;
+            height: 120px;
+            font-size: 1.7rem;
+            border-radius: 50%;
+            background: #fff;
+            text-align: center;
+            padding-top: 30px;
+            position: absolute;
+            top: 90px;
+            right: 375px;
+        }
+
+        &__image {
+            width: 180px;
+            height: 380px;
+            position: absolute;
+            top: 35px;
+            right: 50px;
+        }
+    }
+}
