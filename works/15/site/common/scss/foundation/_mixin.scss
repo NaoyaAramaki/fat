@@ -10,114 +10,114 @@
   }
 }
 
-// 行間調整
-@mixin fontLineMargin($fts, $lin, $mt: 0, $mr: 0, $mb: 0, $ml: 0) {
-  $rem: $fts / 10;
-  $lh: $lin / $fts;
-  $nm: ( ($lh * $fts) - $fts) / 2;
-  font-size: #{$rem}rem;
-  line-height: $lh ;
-  margin: #{$mt - $nm}px #{$mr}px #{$mb - $nm}px #{$ml}px;
-}
-
-@mixin fontLinePadding($fts, $lin, $pt: 0, $pr: 0, $pb: 0, $pl: 0) {
-  $rem: $fts / 10;
-  $lh: $lin / $fts;
-  $nm: ( ($lh * $fts) - $fts) / 2;
-  font-size: #{$rem}rem;
-  line-height: $lh ;
-  padding: #{$pt - $nm}px #{$pr}px #{$pb - $nm}px #{$pl}px;
-}
-
-// border
-@mixin border{
-  border-width: 1px;
-  border-style:solid;
-}
-
-// 文字リンクカラー
-$normal: #f00;
-$hover: lighten($normal, 30%);
-$visited: darken($normal, 30%);
-@mixin link-color($n: $normal, $h: $hover, $v: $visited) {
-  color: $n;
-  &:hover {
-    color: $h;
-    text-decoration: none;
-  }
-  &:visited {
-    color: $v;
-  }
-}
-
 // z-index使い分け
 $layer: (
   modal   : 100,
   header  : 20,
   ctaBtn  : 10,
+  triangle: 5,
   default : 1,
 );
 @mixin z-index($key) {
   z-index: map-get($map: $layer, $key: $key);
 }
 
+// // 行間調整
+// @mixin fontLineMargin($fts, $lin, $mt: 0, $mr: 0, $mb: 0, $ml: 0) {
+//   $rem: $fts / 10;
+//   $lh: $lin / $fts;
+//   $nm: ( ($lh * $fts) - $fts) / 2;
+//   font-size: #{$rem}rem;
+//   line-height: $lh ;
+//   margin: #{$mt - $nm}px #{$mr}px #{$mb - $nm}px #{$ml}px;
+// }
 
-// ルートからのリプレイス
-@mixin replace($original, $replacement) {
-  @at-root {
-    #{selector-replace(&, $original, $replacement)} {
-      @content;
-    }
-  }
-}
+// @mixin fontLinePadding($fts, $lin, $pt: 0, $pr: 0, $pb: 0, $pl: 0) {
+//   $rem: $fts / 10;
+//   $lh: $lin / $fts;
+//   $nm: ( ($lh * $fts) - $fts) / 2;
+//   font-size: #{$rem}rem;
+//   line-height: $lh ;
+//   padding: #{$pt - $nm}px #{$pr}px #{$pb - $nm}px #{$pl}px;
+// }
+
+// // border
+// @mixin border{
+//   border-width: 1px;
+//   border-style:solid;
+// }
+
+// // 文字リンクカラー
+// $normal: #f00;
+// $hover: lighten($normal, 30%);
+// $visited: darken($normal, 30%);
+// @mixin link-color($n: $normal, $h: $hover, $v: $visited) {
+//   color: $n;
+//   &:hover {
+//     color: $h;
+//     text-decoration: none;
+//   }
+//   &:visited {
+//     color: $v;
+//   }
+// }
+
+// // ルートからのリプレイス
+// @mixin replace($original, $replacement) {
+//   @at-root {
+//     #{selector-replace(&, $original, $replacement)} {
+//       @content;
+//     }
+//   }
+// }
 
 
-// リンクの矢印
-@mixin linkIcon($color: #333) {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    width: 10px;
-    height: 10px;
-    margin-top: -7px;
-    border-top: 3px solid $color;
-    border-right: 3px solid $color;
-    transform: rotate(45deg);
-  }
-}
+// // リンクの矢印
+// @mixin linkIcon($color: #333) {
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 50%;
+//     right: 15px;
+//     width: 10px;
+//     height: 10px;
+//     margin-top: -7px;
+//     border-top: 3px solid $color;
+//     border-right: 3px solid $color;
+//     transform: rotate(45deg);
+//   }
+// }
 
 
-// グラデーション作成
-@mixin linear-gradient($color: #f00, $way: to bottom, $percent: 20%) {
-  background-image: linear-gradient($way, $color 0%, lighten($color, $percent) 100%);
-}
+// // グラデーション作成
+// @mixin linear-gradient($color: #f00, $way: to bottom, $percent: 20%) {
+//   background-image: linear-gradient($way, $color 0%, lighten($color, $percent) 100%);
+// }
 
 
-// SNSボタン一括作成
-$sns-config: (
-  colors: (
-    twitter: #1b95e0,
-    facebook: #3b5998,
-  ),
-  sizes: (
-    sm: 25%,
-    md: 50%,
-    lg: 100%,
-  )
-);
-.sns {
-  &__btn {
-    @each $name, $color in map-get($sns-config, 'colors') {
-      &.-#{$name} {
-        background: $color url(/img/icon_#{$name}.png) no-repeat center;
-      }
-    }
-    @each $size, $width in map-get($map: $sns-config, $key: "sizes") {
-      &.-#{$size} {
-        width: $width;
-      }
-    }
-  }
-}
+// // SNSボタン一括作成
+// $sns-config: (
+//   colors: (
+//     twitter: #1b95e0,
+//     facebook: #3b5998,
+//   ),
+//   sizes: (
+//     sm: 25%,
+//     md: 50%,
+//     lg: 100%,
+//   )
+// );
+// .sns {
+//   &__btn {
+//     @each $name, $color in map-get($sns-config, 'colors') {
+//       &.-#{$name} {
+//         background: $color url(/img/icon_#{$name}.png) no-repeat center;
+//       }
+//     }
+//     @each $size, $width in map-get($map: $sns-config, $key: "sizes") {
+//       &.-#{$size} {
+//         width: $width;
+//       }
+//     }
+//   }
+// }

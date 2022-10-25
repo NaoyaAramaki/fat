@@ -1,0 +1,14 @@
+.p-ctnBtn {
+    background: rgba($color: #000, $alpha: .5);
+    position: sticky;
+    bottom: 0;
+    padding: 20px 0;
+    width: 100%;
+    @include z-index(ctaBtn);
+
+    &.is-change {
+        background: #F2F2F2;
+        position: absolute;
+        bottom: 0;
+    }
+}

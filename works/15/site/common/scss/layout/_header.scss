@@ -1,11 +1,15 @@
 .l-header {
-    display: flex;
-    justify-content: space-between;
     box-shadow: 0px 5px 8px 0px rgba($color: #000000, $alpha: .1);
     position: fixed;
     width: 100%;
     @include z-index(header);
     background: $bgColor;
+
+    &__inner {
+        min-width: 1320px;
+        display: flex;
+        justify-content: space-between;
+    }
 
     &-logo {
         background: url(/fat/works/img/gray.png) center center / cover no-repeat;
@@ -18,7 +22,7 @@
         &__link {
             line-height: 43px;
             text-align: center;
-            font-size: 1.6rem;
+            font-size: 2rem;
             color: #fff;
             text-shadow: 1px 1px #999;
             font-weight: bold;

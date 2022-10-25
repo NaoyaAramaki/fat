@@ -9,6 +9,10 @@
     box-shadow: 0 4px 8px rgba($color: #000000, $alpha: .1);
     transition: opacity .3s ease;
 
+    &--orange {
+        background: #F39800;
+    }
+
     &:hover {
         opacity: .7;
     }

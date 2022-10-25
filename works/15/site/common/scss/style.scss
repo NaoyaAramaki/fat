@@ -1,3 +1,12 @@
+//font
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+/* ==========================================================================
+    作成者　　 : 荒牧直矢
+    作成日　　 : 2022/10/16
+    最終更新日 : 2022/10/25
+============================================================================*/
+
 // foundation
 @import 'foundation/_variable';
 @import 'foundation/_mixin';
@@ -10,6 +19,7 @@
 @import 'component/_heading';
 
 // layout
+@import 'layout/_footer';
 @import 'layout/_section';
 @import 'layout/_header';
 @import 'layout/_kv';
@@ -17,6 +27,9 @@
 
 // project
 @import 'project/_content';
+@import 'project/_ctnBtn';
+@import 'project/_footer.scss';
+@import 'project/_toTop';
 
 
 // utility
@@ -24,6 +37,3 @@
 @import 'utility/_clearfix';
 @import 'utility/_margin';
 @import 'utility/_use';
-
-//font
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);

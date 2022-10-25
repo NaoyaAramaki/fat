@@ -11,8 +11,17 @@
         display: flex;
         justify-content: space-between;
 
-        &--section02, &--section03, &--section05 {
+        &--section02, &--section03 {
             margin-bottom: 40px;
+        }
+
+        &--section04 {
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        &--section05 {
+            flex-wrap: wrap;
         }
     }
 
@@ -35,11 +44,47 @@
             width: 265px;
             height: 240px;
             padding: 20px 15px 50px 50px;
+            position: relative;
 
             &:last-of-type {
                 width: 285px;
                 padding-right: 40px;
+
+                &::before, &::after {
+                    display: none;
+                }
             }
+
+            &::before, &::after {
+                content: "";
+                position: absolute;
+            }
+
+            &::before {
+                border-top: 160px solid transparent;
+                border-left: 40px solid #fff;
+                border-bottom: 160px solid transparent;
+                top: -40px;
+                right: -40px;
+                @include z-index(triangle);
+            }
+
+            &::after {
+                border-top: 120px solid transparent;
+                border-left: 30px solid #D4F4FA;
+                border-bottom: 120px solid transparent;
+                top: 0px;
+                right: -30px;
+                @include z-index(triangle);
+            }
+        }
+
+        &--section05 {
+            width: 520px;
+            height: 170px;
+            border: 2px solid #73d2e6;
+            padding: 25px;
+            margin-bottom: 40px;
         }
     }
 
@@ -66,6 +111,11 @@
 
         &--section04 {
             height: 60px;
+        }
+
+        &--section05 {
+            justify-content: flex-start;
+            margin-bottom: 1rem;
         }
     }
 
@@ -159,5 +209,40 @@
         display: inline;
         color: $fontColor;
         text-decoration: underline;
+    }
+
+    &-box {
+        width: 720px;
+        margin: 0 auto 40px;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        background: #E9FAC8;
+        line-height: 1.5;
+        padding: 15px 0;
+        position: relative;
+
+        &__text {
+            margin-bottom: 1rem;
+        }
+
+        &::before, &::after {
+            content: "";
+            position: absolute;
+            border-left: 35px solid transparent;
+            border-right: 35px solid transparent;
+        }
+
+        &::before {
+            border-top: 24px solid #fff;
+            top: -10px;
+            transform: translate(-50%);
+        }
+
+        &::after {
+            border-top: 24px solid #BFE673;
+            top: -12px;
+            transform: translate(-50%);
+        }
     }
 }
