@@ -1,0 +1,19 @@
+<svg id="pagetop" xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #bfbfbf;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+      }
+
+      .cls-2 {
+        fill: #bfbfbf;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="btn" class="cls-1" x="0.5" y="0.5" width="56" height="56" rx="28" ry="28"/>
+  <path id="多角形_1932" data-name="多角形 1932" class="cls-2" d="M1255.3,6265.25l6.35,10.99h-12.7Z" transform="translate(-1226.5 -6243.5)"/>
+</svg>

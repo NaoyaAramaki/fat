@@ -1,0 +1,62 @@
+.p-progress {
+    width: 360px;
+    margin: 80px auto 0;
+
+    @include sp {
+        width: 275px;
+        margin-top: 60px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    &__item {
+        font-size: 1.6rem;
+        font-weight: bold;
+
+        &:last-of-type {
+            .p-progress__square {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__square {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: #ccc;
+        margin-bottom: 20px;
+
+        @include sp {
+            width: 30px;
+            height: 30px;
+        }
+
+        &--green {
+            background: #a6d941;
+        }
+
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 120px;
+            height: 4px;
+            background: #ccc;
+            position: relative;
+            top: 7px;
+            left: 40px;
+
+            @include sp {
+                width: 92.5px;
+                top: 2px;
+                left: 30px;
+            }
+        }
+    }
+}

@@ -1,0 +1,254 @@
+.p-form {
+    %inputStyle {
+        border: 1px solid #808080;
+        padding: 10px 20px;
+        font-size: 1.6rem;
+        height: 40px;
+        outline: none;
+
+        @include sp {
+            padding: 14px;
+            font-size: 1.4rem;
+        }
+    }
+
+    %isErrorInput {
+        border: 1px solid #e5a1a1;
+        background: #fff5f5;
+    }
+
+    width: 1080px;
+    margin: 60px auto 0;
+
+    @include sp {
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 27px;
+        margin-bottom: 20px;
+    }
+    
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 1px solid #e6e6e6;
+    }
+    
+    &__heading {
+        font-size: 1.8rem;
+        font-weight: bold;
+        width: 290px;
+        border-bottom: 1px solid #e6e6e6;
+        line-height: 4;
+        padding-left: 50px;
+        position: relative;
+
+        @include sp {
+            width: 100%;
+            border-bottom: none;
+            padding-left: 0;
+            font-size: 1.6rem;
+        }
+
+        &::after {
+            content: "必須";
+            display: inline-block;
+            font-size: 1.4rem;
+            color: #fff;
+            background: #f56262;
+            padding: 4px 15px;
+            line-height: 1;
+            position: absolute;
+            top: 24px;
+            right: 20px;
+
+            @include sp {
+                top: 20px;
+                right: 0;
+            }
+        }
+    }
+
+    &__inputItem {
+        width: 790px;
+        border-bottom: 1px solid #e6e6e6;
+        padding-top: 15px;
+        padding-left: 50px;
+
+        @include sp {
+            width: 100%;
+            padding-top: 0;
+            padding-left: 0;
+            padding-bottom: 20px;
+        }
+    }
+
+    &__error {
+        color: #e65c5c;
+        font-size: 1.6rem;
+        margin-top: 10px;
+        margin-bottom: 15px;
+
+        @include sp {
+            font-size: 1.4rem;
+            margin-bottom: 0;
+        }
+    }
+
+    &__input {
+        width: calc(100% - 50px);
+        @extend %inputStyle;
+
+        @include sp {
+            width: 100%;
+        }
+
+        &--noHyphen {
+            position: relative;
+
+            @include sp {
+                margin-bottom: 24px;
+            }
+
+            &::after {
+                content: "※ハイフンなしで入力してください";
+                display: inline-block;
+                color: #919191;
+                font-size: 1.6rem;
+                margin-left: 20px;
+                position: absolute;
+                top: 10px;
+                right: 165px;
+
+                @include sp {
+                    margin-top: 10px;
+                    margin-left: 0;
+                    font-size: 1.4rem;
+                    top: 40px;
+                    left: 0;
+                    width: 230px;
+                }
+            }
+
+            &.is-error {
+
+                &::after {
+                    @include sp {
+                        top: 65px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+
+        &.is-error {
+            @extend %isErrorInput;
+        }
+
+        &--wd300 {
+            width: 300px;
+
+            @include sp {
+                width: 100%;
+            }
+        }
+
+        &--lh10 {
+            padding: 0 20px !important;
+            color: #222;
+            transition: all .3s ease;
+            cursor: pointer;
+
+            &:hover {
+                opacity: .7;
+            }
+
+            @include sp {
+                padding: 0 14px !important;
+            }
+        }
+    }
+
+    &-nested {
+        display: flex;
+        margin-left: -50px;
+
+        @include sp {
+            flex-wrap: wrap;
+            margin-left: 0;
+        }
+
+        &__heading {
+            font-size: 1.6rem;
+            width: 50px;
+            padding-top: 13px;
+            padding-right: 18px;
+            text-align: right;
+
+            @include sp {
+                font-size: 1.4rem;
+                width: 37px;
+                text-align: left;
+                padding-right: 0;
+            }
+        }
+
+        &__inputItem {
+            width: 300px;
+
+            @include sp {
+                width: calc(100% - 37px);
+            }
+
+            &:first-of-type {
+                margin-right: 40px;
+
+                @include sp {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &__input {
+            width: 100%;
+            @extend %inputStyle;
+
+            &.is-error {
+                @extend %isErrorInput;
+            }
+        }
+    }
+
+    &-consent {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 1.5;
+
+        @include sp {
+            margin-top: 30px;
+        }
+
+        &__link {
+            display: inline-block;
+            color: #222;
+            text-decoration: underline;
+        }
+    }
+
+    &-button {
+        @extend .c-button;
+        @extend .c-button--orange;
+        border: none;
+        text-align: center;
+        color: #fff;
+        margin: 40px auto 0;
+        display: block;
+        cursor: pointer;
+        outline: none;
+
+        @include sp {
+            margin-top: 25px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.l-section {
+
+    @include sp {
+        margin: 0 20px;
+    }
+
+    &:first-of-type {
+        padding-top: 18px;
+
+        @include sp {
+            padding-top: 30px;
+        }
+    }
+    
+    &--green {
+        background: #f6fce8;
+
+        @include sp {
+            margin: auto;
+            padding: 0 20px;
+        }
+    }
+}

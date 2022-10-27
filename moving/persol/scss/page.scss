@@ -1,0 +1,36 @@
+// foundation
+@import 'foundation/_mixin';
+@import 'foundation/_default';
+@import 'foundation/_variable';
+
+// component
+@import 'component/_button';
+@import 'component/consent';
+@import 'component/_heading';
+@import 'component/_toTop';
+
+// layout
+@import 'layout/_footer';
+@import 'layout/_header';
+@import 'layout/_kv';
+@import 'layout/_main';
+@import 'layout/_section';
+
+// project
+@import 'project/_apply';
+@import 'project/consent';
+@import 'project/_contents';
+@import 'project/_footer';
+@import 'project/_form';
+@import 'project/_progress';
+
+// utility
+@import 'utility/_align';
+@import 'utility/_clearfix';
+@import 'utility/_margin';
+@import 'utility/_use';
+
+//font
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+

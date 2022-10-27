@@ -1,0 +1,9 @@
+.l-main {
+    position: relative;
+    
+    @include sp {
+        &.is-close {
+            display: none;
+        }
+    }
+}

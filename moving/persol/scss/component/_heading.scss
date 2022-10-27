@@ -1,0 +1,45 @@
+.c-heading {
+    font-size: 3.6rem;
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    @include sp {
+        font-size: 2.4rem;
+        margin-bottom: 30px;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 82px;
+        height: 18px;
+        flex-shrink: 0;
+
+        @include sp {
+            width: 41px;
+            height: 9px;
+        }
+    }
+
+    &::before {
+        background: url(/img/icon_square_left.png) center center / cover no-repeat;
+        margin-right: 30px;
+
+        @include sp {
+            margin-right: 15px;
+        }
+    }
+
+    &::after {
+        background: url(/img/icon_square_right.png) center center / cover no-repeat;
+        margin-left: 30px;
+
+        @include sp {
+            margin-left: 15px;
+        }
+    }
+}

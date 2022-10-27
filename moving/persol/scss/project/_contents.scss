@@ -1,0 +1,430 @@
+.p-contents {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 60px 0;
+
+    @include sp {
+        padding: 30px 0;
+    }
+
+    &--faq {
+        padding: 20px 0 180px;
+
+        @include sp {
+            padding: 30px 0 130px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+        @include sp {
+            display: block;
+        }
+
+        &--review {
+            margin-bottom: 40px;
+        }
+
+        &--flow {
+            margin-bottom: 20px;
+            overflow: hidden;
+
+            @include sp {
+                margin-bottom: 10px;
+                padding-bottom: 42px;
+            }
+        }
+
+        &--faq {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+
+        &--feature {
+            width: 336px;
+            background: #e8f9fc;
+            // line-height分(4px)下方向削除
+            padding: 25px 0 23px;
+
+            @include sp {
+                width: 100%;
+                box-sizing: border-box;
+                margin-bottom: 20px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &--review {
+            background:  #fff;
+            // line-height分(5px)削除
+            padding-top: 20px;
+            width: 336px;
+            display: flex;
+            flex-direction: column;
+
+            @include sp {
+                padding-top: 26px;
+                width: 100%;
+                margin-bottom: 20px;
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+        &--flow {
+            width: 265px;
+            position: relative;
+            background: #d4f4fa;
+            // line-height分(4px)下方向削除
+            padding: 39px 15px 50px 50px;
+            
+            @include sp {
+                width: 100%;
+                padding: 70px 30px 28px;
+            }
+
+            &:first-of-type {
+                padding-left: 30px;
+
+                @include sp {
+                    padding-top: 30px;
+                }
+            }
+
+            &:last-of-type {
+                width: 285px;
+                padding-right: 40px;
+
+                &::before,
+                &::after {
+                    display: none;
+                }
+
+                @include sp {
+                    width: 100%;
+                    padding-right: 30px;
+                }
+            }
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                z-index: 10;
+                
+                @include sp {
+                    display: none;
+                }
+            }
+
+            &::before {
+                border-top: 160px solid transparent;
+                border-left: 40px solid #fff;
+                border-bottom: 160px solid transparent;
+                top: -40px;
+                right: -30px;
+                bottom: 10px;
+            }
+    
+            &::after {
+                border-top: 120px solid transparent;
+                border-left: 30px solid #d4f4fa;
+                border-bottom: 120px solid transparent;
+                top: 0;
+                right: -20px;
+            }
+        }
+
+        &--faq {
+            width: 520px;
+            height: 170px;
+            box-sizing: border-box;
+            border: 2px solid #73d2e6;
+            margin-bottom: 40px;
+            // line-height分(4px)下方向削除
+            padding: 28px 28px 24px;
+
+            @include sp {
+                width: 100%;
+                height: auto;
+                padding: 18px 19px;
+                margin-bottom: 20px;
+
+                &:last-of-type {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    &__heading {
+        font-size: 2rem;
+        text-align: center;
+        // line-height分(4px)削除
+        margin-bottom: 20px;
+
+        @include sp {
+            font-size: 1.8rem;
+        }
+
+        &--review {
+            line-height: 1.4;
+            margin-bottom: 6px;
+        }
+
+        &--flow {
+            // line-height分(4px)下方向削除
+            margin-bottom: 35px;
+
+            @include sp {
+                margin-bottom: 16px;
+            }
+        }
+
+        &--faq {
+            text-align: left;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__image {
+
+        img {
+            width: 336px;
+                
+            @include sp {
+                width: 100%;
+            }
+        }
+
+        &--feature {
+            
+            img {
+                height: 120px;
+
+                @include sp {
+                    height: auto;
+                }
+            }
+        }
+
+        &--iot {
+
+            img {
+                height: 226px;
+
+                @include sp {
+                    height: auto;
+                    // line-height分(3px)上方向削除
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        &--review {
+            margin-top: auto;
+
+            img {
+                height: 236px;
+
+                @include sp {
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        line-height: 1.5;
+
+        @include sp {
+            font-size: 1.4rem;
+        }
+
+        &--feature {
+            // line-height分(4px)上方向削除
+            padding: 15px 25px 0;
+        }
+
+        &--iot {
+            width: 705px;
+
+            @include sp {
+                width: 100%;
+            }
+        }
+
+        &--flow {
+            position: relative;
+
+            a {
+                color: #222;
+                transition: all .3s ease;
+
+                &:hover {
+                    opacity: .7;
+                    text-decoration: underline;
+                }
+            }
+
+            @include sp {
+                text-align: center;
+            }
+
+            &::before,
+            &::after {
+                
+                @include sp {
+                    content: "";
+                    position: absolute;
+                    z-index: 10;
+                    left: 50%;
+                }
+            }
+
+            &::before {                
+                @include sp {
+                    border-top: 52px solid #fff;
+                    border-left: 60vw solid transparent;
+                    border-right: 60vw solid transparent;
+                    margin-left: -60vw;
+                    bottom: -80px;
+                }
+            }
+    
+            &::after {
+                @include sp {
+                    border-top: 42px solid #d4f4fa;
+                    border-left: 50vw solid transparent;
+                    border-right: 50vw solid transparent;
+                    margin-left: -50vw;
+                    bottom: -70px;
+                }
+            }
+        }
+
+        &--entry {
+            
+            @include sp {
+
+                &::before,
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &-flow {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.6rem;
+        background: #a6d941;
+
+        @include sp {
+            justify-content: center;
+        }
+
+        &__left, 
+        &__right {
+            font-weight: bold;
+            height: 60px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        &__left {
+            padding-left: 25px;
+            background: #fff;
+            position: relative;
+
+            @include sp {
+                padding-left: 10px;
+                width: 40%;
+            }
+
+            &::after {
+                content: "";
+                border-left: 30px solid #fff;
+                border-top: 30px solid transparent;
+                border-bottom: 30px solid transparent;
+                position: absolute;
+                right: -30px;
+                top: 0;
+            }
+        }
+
+        &__right {
+            padding-left: 50px;
+            color: #fff;
+            padding-right: 25px;
+            
+            @include sp {
+                width: 60%;
+                padding-right: 20px;
+            }
+        }
+    }
+
+    &__selection {
+        background: #e9fac8;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 1.5;
+        // line-height分(10px)上下方向削除
+        padding: 20px 0;
+        width: 720px;
+        margin: 0 auto 40px;
+        position: relative;
+        font-weight: bold;
+
+        @include sp {
+            width: 100%;
+            font-size: 1.6rem;
+            padding: 30px 25px;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            margin-left: -35px;
+            
+            @include sp {
+                display: none;
+            }
+        }
+
+        &::before {
+            border-top: 23px solid #fff;
+            border-left: 35px solid transparent;
+            border-right: 35px solid transparent;
+            top: -8px;
+        }
+
+        &::after {
+            border-top: 23px solid #88cc00;
+            border-left: 35px solid transparent;
+            border-right: 35px solid transparent;
+            top: -10px;
+        }
+    }
+
+    &__suggest {
+
+        &:first-of-type {
+            margin-bottom: 1rem;
+        }
+    }
+}

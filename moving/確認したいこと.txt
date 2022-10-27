@@ -1,0 +1,91 @@
+・使用しているバージョン管理アプリケーションについて・・・Gitのほかにもあるかどうか。
+source tree GUI
+backlog
+github
+gitlabo
+
+・javascript validation・・・ 条件分岐にて作成するのかどうか。
+→jQueryを使用しないプロジェクトも多くあるため、Jsのみで書けるほうが望ましい。
+
+
+・form画面の追従ボタンについて・・・カンプではSPのみ、本番はPC・SP二つともなし
+→どちらでもよい
+
+
+・button extend
+→この書き方でもよいし、そのページ固有クラスなどの親要素からのc-buttonなどの指定もされる。
+
+
+・現場でSassを使用していない場合、ローカルでSassを使用し、後ほどマージするなどの対応は可能かどうか。
+→プロジェクトの工数
+→昔からあるサイト
+→依頼した箇所した以外は触らない
+
+・開発工程について　ウォーターフロー　アジャイル　ウェブ系はどちらが多い？
+→
+
+
+FLOCSSのComponentとProjectの違いを身の回りのもので考える（お寿司編） | Ozlink LAB | マーケティングエージェンシー 株式会社Oz link（オズ・リンク）tab
+https://www.ozlink.co.jp/lab/1050/
+HTMLエラーチェッカー - Chrome ウェブストアtab
+https://chrome.google.com/webstore/detail/html%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%81%E3%82%A7%E3%83%83%E3%82%AB%E3%83%BC/ohdllebchmmponnofchalfkegpjojcaf?hl=ja
+
+リアルタイムバリデーションとは？｜フォームメーラーによくあるご質問 : ヘルプセンターtab
+https://support.form-mailer.jp/support/solutions/articles/44002137880-%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%90%E3%83%AA%E3%83%87%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A8%E3%81%AF%E3%81%AA%E3%82%93%E3%81%A7%E3%81%99%E3%81%8B-
+SCSSのファイル設計（クラス名の命名規則と要素について vol.1） | 吉本式 Web制作のコーディングガイドラインtab
+https://tsudoi.org/guide2019/detail/7.html
+
+インフラ コード化　チュートリアル - Google 検索tab
+https://www.google.com/search?q=%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9+%E3%82%B3%E3%83%BC%E3%83%89%E5%8C%96%E3%80%80%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB&rlz=1C1TKQJ_jaJP1026JP1026&ei=M5BYY6KXCp6N2roP47yA6As&ved=0ahUKEwji_MLy4fz6AhWehlYBHWMeAL0Q4dUDCA8&uact=5&oq=%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9+%E3%82%B3%E3%83%BC%E3%83%89%E5%8C%96%E3%80%80%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEKIEMgUIABCiBDIFCAAQogQ6CggAEEcQ1gQQsAM6BAgAEEM6BQgAEIAEOgcIABAEEIAEOgQIABAeOgYIABAFEB46BggAEAQQHjoFCCEQoAFKBAhNGAFKBAhBGABKBAhGGABQ2xhYiDZg6TpoAXABeACAAW-IAawGkgEDOS4xmAEAoAEByAEKwAEB&sclient=gws-wiz
+【知識編】インフラ構成のコード化。構成管理をスマートにするための「infrastructure as code」という考え方を学ぼう。 | 株式会社ビヨンドtab
+https://beyondjapan.com/blog/2017/03/infrastructure-as-code-knowledge/
+認定資格  |  Google Cloudtab
+https://cloud.google.com/certification?hl=ja
+google cloud 認定資格 費用 - Google 検索tab
+https://www.google.com/search?q=google+cloud+%E8%AA%8D%E5%AE%9A%E8%B3%87%E6%A0%BC+%E8%B2%BB%E7%94%A8&rlz=1C1TKQJ_jaJP1026JP1026&ei=aZFYY93pGcCu2roPn5SO4As&oq=Google+Cloud+%E8%AA%8D%E5%AE%9A%E8%B3%87%E6%A0%BC%E3%80%80&gs_lcp=Cgdnd3Mtd2l6EAEYBDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoKCAAQRxDWBBCwA0oECE0YAUoECEEYAEoECEYYAFDLAVjLAWC1D2gBcAF4AIABaIgBaJIBAzAuMZgBAKABAcgBCsABAQ&sclient=gws-wiz
+Google Cloud 認定資格の一覧を解説。全部で何個ある？難易度は？ - G-gen Tech Blogtab
+https://blog.g-gen.co.jp/entry/google-cloud-certification
+Packer - Google 検索tab
+https://www.google.com/search?q=Packer&rlz=1C1TKQJ_jaJP1026JP1026&sourceid=chrome&ie=UTF-8
+terraform - Google 検索tab
+https://www.google.com/search?q=terraform&rlz=1C1TKQJ_jaJP1026JP1026&sourceid=chrome&ie=UTF-8
+5分で分かるTerraform（Infrastructure as Code） | LAC WATCHtab
+https://www.lac.co.jp/lacwatch/service/20200903_002270.html
+Kubernetesとは 概要や、Dockerとの違いを5分で入門 | クラウドエース株式会社tab
+https://cloud-ace.jp/column/detail229/
+【再入門】コンテナ技術とは？基本をわかりやすく解説します - カゴヤのサーバー研究室tab
+https://www.kagoya.jp/howto/cloud/container/container-03/
+【図解】Rancher（ランチャー）とは？をわかりやすく解説 - カゴヤのサーバー研究室tab
+https://www.kagoya.jp/howto/cloud/container/rancher/
+コンテナサービス｜cloud tapとは｜cloud tap｜tab
+https://www.cloudtap.jp/about/container/?argument=vqHX23Xs&dmai=a5dd784c01544c
+HashiCorp / Terraform｜Hashicorp Terraformは、世界で非常に人気のあるクラウドプロビジョニング製品です。クラウド運用モデルにおけるプロビジョニングとコンプライアンスのために、IaC(Infrastructure as Code)を使用したクラウドインフラ自動化のための基盤を提供します。《概要》 | CTC - 伊藤忠テクノソリューションズtab
+https://www.ctc-g.co.jp/solutions/terraform/
+コードとしてのインフラストラクチャ - パート 1: Kubernetes クラスタを作成する | CircleCItab
+https://circleci.com/ja/blog/learn-iac-part1/
+
+
+ソルバーとは 機械学習 - Google 検索tab
+https://www.google.com/search?q=%E3%82%BD%E3%83%AB%E3%83%90%E3%83%BC%E3%81%A8%E3%81%AF+%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92&rlz=1C1TKQJ_jaJP1026JP1026&ei=FaFYY_EGybmHA_a5tIgE&oq=%E3%82%BD%E3%83%AB%E3%83%90%E3%83%BC%E3%81%A8%E3%81%AF&gs_lcp=Cgdnd3Mtd2l6EAEYBTIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwAzIKCAAQRxDWBBCwA0oECE0YAUoECEEYAEoECEYYAFAAWABghhFoAXABeACAAQCIAQCSAQCYAQDIAQrAAQE&sclient=gws-wiz
+エクセル ソルバー - Google 検索tab
+https://www.google.com/search?q=%E3%82%A8%E3%82%AF%E3%82%BB%E3%83%AB+%E3%82%BD%E3%83%AB%E3%83%90%E3%83%BC&rlz=1C1TKQJ_jaJP1026JP1026&oq=%E3%82%A8%E3%82%AF%E3%82%BB%E3%83%AB%E3%80%80%E3%82%BD%E3%83%AB%E3%83%90%E3%83%BC&aqs=chrome..69i57j0i512l9.5664j0j4&sourceid=chrome&ie=UTF-8
+DockerでWordPressの開発環境を構築する方法 | Web学園 byお名前.comtab
+https://www.onamae.com/column/wordpress/5/#article3_0
+【Docker Desktop】Windowsにインストール（WSL2） | チグサウェブtab
+https://chigusa-web.com/blog/windows%E3%81%ABdocker%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6python%E7%92%B0%E5%A2%83%E3%82%92%E6%A7%8B%E7%AF%89/
+【簡単設定！】DockerでWordPressをローカル開発する方法tab
+https://elon-task.com/1085-2/
+WSL2のインストールと分かりやすく解説【Windows10/11】 | チグサウェブtab
+https://chigusa-web.com/blog/wsl2-win11/
+
+
+WordPressサイトを静的に出力してGitHub Pagesを作る - MasaruのIT＆マーケティングBLOG | Info Tech & Marketing BLOG by Masarutab
+https://can.ne.jp/2021/04/11/wordpress%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E9%9D%99%E7%9A%84%E3%81%AB%E5%87%BA%E5%8A%9B%E3%81%97%E3%81%A6github-pages%E3%82%92%E4%BD%9C%E3%82%8B/
+docker-compose.ymlの書き方について解説してみた - Qiitatab
+https://qiita.com/yuta-ushijima/items/d3d98177e1b28f736f04
+viコマンドについて詳しくまとめました 【Linuxコマンド集】tab
+https://eng-entrance.com/linux-command-vi
+
+
+
+
