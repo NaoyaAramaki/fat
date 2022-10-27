@@ -1,0 +1,292 @@
+@charset "utf-8";
+/* ==========================================================================
+viewport指定
+============================================================================*/
+//$screensize: 750; //スマホデザインPSDの幅
+$breakpoint: 769px; // 768pxからSP
+
+@mixin pc($viewport: $breakpoint) {
+  @media screen and (min-width: $breakpoint), print {
+    @content;
+  }
+}
+
+@mixin sp($viewport: $breakpoint) {
+  @media screen and (max-width: $breakpoint - 1) {
+    @content;
+  }
+}
+
+@mixin se($viewport: $breakpoint) {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin sp-2($viewport: $breakpoint) {
+  @media screen and (max-width: 360px) {
+    @content;
+  }
+}
+
+//clearfix
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+//placeholder
+@mixin placeholder{
+  &:placeholder-shown {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+//行間調整
+@mixin fontLineMargin($fts, $lin, $mt: 0, $mr: 0, $mb: 0, $ml: 0) {
+  $rem: $fts / 10;
+  $nm: (($lin * $fts) - $fts) / 2;
+  font-size: #{$rem}rem;
+  line-height: $lin;
+  margin: #{$mt - $nm}px #{$mr}px #{$mb - $nm}px #{$ml}px;
+}
+
+//font-sizeとline-heightのパターン化
+//KV内見出し
+@mixin fs-3624{
+  @include pc {
+    font-size:$fs-36;
+  }
+  @include sp {
+    font-size:$fs-24;
+  }
+}
+//記事ページKV内見出し
+@mixin fs-3024{
+  @include pc {
+    font-size:$fs-30;
+  }
+  @include sp {
+    font-size:$fs-24;
+  }
+}
+//記事ページKV内見出し下リード文
+@mixin fs-1612{
+  @include pc {
+    font-size:$fs-16;
+  }
+  @include sp {
+    font-size:$fs-12;
+  }
+}
+//記事ページKV内見出し(英字　SP要素なし)
+@mixin fs-1800{
+  @include pc {
+    font-size:$fs-18;
+  }
+}
+@mixin fs-3618{
+  @include pc {
+    font-size:$fs-36;
+  }
+  @include sp {
+    font-size:$fs-18;
+  }
+}
+//ローカルナビ見出し
+@mixin fs-1614{
+  @include pc {
+    font-size:$fs-16;
+  }
+    @include sp {
+    font-size:$fs-14;
+  }
+}
+//コンテンツ内各見出し
+@mixin fs-2618{
+  @include pc {
+    font-size:$fs-26;
+  }
+  @include sp {
+    font-size:$fs-18;
+  }
+}
+@mixin fs-2624{
+  @include pc {
+    font-size:$fs-26;
+  }
+  @include sp {
+    font-size:$fs-24;
+  }
+}
+@mixin fs-2018{
+  @include pc {
+    font-size:$fs-20;
+  }
+  @include sp {
+    font-size:$fs-18;
+  }
+}
+@mixin fs-2016{
+  @include pc {
+    font-size:$fs-20;
+  }
+  @include sp {
+    font-size:$fs-16;
+  }
+}
+
+@mixin fs-1816{
+  @include pc {
+    font-size:$fs-18;
+  }
+  @include sp {
+    font-size:$fs-16;
+  }
+}
+@mixin fs-1814 {
+  @include pc {
+    font-size:$fs-18;
+  }
+  @include sp {
+    font-size:$fs-14;
+  }
+}
+@mixin fs-1812{
+  @include pc {
+    font-size:$fs-18;
+  }
+  @include sp {
+    font-size:$fs-12;
+  }
+}
+
+
+@mixin fs-1614{
+  @include pc {
+    font-size:$fs-16;
+  }
+  @include sp {
+    font-size:$fs-14;
+  }
+}
+
+@mixin fs-1612{
+  @include pc {
+    font-size:$fs-16;
+  }
+  @include sp {
+    font-size:$fs-12;
+  }
+}
+
+@mixin fs-1416{
+  @include pc {
+    font-size:$fs-14;
+  }
+  @include sp {
+    font-size:$fs-16;
+  }
+}
+
+@mixin fs-1412{
+  @include pc {
+    font-size:$fs-14;
+  }
+  @include sp {
+    font-size:$fs-12;
+  }
+}
+@mixin fs-1214{
+  @include pc {
+    font-size:$fs-12;
+  }
+  @include sp {
+    font-size:$fs-14;
+  }
+}
+//フローチャート
+@mixin fs-18{
+  font-size:$fs-18;
+}
+//ボタンのテキスト（PCSP共通）
+@mixin fs-16{
+  font-size:$fs-16;
+}
+//コンテンツ内テキスト（PCSP共通）
+@mixin fs-14{
+  font-size:$fs-14;
+}
+//ヘッダー・フッター内のパーツ（PCSP共通）
+@mixin fs-12{
+  font-size:$fs-12;
+}
+//記事ページのline-height
+@mixin articleLineHeight {
+  @include pc {
+    line-height:$lh-txt--pc;
+  }
+  @include sp {
+    line-height:$lh-txt--sp;
+  }
+}
+
+//要素の最小幅
+@mixin minWidth1320{
+  @include pc {
+    min-width:1320px;
+  }
+}
+//要素の固定幅（PC）
+@mixin Width1320 {
+  @include pc {
+    width:1320px;
+  }
+}
+@mixin Width1200 {
+  @include pc {
+    width:1200px;
+  }
+}
+//要素　中央配置
+@mixin positionCenter {
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+}
+//border
+@mixin border{
+  border-width: 1px;
+  border-style:solid;
+}
+
+//hover時の共通する動き
+@mixin trans-hover($prop:opacity) {
+  transition-property: $prop;
+
+  transition-duration: .3s;
+  &:hover{
+    @content
+  }
+}
+
+
+

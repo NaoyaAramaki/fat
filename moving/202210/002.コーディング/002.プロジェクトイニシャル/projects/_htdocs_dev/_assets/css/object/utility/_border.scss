@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* ==========================================================================
+table　ボーダー
+============================================================================*/
+.u-border-left{
+  @include sp {
+    border-left:1px solid $clr-tbl-bd03;
+  }
+}
+.u-border-top{
+  @include sp {
+    border-top:1px solid $clr-tbl-bd03;
+  }
+}
+
+.u-border-left--none{
+  @include sp {
+    border-left:none;
+  }
+}
+.u-border-top--none{
+  @include sp {
+    border-top:none;
+  }
+}
