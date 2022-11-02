@@ -37,6 +37,7 @@
     transition: all .2s ease;
     font-weight: bold;
     color: #0048ff;
+    text-decoration: underline;
 }
 
 .leading a:hover {
