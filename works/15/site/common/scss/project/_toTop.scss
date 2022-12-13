@@ -1,0 +1,23 @@
+.p-toTop {
+    position: sticky;
+    right: 20px;
+    bottom: 200px;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #bfbfbf;
+    border-radius: 50%;
+
+    &::after {
+        content: "▲";
+        font-size: 1.3rem;
+        color: #bfbfbf;
+        height: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link {
+        font-size: 0;
+    }
+}

@@ -1,0 +1,157 @@
+.p-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #53565a;
+    border-top: solid 1px #e6e6e6;
+    padding: 20px 0;
+
+    &--01, &--04 {
+        padding: 15px 0;
+    }
+
+    &--02 {
+        display: block;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+
+        &--0201, &--0202 {
+            display: block;
+        }
+
+        &--0201 {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__heading {
+        font-weight: bold;
+
+        &--0101 {
+            font-weight: normal;
+            margin-right: 24px;
+        }
+
+        &--0201, &--0202 {
+            margin-bottom: 1rem;
+        }
+
+        &--0201 {
+            width: 50px;
+        }
+
+        &--0301 {
+            margin: {
+                right: 25px;
+                bottom: 4px;
+            };
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+        &--0102, &--0401, &--0402 {
+            align-items: center;
+        }
+
+        &--0201, &--0202 {
+            margin-left: 2rem;
+        }
+
+        &--0201 {
+            width: 480px;
+        }
+
+        &--0202 {
+            width: 160px;
+        }
+
+        &--0401 {
+            width: 250px;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        &--0402 {
+            width: 200px;
+        }
+    }
+
+    &__item {
+        transition: opacity .3s ease;
+
+        &:hover {
+            opacity: .7;
+            text-decoration: underline;
+        }
+
+        &--0101 {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            background: #AAB8C2;
+            color: #fff;
+        }
+
+        &--0102 {
+            border-left: 1px solid #e6e6e6;
+        }
+
+        &--0301 {
+            margin-left: 25px;
+        }
+
+        &--0302 {
+            margin-right: 25px;
+        }
+
+        &--0401 {
+            padding: 0 15px;
+            margin-bottom: 1rem;
+            border-right: 1px solid #e6e6e6;
+        }
+
+        &--0402 {
+            width: 98px;
+            height: 35px;
+            background: url(/fat/works/img/gray.png) center center / cover no-repeat;
+            text-align: center;
+
+            &:last-of-type {
+                width: 75px;
+                height: 75px;
+            }
+        }
+
+    }
+
+    &__link {
+        color: inherit;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--0102 {
+            height: auto;
+            padding: 0 15px;
+        }
+
+        &--0401 {
+            height: auto;
+            color: #97999b;
+        }
+
+        &--0402 {
+            color: #fff;
+            text-shadow: 1px 1px #999;
+        }
+    }
+}
