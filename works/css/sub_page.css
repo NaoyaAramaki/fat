@@ -81,6 +81,16 @@ h3 {
     font-size: 0.9em;
 }
 
+.detail a {
+    display: block;
+    transition: all .2s ease;
+    color: #0048ff;
+}
+
+.detail a:hover {
+    color: rgb(255, 72, 0);
+}
+
 /* タブレット端末用CSS */
 @media screen and (max-width: 1000px) {
     .thumbnails {
