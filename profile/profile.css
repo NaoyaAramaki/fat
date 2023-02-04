@@ -123,6 +123,23 @@
     margin: 0 auto;
 }
 
+.bg_sup {
+    text-indent: 1em;
+    margin-bottom: 5px;
+}
+
+.edu_bg {
+    /* 青碧 */
+    color: #478384;
+    font-weight: bold;
+}
+
+.wor_ex {
+    /* 茜色 */
+    color: #b7282e;
+    font-weight: bold;
+}
+
 /* 背景文字 */
 .detail::after {
     content: "background";
@@ -188,8 +205,16 @@
     content: "Webサイトデザイン科 入校";
 }
 
+.gio::after {
+    content: "企業実習(1ヶ月間)";
+}
+
 .completion_webdesign_school::after {
-    content: "Webサイトデザイン科 修了予定";
+    content: "Webサイトデザイン科 修了";
+}
+
+.adecco::after {
+    content: "株式会社ティーズに派遣社員として就業";
 }
 
 .completion_university::after {
