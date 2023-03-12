@@ -197,8 +197,16 @@
     content: "英語コミュニケーション科 中途退学";
 }
 
+.join_techno::after {
+    content: "入社(正社員)";
+}
+
 .enter_university::after {
     content: "情報マネジメント学部 入学";
+}
+
+.leave_techno::after {
+    content: "退社";
 }
 
 .enter_webdesign_school::after {
@@ -213,8 +221,12 @@
     content: "Webサイトデザイン科 修了";
 }
 
-.adecco::after {
-    content: "株式会社ティーズに派遣社員として就業";
+.tees::after {
+    content: "派遣社員(1ヶ月間)";
+}
+
+.join_persol::after {
+    content: "入社(正社員)";
 }
 
 .completion_university::after {
