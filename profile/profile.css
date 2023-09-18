@@ -125,16 +125,18 @@
 
 .bg_sup {
     text-indent: 1em;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
-.edu_bg {
+
+
+.edu.bg {
     /* 青碧 */
     color: #478384;
     font-weight: bold;
 }
 
-.wor_ex {
+.work.bg {
     /* 茜色 */
     color: #b7282e;
     font-weight: bold;
