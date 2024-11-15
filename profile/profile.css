@@ -178,6 +178,22 @@
     display: inline-block;
 }
 
+.enter_junior_high_school::after {
+    content: "入学";
+}
+
+.transfer_from_junior_high_school::after {
+    content: "転校";
+}
+
+.transfer_to_junior_high_school::after {
+    content: "転入";
+}
+
+.graduate_junior_high_school::after {
+    content: "卒業";
+}
+
 .enter_high_school::after {
     content: "普通科特別選抜コース 入学";
 }
