@@ -12,6 +12,14 @@
     margin-bottom: 40px;
 }
 
+.main_top + p {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
 dl.flex {
     line-height: 2;
     flex-wrap: wrap;

@@ -128,7 +128,11 @@
     margin-bottom: 15px;
 }
 
-
+.underline {
+    text-decoration: underline;
+    font-size: 0.9em;
+    color: #666;
+}
 
 .edu.bg {
     /* 青碧 */
@@ -215,7 +219,7 @@
     content: "英語コミュニケーション科 中途退学";
 }
 
-.join_techno::after {
+.join_fulltime::after {
     content: "入社(正社員)";
 }
 
@@ -223,28 +227,48 @@
     content: "情報マネジメント学部 入学";
 }
 
-.leave_techno::after {
+.leave::after {
     content: "退社";
 }
 
-.enter_webdesign_school::after {
+.enter_waseda_it::after {
     content: "Webサイトデザイン科 入校";
 }
 
-.gio::after {
-    content: "企業実習(1ヶ月間)";
+.enter_kikagaku::after {
+    content: "DXを推進するAI・データサイエンス人材育成コース 入校";
 }
 
-.completion_webdesign_school::after {
+.enter_samurai::after {
+    content: "Webエンジニア転職コース 入校";
+}
+
+.internship::after {
+    content: "企業実習";
+}
+
+.completion_waseda_it::after {
     content: "Webサイトデザイン科 修了";
 }
 
-.tees::after {
-    content: "派遣社員(1ヶ月間)";
+.completion_kikagaku::after {
+    content: "DXを推進するAI・データサイエンス人材育成コース 修了";
 }
 
-.join_persol::after {
-    content: "入社(正社員)";
+.completion_samurai::after {
+    content: "Webエンジニア転職コース 修了";
+}
+
+.tees::after {
+    content: "派遣社員";
+}
+
+.join_parttime::after {
+    content: "入社(アルバイト)";
+}
+
+.join_outsourcing::after {
+    content: "業務委託";
 }
 
 .completion_university::after {
