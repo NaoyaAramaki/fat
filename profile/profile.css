@@ -236,7 +236,7 @@
 }
 
 .enter_kikagaku::after {
-    content: "DXを推進するAI・データサイエンス人材育成コース 入校";
+    content: "AI・データサイエンス人材育成コース 入校";
 }
 
 .enter_samurai::after {
@@ -252,7 +252,7 @@
 }
 
 .completion_kikagaku::after {
-    content: "DXを推進するAI・データサイエンス人材育成コース 修了";
+    content: "AI・データサイエンス人材育成コース 修了";
 }
 
 .completion_samurai::after {
