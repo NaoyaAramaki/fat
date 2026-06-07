@@ -110,6 +110,14 @@
     font-size: 14px;
 }
 
+.it_group li {
+    width: 315px;
+}
+
+.other_group li {
+    width: 235px;
+}
+
 .it_group {
     width: 340px;
 }
@@ -420,10 +428,6 @@
         margin-bottom: 5px;
     }
 
-    .qualification {
-        text-align: center;
-    }
-
     .qualification > .flex {
         width: 280px;
         display: block;
@@ -435,7 +439,6 @@
 
     .qualification ul.flex {
         padding-left: 0;
-        list-style: none;
         display: block;
     }
 

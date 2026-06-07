@@ -121,11 +121,6 @@ main > div::before {
     margin-bottom: 1em;
 }
 
-.profile_right p:nth-of-type(3) {
-    /* お問い合わせ非表示 */
-    display: none;
-}
-
 #news {
     margin-top: 50px;
 }
